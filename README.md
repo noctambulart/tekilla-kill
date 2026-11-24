@@ -1,4 +1,4 @@
-# TekillaKill
+# Tequila Kill
 
 TekillaKill est un jeu de combat en arène, en vue du dessus, où jusqu’à **16 joueurs** se disputent la dernière bouteille de tequila d’un village mexicain privé de livraison.
 
