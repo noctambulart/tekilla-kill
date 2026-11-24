@@ -1,0 +1,92 @@
+{
+  "issue": 58,
+  "version": "refined-v2",
+  "source_cell": [
+    144,
+    144
+  ],
+  "draw_size_world": [
+    48,
+    48
+  ],
+  "texels_per_logical_pixel": 3,
+  "source_ground_anchor": [
+    72,
+    120
+  ],
+  "source_aim_pivot": [
+    72,
+    78
+  ],
+  "runtime_anchor_world": [
+    24,
+    26
+  ],
+  "contract": "Higher drawing density inside the same world-space footprint; 1:1 texels at 1080p, nearest-neighbor reduction at smaller windows or overview zoom.",
+  "quality": {
+    "poncho": {
+      "source": "output/sprites/players/issue-58/v2/source/poncho-refined-raw.png",
+      "sha256": "0fd8d0485dc352208167d25ddc5851444d51da38bd08f409742f0132ddfa6d02",
+      "shared_scale": 0.3333333333333333,
+      "native_bbox": [
+        25,
+        31,
+        119,
+        120
+      ],
+      "visible_colors": 59,
+      "world_body_width": 31.333333333333332,
+      "idle": {
+        "frames": 1,
+        "distinct": 1
+      },
+      "walk": {
+        "frames": 6,
+        "distinct": 5
+      },
+      "dash": {
+        "frames": 4,
+        "distinct": 3
+      }
+    },
+    "garcia": {
+      "source": "output/sprites/players/issue-58/v2/source/garcia-refined-raw.png",
+      "sha256": "d9a595c60b779f5bf879a78a6f2ec5f79013ca3e88ddfc12c62483bf41a673e8",
+      "shared_scale": 0.3404255319148936,
+      "native_bbox": [
+        25,
+        36,
+        120,
+        120
+      ],
+      "visible_colors": 61,
+      "world_body_width": 31.666666666666668,
+      "idle": {
+        "frames": 1,
+        "distinct": 1
+      },
+      "walk": {
+        "frames": 6,
+        "distinct": 5
+      },
+      "dash": {
+        "frames": 4,
+        "distinct": 3
+      }
+    },
+    "weapon": {
+      "source": "output/sprites/players/issue-58/v2/source/weapon-refined-raw.png",
+      "sha256": "dcd5de9a2d2c8ed0da30a379b444b7a214d832c887074c6fd014a6c2870b6d09",
+      "shared_scale": 0.22959183673469388,
+      "native_bbox": [
+        93,
+        68,
+        138,
+        88
+      ],
+      "visible_colors": 38,
+      "world_body_width": 15.0
+    }
+  },
+  "weapon_scope": "Still a common provisional prop layer, not final Garcia shotgun action art."
+}

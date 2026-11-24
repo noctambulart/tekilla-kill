@@ -1,0 +1,376 @@
+{
+	"collision_contract": "Visual scenes contain no physics. Keep the intact collision in the owner; release it on destruction. Broken/debris visuals never block or grant bonuses.",
+	"coordinates": "Sprite local origin is its center; positions and collisions come from layout.json.",
+	"date": "2026-11-24",
+	"destruction_source": "res://scenes/arroyo_seco/assets/destruction-v1.png",
+	"intact_source": "res://scenes/arroyo_seco/assets/environment-v4.png",
+	"integration_status": "Visual lot ready; damage, resistance, collision removal and timing belong to #29/#43.",
+	"issue": 42,
+	"variants": [
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				40.0,
+				40.0
+			],
+			"kind": "crate",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				88,
+				96,
+				268,
+				278
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/crate-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/crate-intact.tres"
+		},
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				40.0,
+				40.0
+			],
+			"kind": "barrel",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": false,
+			"region_px": [
+				524,
+				87,
+				283,
+				292
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/barrel-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/barrel-intact.tres"
+		},
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				64.0,
+				64.0
+			],
+			"kind": "table",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": false,
+			"region_px": [
+				958,
+				85,
+				303,
+				304
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/table-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/table-intact.tres"
+		},
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				128.0,
+				48.0
+			],
+			"kind": "couch",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": false,
+			"region_px": [
+				1364,
+				153,
+				376,
+				172
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/couch-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/couch-intact.tres"
+		},
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				32.0,
+				32.0
+			],
+			"kind": "chair",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				105,
+				533,
+				233,
+				278
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/chair-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/chair-intact.tres"
+		},
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				24.0,
+				24.0
+			],
+			"kind": "pot",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				549,
+				559,
+				227,
+				234
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/pot-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/pot-intact.tres"
+		},
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				128.0,
+				48.0
+			],
+			"kind": "cart",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": false,
+			"region_px": [
+				926,
+				553,
+				374,
+				232
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/cart-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/cart-intact.tres"
+		},
+		{
+			"blocking_in_game": true,
+			"draw_size_px": [
+				128.0,
+				32.0
+			],
+			"kind": "counter",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": false,
+			"region_px": [
+				1355,
+				610,
+				394,
+				118
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/counter-intact.tscn",
+			"state": "intact",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/counter-intact.tres"
+		},
+		{
+			"blocking_in_game": false,
+			"draw_size_px": [
+				40.0,
+				40.0
+			],
+			"kind": "crate",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				85,
+				108,
+				349,
+				354
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/crate-broken.tscn",
+			"state": "broken",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/crate-broken.tres"
+		},
+		{
+			"blocking_in_game": false,
+			"draw_size_px": [
+				32.0,
+				32.0
+			],
+			"kind": "chair",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				581,
+				88,
+				348,
+				383
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/chair-broken.tscn",
+			"state": "broken",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/chair-broken.tres"
+		},
+		{
+			"blocking_in_game": false,
+			"draw_size_px": [
+				24.0,
+				24.0
+			],
+			"kind": "pot",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				1108,
+				109,
+				336,
+				333
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/pot-broken.tscn",
+			"state": "broken",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/pot-broken.tres"
+		},
+		{
+			"blocking_in_game": false,
+			"draw_size_px": [
+				32.0,
+				22.0
+			],
+			"kind": "crate",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				138,
+				683,
+				238,
+				179
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/crate-debris.tscn",
+			"state": "debris",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/crate-debris.tres"
+		},
+		{
+			"blocking_in_game": false,
+			"draw_size_px": [
+				24.0,
+				16.0
+			],
+			"kind": "chair",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				661,
+				699,
+				194,
+				156
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/chair-debris.tscn",
+			"state": "debris",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/chair-debris.tres"
+		},
+		{
+			"blocking_in_game": false,
+			"draw_size_px": [
+				20.0,
+				14.0
+			],
+			"kind": "pot",
+			"origin_px": [
+				0,
+				0
+			],
+			"pivot_normalized": [
+				0.5,
+				0.5
+			],
+			"planned_breakable": true,
+			"region_px": [
+				1172,
+				712,
+				184,
+				128
+			],
+			"scene": "res://scenes/arroyo_seco/assets/prop_visuals/pot-debris.tscn",
+			"state": "debris",
+			"texture": "res://scenes/arroyo_seco/assets/prop_visuals/pot-debris.tres"
+		}
+	],
+	"version": 1
+}

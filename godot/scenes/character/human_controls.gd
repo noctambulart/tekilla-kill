@@ -9,6 +9,9 @@ enum Source { KEYBOARD_MOUSE, JOYPAD }
 var joypad_device := -1
 var _actions: Dictionary = {}
 var _mouse_position := Vector2.ZERO
+var _fire_held := false
+var _fire_press := false
+var _reload_press := false
 
 
 func _ready() -> void:
@@ -20,6 +23,15 @@ func _ready() -> void:
 			# Physical WASD becomes ZQSD on an AZERTY layout.
 			event.physical_keycode = keys[i]
 			_add_action("move_" + str(i), event)
+		var dash_key := InputEventKey.new()
+		dash_key.physical_keycode = KEY_SPACE
+		_add_action("dash", dash_key)
+		var fire_button := InputEventMouseButton.new()
+		fire_button.button_index = MOUSE_BUTTON_LEFT
+		_add_action("fire", fire_button)
+		var reload_key := InputEventKey.new()
+		reload_key.physical_keycode = KEY_R
+		_add_action("reload", reload_key)
 
 
 func assign_joypad(device: int) -> void:
@@ -37,10 +49,46 @@ func assign_joypad(device: int) -> void:
 			event.axis = first_axis + (1 if i >= 2 else 0)
 			event.axis_value = -1.0 if i % 2 == 0 else 1.0
 			_add_action(prefix + str(i), event)
+	var trigger := InputEventJoypadMotion.new()
+	trigger.device = device
+	trigger.axis = JOY_AXIS_TRIGGER_LEFT
+	trigger.axis_value = 1.0
+	_add_action("dash", trigger)
+	InputMap.action_set_deadzone(_actions["dash"], 0.5)
+	var fire_trigger := InputEventJoypadMotion.new()
+	fire_trigger.device = device
+	fire_trigger.axis = JOY_AXIS_TRIGGER_RIGHT
+	fire_trigger.axis_value = 1.0
+	_add_action("fire", fire_trigger)
+	InputMap.action_set_deadzone(_actions["fire"], 0.5)
+	var reload_button := InputEventJoypadButton.new()
+	reload_button.device = device
+	reload_button.button_index = JOY_BUTTON_X
+	_add_action("reload", reload_button)
 
 
 func movement() -> Vector2:
 	return _vector("move_")
+
+
+func dash_just_pressed() -> bool:
+	return _actions.has("dash") and Input.is_action_just_pressed(_actions["dash"])
+
+
+func fire_pressed() -> bool:
+	return _fire_held
+
+
+func consume_fire_press() -> bool:
+	var pressed := _fire_press
+	_fire_press = false
+	return pressed
+
+
+func consume_reload_press() -> bool:
+	var pressed := _reload_press
+	_reload_press = false
+	return pressed
 
 
 func aim(character_position: Vector2) -> Vector2:
@@ -51,6 +99,9 @@ func aim(character_position: Vector2) -> Vector2:
 
 
 func release() -> void:
+	_fire_held = false
+	_fire_press = false
+	_reload_press = false
 	for action in _actions.values():
 		Input.action_release(action)
 
@@ -58,6 +109,18 @@ func release() -> void:
 func _input(event: InputEvent) -> void:
 	if source == Source.KEYBOARD_MOUSE and event is InputEventMouseMotion:
 		_mouse_position = event.position
+	if _actions.has("fire") and event.is_action_released(_actions["fire"]):
+		_fire_held = false
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	# GUI clicks never become shots. Releases are observed before GUI handling.
+	if _actions.has("fire") and event.is_action_pressed(_actions["fire"]):
+		if not _fire_held:
+			_fire_press = true
+		_fire_held = true
+	if _actions.has("reload") and not event.is_echo() and event.is_action_pressed(_actions["reload"]):
+		_reload_press = true
 
 
 func _vector(prefix: String) -> Vector2:

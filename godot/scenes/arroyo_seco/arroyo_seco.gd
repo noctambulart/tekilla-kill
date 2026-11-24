@@ -8,6 +8,8 @@ const ENVIRONMENT := preload("res://scenes/arroyo_seco/assets/environment-v4.png
 const SPRITE_KINDS := ["crate", "barrel", "table", "couch", "chair", "pot", "cart", "counter"]
 static var _sprite_region_cache: Array[Rect2] = []
 
+@export var show_bottle_marker := true
+
 var layout: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(DATA_PATH))
 var sprite_textures: Dictionary = {}
 var annotations := false:
@@ -120,7 +122,8 @@ func _draw() -> void:
 	for wall in layout.walls:
 		_draw_wall(wall)
 	_draw_thresholds()
-	_draw_bottle(tile_point(layout.bottle))
+	if show_bottle_marker:
+		_draw_bottle(tile_point(layout.bottle))
 	if annotations:
 		_draw_annotations()
 

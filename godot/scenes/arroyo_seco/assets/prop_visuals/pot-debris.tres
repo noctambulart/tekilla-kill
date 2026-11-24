@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" format=3]
+
+[ext_resource type="Texture2D" path="res://scenes/arroyo_seco/assets/destruction-v1.png" id="1_7p8dw"]
+
+[resource]
+atlas = ExtResource("1_7p8dw")
+region = Rect2(1172, 712, 184, 128)
+filter_clip = true

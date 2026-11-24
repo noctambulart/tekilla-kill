@@ -1,0 +1,45 @@
+{
+  "issue": 58,
+  "frame_size": [
+    48,
+    48
+  ],
+  "ground_anchor": [
+    24,
+    40
+  ],
+  "runtime_anchor": [
+    24,
+    26
+  ],
+  "aim_pivot": [
+    24,
+    26
+  ],
+  "source_files": {
+    "output/sprites/poncho/issue-38/exports/v4/idle.png": "463d5d8fd99a9ab61307ef5066cbeaa8fe2ed4c5412c368519a3535194191999",
+    "output/sprites/poncho/issue-38/exports/v4/walk.png": "9fbe0d2706426323272c669115a4d993b8b0d152d3b270c0938c5630404c59f1",
+    "output/sprites/poncho/issue-38/exports/v4/dash.png": "ef4b737d3e3d57f1f34721447d5844b9b9956873a1c06cb82892cc1cfb23057c",
+    "output/sprites/poncho/issue-38/exports/v4/arm_idle.png": "bf31e26e3e97de04faabee1c9bdeaa02cef58f823f81b8c122d846019529c721",
+    "output/sprites/poncho/issue-38/exports/v4/walk_arm.png": "84c955be4d97e629d5155a3ff4578480acefd2a38ee2a7502d7972a8521a3dc4",
+    "output/sprites/poncho/issue-38/exports/v4/fire.png": "a119aec3c757751cf93339756940b1399469d5f734155227ec43ed913d52698a",
+    "output/sprites/players/issue-58/source/garcia-dash-raw.png": "c395f8eb9e128a2977a777e1cf1bf0c32621e3f93af15599f78ab88dec08a4c4",
+    "output/sprites/players/issue-58/source/garcia-seed-raw.png": "bb511860a1e700c61132f2a4915954cf6ab4f39a072490eefcbf55743dbcb652",
+    "output/sprites/players/issue-58/source/garcia-walk-raw.png": "2ea43748e495cca15802d868795d4cb6c57f2b21f43b860ad0c9a6fc981acdb0"
+  },
+  "garcia_strips": {
+    "walk": {
+      "scale": 0.13122171945701358,
+      "frames": 6,
+      "unique_frames": 5
+    },
+    "dash": {
+      "scale": 0.10507246376811594,
+      "frames": 4,
+      "unique_frames": 3
+    }
+  },
+  "scope": "Locomotion in existing playable scenes; #39/#40 still own final Garcia combat/action art.",
+  "weapon": "Shared provisional Poncho V4 held-weapon art, not final Garcia shotgun art.",
+  "normalization": "One shared scale per strip, nearest-neighbor, binary alpha, shared seed palette; no repainting."
+}

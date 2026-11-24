@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://scenes/arroyo_seco/assets/prop_visuals/pot-debris.tres" id="1_mu254"]
+
+[node name="PotDebris" type="Sprite2D" unique_id=2079819770]
+texture_filter = 1
+scale = Vector2(0.10869565, 0.109375)
+texture = ExtResource("1_mu254")
+metadata/prop_kind = "pot"
+metadata/visual_state = "debris"
+metadata/planned_breakable = true
+metadata/requires_collision = false

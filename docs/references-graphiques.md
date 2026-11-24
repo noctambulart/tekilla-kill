@@ -73,11 +73,13 @@ Base pixel art validée le 22 novembre 2026 dans [l’issue #12](https://github.
 | --- | --- |
 | Tiles de terrain | **32 × 32 pixels** |
 | Grille logique des scènes | **640 × 360 unités**, ratio 16:9 |
-| Rendu à la taille cible | **1920 × 1080 pixels**, sprites à l’échelle ×3 |
+| Rendu à la taille cible | **1920 × 1080 pixels**, 3 pixels d’affichage par unité logique au zoom natif |
 | Fenêtre initiale demandée | 1920 × 1080 |
 | Mise à l'échelle | Facteurs entiers, ratio conservé, filtrage au plus proche voisin |
 
 Les assets se dessinent à leur taille native ; l'agrandissement de l'image est assuré par Godot. La grille de terrain de 32 pixels n'impose pas cette taille à tous les objets : les formats historiques des personnages, du mobilier et des portraits restent des références à examiner et à harmoniser.
+
+Après examen du rendu le 24 novembre 2026, la reprise [#58](https://github.com/noctambulart/tequila-kill/issues/58) augmente la densité des dessins des personnages : cellules source de 144 × 144 pixels, dessinées dans 48 × 48 unités logiques. Leurs silhouettes occupent toujours environ 32 unités de large ; les contours, franges et signes distinctifs disposent de plus de détails. À zoom natif en 1080p, un pixel de texture correspond à un pixel affiché. À 720p ou en vue d’ensemble, les textures sont réduites au plus proche voisin. Cette densité est propre aux personnages ; les tuiles de terrain restent à 32 × 32. Les anciens sprites restent disponibles pour comparaison et l’harmonisation avec le décor sera examinée en jouant.
 
 Le 640 × 360 est attesté dans l’écran de sélection historique. Il sert de grille de composition pour les scènes actuelles. Le cadrage de l’arène et la lisibilité avec plusieurs joueurs devront être vérifiés dans une version jouable.
 

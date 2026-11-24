@@ -59,7 +59,7 @@ offset_right = 632.0
 offset_bottom = 360.0
 theme_override_colors/font_color = Color(0.2, 0.16, 0.11, 1)
 theme_override_font_sizes/font_size = 10
-text = "ZQSD / WASD · Souris pour viser · R : revenir au départ · Visite du village"
+text = "ZQSD / WASD · Souris : visée · Espace : dash · R : revenir au départ"
 
 [connection signal="pressed" from="HUD/Top/View" to="." method="toggle_view"]
 [connection signal="pressed" from="HUD/Top/Plan" to="." method="toggle_plan"]

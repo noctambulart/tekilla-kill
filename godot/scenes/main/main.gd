@@ -49,3 +49,7 @@ func start_movement_test() -> void:
 
 func start_arena_review() -> void:
 	get_tree().change_scene_to_file("res://scenes/arroyo_seco/arena_review.tscn")
+
+
+func start_match() -> void:
+	get_tree().change_scene_to_file("res://scenes/match/match.tscn")

@@ -60,14 +60,19 @@ shape = SubResource("Obstacle_small")
 
 [node name="J1" parent="Players" instance=ExtResource("2_character")]
 position = Vector2(160, 208)
+combat_enabled = true
 
 [node name="J2" parent="Players" instance=ExtResource("2_character")]
 position = Vector2(480, 144)
 player_number = 2
 player_color = Color(0.72, 0.24, 0.17, 1)
+combat_enabled = true
 
 [node name="HumanControls" parent="Players/J2" index="1"]
 source = 1
+
+[node name="Visual" parent="Players/J2" index="3"]
+character_style = 1
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
@@ -90,10 +95,10 @@ theme_override_styles/panel = SubResource("HUD_background")
 [node name="Title" type="Label" parent="HUD/Controls"]
 offset_left = 16.0
 offset_top = 6.0
-offset_right = 500.0
+offset_right = 400.0
 offset_bottom = 22.0
 theme_override_font_sizes/font_size = 14
-text = "TEQUILA KILL · Déplacements et visée"
+text = "TEQUILA KILL · Tir, déplacements et dash"
 
 [node name="Subtitle" type="Label" parent="HUD/Controls"]
 offset_left = 16.0
@@ -101,6 +106,14 @@ offset_top = 27.0
 offset_right = 520.0
 offset_bottom = 43.0
 text = "Deux joueurs · Traverse la zone et contourne les obstacles"
+
+[node name="ResetButton" type="Button" parent="HUD/Controls"]
+offset_left = 420.0
+offset_top = 4.0
+offset_right = 532.0
+offset_bottom = 24.0
+focus_mode = 0
+text = "Réinitialiser l’essai"
 
 [node name="ReturnButton" type="Button" parent="HUD/Controls"]
 offset_left = 540.0
@@ -115,7 +128,7 @@ offset_left = 16.0
 offset_top = 310.0
 offset_right = 624.0
 offset_bottom = 328.0
-text = "J1 · ZQSD / WASD : déplacement · Souris : visée"
+text = "J1 · ZQSD / WASD · Souris : viser · Clic gauche : tir · Espace : dash · R : recharger"
 
 [node name="JoypadStatus" type="Label" parent="HUD/Controls"]
 offset_left = 16.0
@@ -124,5 +137,6 @@ offset_right = 624.0
 offset_bottom = 350.0
 
 [connection signal="pressed" from="HUD/Controls/ReturnButton" to="." method="return_to_title"]
+[connection signal="pressed" from="HUD/Controls/ResetButton" to="." method="reset_trial"]
 
 [editable path="Players/J2"]

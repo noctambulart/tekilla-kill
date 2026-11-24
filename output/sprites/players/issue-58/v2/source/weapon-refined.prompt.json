@@ -1,0 +1,8 @@
+{
+  "tool": "image_gen.imagegen",
+  "name": "weapon-refined",
+  "refs": [
+    "/Users/noctambul/Dev/Noctambul/IA/jeux-video/tequila-kill/godot/scenes/character/assets/poncho/arm_idle.png"
+  ],
+  "prompt": "Use case: precise-object-edit / production pixel-art refinement. Refine this existing isolated small held-weapon and hand layer at three times its previous drawing density, matching its shape and pointing RIGHT in every cell. It is a tiny prop layer, not a person or a mechanical illustration. Warm dark brown sleeve, small palm/grip and short gray-metal barrel with dark outline and one pale highlight. Keep the grasp compact because it will be masked behind a sombrero; no long exposed arm, no face, no complete body. Make a truly transparent TWELVE-cell sprite sheet, exactly SIX columns and TWO rows with the same scale, baseline and pointing direction. Top row SIX walking attachment poses with tiny relative vertical/horizontal motions of the whole held prop (neutral, left/down, neutral, right/up, up, left/up). Bottom row: neutral IDLE, FIRE pose 1 neutral, FIRE pose 2 small recoil backward, FIRE pose 3 recovering, FIRE pose 4 neutral, neutral IDLE. No muzzle flash, bullet, labels, diagrams, ground shadow, scenery or extra objects. It will be normalized into 144px cells at three times the old resolution and drawn at the old world size. Refine the thin contours and metal shading so it stays readable with the newly refined bodies; no blur, antialiasing or painterly gradients. Whole sheet at once with stable compact dimensions in every cell."
+}

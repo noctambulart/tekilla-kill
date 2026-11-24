@@ -1,0 +1,8 @@
+{
+	"checks": 51,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": false,
+	"scope": "Rechargement dans les scènes réelles, entrées clavier/souris/manette simulées. Sensations et matériel physique à essayer.",
+	"status": "passed"
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-24",
+  "issue": 42,
+  "tool": "image_gen.imagegen (built-in)",
+  "intact_source": "environment-v4.png, approved base",
+  "new_source": "destruction-v1.png, companion 3x2 atlas",
+  "source_files": [
+    {
+      "path": "godot/scenes/arroyo_seco/assets/environment-v4.png",
+      "sha256": "f97551d7c1e83a5bb56a5aa0765a8662de967e631ebc9a755ec4a68bc0ec3099"
+    },
+    {
+      "path": "godot/scenes/arroyo_seco/assets/destruction-v1.png",
+      "sha256": "9076f1cef94d8251026859b923f92d4926deb37c7c168f075d4ced15f8f0909b"
+    },
+    {
+      "path": "output/arena/2026-11-24/issue-42/source-draft.png",
+      "sha256": "abeee548551af10512b3f3322d2490ec6b4ab18a6365d9dc8e0998a7fab41f4e"
+    },
+    {
+      "path": "output/arena/2026-11-24/issue-42/generation.txt",
+      "sha256": "42462cf633e70ec3827fd0545488518e9bbd8541c9ac9e5097cd2bd428f8e58d"
+    },
+    {
+      "path": "output/arena/2026-11-24/issue-42/transparence.txt",
+      "sha256": "e3dbc789d802867f9c21132126efd6d3f2f45d166146aebecd1d01c52caa7dd1"
+    }
+  ],
+  "recipe": "Generation with approved intact atlas as reference, then transparency-only edit. Godot reads visible-alpha bounds and exports centered textures/scenes without rewriting source images.",
+  "rebuild": "godot --headless --path godot --script res://tools/prepare_prop_visuals.gd"
+}

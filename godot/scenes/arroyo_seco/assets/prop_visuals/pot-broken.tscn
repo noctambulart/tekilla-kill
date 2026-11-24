@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://scenes/arroyo_seco/assets/prop_visuals/pot-broken.tres" id="1_7vr44"]
+
+[node name="PotBroken" type="Sprite2D" unique_id=1549270415]
+texture_filter = 1
+scale = Vector2(0.071428575, 0.072072074)
+texture = ExtResource("1_7vr44")
+metadata/prop_kind = "pot"
+metadata/visual_state = "broken"
+metadata/planned_breakable = true
+metadata/requires_collision = false

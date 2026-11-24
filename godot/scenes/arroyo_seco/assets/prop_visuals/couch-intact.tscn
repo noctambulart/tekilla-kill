@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://scenes/arroyo_seco/assets/prop_visuals/couch-intact.tres" id="1_d3sg6"]
+
+[node name="CouchIntact" type="Sprite2D" unique_id=1629032151]
+texture_filter = 1
+scale = Vector2(0.34042552, 0.27906978)
+texture = ExtResource("1_d3sg6")
+metadata/prop_kind = "couch"
+metadata/visual_state = "intact"
+metadata/planned_breakable = false
+metadata/requires_collision = true

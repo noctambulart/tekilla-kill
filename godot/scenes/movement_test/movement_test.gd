@@ -1,5 +1,5 @@
 extends Node2D
-## Temporary play area for issue #18; the production arena is a later mission.
+## Temporary movement/combat trial for #18–#21; not a complete match.
 
 const PLAY_AREA := Rect2(24, 64, 592, 232)
 const OBSTACLES := [Rect2(286, 128, 68, 104), Rect2(128, 96, 64, 32), Rect2(448, 232, 64, 32)]
@@ -19,9 +19,35 @@ func assign_joypad(device: int) -> void:
 	joypad_character.stop_movement()
 	joypad_character.controls.assign_joypad(device)
 	$HUD/Controls/JoypadStatus.text = (
-		"J2 · Manette connectée — sticks : déplacement / visée"
+		"J2 · Sticks : bouger / viser · RT : tir · LT : dash · X / carré : recharger"
 		if device >= 0 else "J2 · Branche une manette pour jouer à deux"
 	)
+
+
+func _process(_delta: float) -> void:
+	var status: Array[String] = []
+	for character in [keyboard_character, joypad_character]:
+		var ammunition: int = character.weapon.ammunition
+		var state := "%d/%d balles" % [ammunition, character.weapon.capacity]
+		if character.health == 0:
+			state = "Réinitialiser l’essai"
+		elif character.weapon.is_reloading():
+			state += " · recharge"
+		elif ammunition == 0:
+			state = "VIDE"
+		status.append("J%d : %d PV · %s" % [character.player_number, character.health, state])
+	$HUD/Controls/Subtitle.text = "     |     ".join(status)
+
+
+func reset_trial() -> void:
+	for bullet in get_tree().get_nodes_in_group("revolver_bullets"):
+		bullet.queue_free()
+	keyboard_character.reset_combat()
+	joypad_character.reset_combat()
+	keyboard_character.position = Vector2(160, 208)
+	joypad_character.position = Vector2(480, 144)
+	keyboard_character.aim_direction = Vector2.RIGHT
+	joypad_character.aim_direction = Vector2.LEFT
 
 
 func _on_joy_connection_changed(device: int, connected: bool) -> void:

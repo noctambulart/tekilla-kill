@@ -37,6 +37,114 @@ func _stick(axis: JoyAxis, value: float, device: int = 7) -> void:
 	Input.parse_input_event(event)
 
 
+func _point_mouse(target: Vector2) -> void:
+	var mouse := InputEventMouseMotion.new()
+	# parse_input_event expects window coordinates, including integer scaling/bars.
+	mouse.position = root.get_final_transform() * target
+	Input.parse_input_event(mouse)
+
+
+func _verify_dash(j1: CharacterBody2D, j2: CharacterBody2D) -> void:
+	j1.position = Vector2(120, 272)
+	var start: Vector2 = j1.position
+	_key(KEY_SPACE, true)
+	await _frames()
+	_check(j1.position.is_equal_approx(start) and j1.dash_readiness() == 1.0,
+		"Espace à l’arrêt ne déclenche rien")
+	_key(KEY_D, true)
+	await _frames(12)
+	_check(is_equal_approx(j1.velocity.length(), j1.max_speed) and not j1.is_dashing(),
+		"L’appui fait à l’arrêt ne se déclenche pas pendant le déplacement")
+	_key(KEY_SPACE, false)
+	_key(KEY_D, false)
+	_key(KEY_W, true)
+	await _frames(2)
+	var heading := j1.get_real_velocity().normalized()
+	var aim: Vector2 = j1.aim_direction
+	start = j1.position
+	_key(KEY_W, false)
+	_key(KEY_A, true)
+	_key(KEY_SPACE, true)
+	await _frames()
+	_check(j1.is_dashing() and j1.velocity.is_equal_approx(heading * j1.dash_speed),
+		"Le dash suit l’élan du virage à son déclenchement")
+	_key(KEY_A, false)
+	_key(KEY_D, true)
+	_key(KEY_SPACE, false)
+	_point_mouse(Vector2(50, 340))
+	await _frames()
+	_key(KEY_SPACE, true)
+	await _frames(2)
+	_check(j1.is_dashing() and j1.velocity.is_equal_approx(heading * j1.dash_speed)
+		and j1.aim_direction.is_equal_approx(aim), "Déplacement et visée figés pendant le dash")
+	await _frames(4)
+	_check(not j1.is_dashing() and j1.dash_readiness() == 0.0
+		and j1.position.is_equal_approx(start + heading * j1.dash_speed * j1.dash_duration)
+		and j1.velocity.is_equal_approx(heading * j1.max_speed),
+		"Distance du dash et reprise avec l’élan dans la même direction")
+	await _frames(4)
+	_check(not j1.aim_direction.is_equal_approx(aim) and j1.dash_readiness() > 0.0
+		and j1.dash_readiness() < 1.0, "Visée à nouveau libre et récupération en cours")
+	_key(KEY_SPACE, false)
+	await _frames()
+	_key(KEY_SPACE, true)
+	await _frames()
+	_check(not j1.is_dashing(), "Appui ignoré pendant la récupération")
+	await _frames(36)
+	_check(j1.dash_readiness() == 1.0 and is_equal_approx(j1.velocity.length(), j1.max_speed),
+		"Aucun dash différé ou répété quand la jauge redevient pleine")
+	_key(KEY_SPACE, false)
+	_key(KEY_D, false)
+	j1.stop_movement()
+
+	j1.position = Vector2(245, 180)
+	_key(KEY_D, true)
+	await _frames(8)
+	_key(KEY_SPACE, true)
+	await _frames(3)
+	_check(not j1.is_dashing() and j1.velocity.is_zero_approx()
+		and j1.position.x > 277.0 and j1.position.x < 279.0 and j1.dash_readiness() < 1.0,
+		"Un nouvel appui déclenche un dash qui s’arrête au premier obstacle")
+	_key(KEY_SPACE, false)
+	await _frames(36)
+	_key(KEY_SPACE, true)
+	await _frames()
+	_check(j1.dash_readiness() == 1.0, "Pousser contre un obstacle à l’arrêt ne consomme pas le dash")
+	_key(KEY_SPACE, false)
+	_key(KEY_D, false)
+	j1.stop_movement()
+
+	j2.position = Vector2(500, 280)
+	_stick(JOY_AXIS_LEFT_X, -1.0)
+	await _frames(10)
+	_stick(JOY_AXIS_TRIGGER_LEFT, 1.0, 8)
+	await _frames()
+	_check(not j2.is_dashing(), "Une autre manette ne peut pas déclencher le dash")
+	_stick(JOY_AXIS_TRIGGER_LEFT, 0.4)
+	await _frames()
+	_check(not j2.is_dashing(), "Une pression sous le seuil ne déclenche pas le dash")
+	_stick(JOY_AXIS_TRIGGER_LEFT, 0.7)
+	await _frames()
+	_check(j2.is_dashing() and not j1.is_dashing(), "Gâchette gauche lance le dash de J2")
+	await _frames(44)
+	_check(j2.dash_readiness() == 1.0 and is_equal_approx(j2.velocity.length(), j2.max_speed),
+		"Maintenir la gâchette ne relance pas le dash")
+	_stick(JOY_AXIS_TRIGGER_LEFT, 0.9)
+	await _frames()
+	_check(not j2.is_dashing(), "Une variation de pression maintenue ne vaut pas un nouvel appui")
+	_stick(JOY_AXIS_TRIGGER_LEFT, 0.0)
+	await _frames()
+	_stick(JOY_AXIS_TRIGGER_LEFT, 1.0)
+	await _frames()
+	_check(j2.is_dashing() and j2.velocity.x < 0.0, "Relâcher puis réappuyer permet un nouveau dash")
+	root.focus_exited.emit()
+	await _frames()
+	_check(not j2.is_dashing() and j2.velocity.is_zero_approx(), "Perdre le focus interrompt le dash")
+	_stick(JOY_AXIS_TRIGGER_LEFT, 0.0, 8)
+	_stick(JOY_AXIS_TRIGGER_LEFT, 0.0)
+	_stick(JOY_AXIS_LEFT_X, 0.0)
+
+
 func _capture() -> void:
 	if DisplayServer.get_name() == "headless":
 		return
@@ -94,11 +202,8 @@ func _run() -> void:
 	await _frames()
 
 	# Mouse aim follows its world target independently of movement.
-	var mouse := InputEventMouseMotion.new()
 	var mouse_target := Vector2(160, 280)
-	# parse_input_event expects window coordinates, including integer scaling/bars.
-	mouse.position = root.get_final_transform() * mouse_target
-	Input.parse_input_event(mouse)
+	_point_mouse(mouse_target)
 	_key(KEY_D, true)
 	await _frames(4)
 	var toward_mouse: Vector2 = (mouse_target - j1.global_position).normalized()
@@ -212,6 +317,8 @@ func _run() -> void:
 	_key(KEY_D, false)
 	_key(KEY_S, false)
 	await _frames(10)
+
+	await _verify_dash(j1, j2)
 
 	# Device removal and leaving/reentering the scene must not retain held actions.
 	_stick(JOY_AXIS_LEFT_X, 1.0)

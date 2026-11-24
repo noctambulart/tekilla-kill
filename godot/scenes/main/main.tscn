@@ -55,12 +55,19 @@ theme_override_font_sizes/font_size = 12
 text = "Une bouteille. Un village. Un seul vainqueur."
 horizontal_alignment = 1
 
+[node name="PlayButton" type="Button" parent="CenterContainer/Content"]
+custom_minimum_size = Vector2(140, 28)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 12
+text = "Jouer à deux · La bouteille"
+
 [node name="MovementButton" type="Button" parent="CenterContainer/Content"]
 custom_minimum_size = Vector2(140, 28)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 12
-text = "Tester les déplacements"
+text = "Tester le tir et les déplacements"
 
 [node name="ReplayButton" type="Button" parent="CenterContainer/Content"]
 custom_minimum_size = Vector2(140, 28)
@@ -87,3 +94,4 @@ text = "Quitter"
 [connection signal="pressed" from="CenterContainer/Content/MovementButton" to="." method="start_movement_test"]
 [connection signal="pressed" from="CenterContainer/Content/ArenaButton" to="." method="start_arena_review"]
 [connection signal="pressed" from="CenterContainer/Content/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CenterContainer/Content/PlayButton" to="." method="start_match"]

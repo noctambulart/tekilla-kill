@@ -1,0 +1,26 @@
+{
+  "checks": 33,
+  "failures": [],
+  "rendered": true,
+  "scope": "Sprites des scènes réelles, transitions repos/marche/dash, visée indépendante et visite. Pas de validation créative ou matérielle.",
+  "other_verifications": {
+    "movement": {
+      "checks": 53,
+      "result": "passed"
+    },
+    "arena": {
+      "checks": 35,
+      "result": "passed"
+    },
+    "shooting": {
+      "checks": 47,
+      "result": "passed"
+    }
+  },
+  "notes": [
+    "Corps de Poncho issus du lot V4 existant, Garcia issu de la planche retenue.",
+    "Arme tenue commune provisoire ; lot Garcia combat et intégration complète #39/#40 restent ouverts.",
+    "Aucun paramètre de mouvement, collision, dégât ou cadence modifié par cette mission.",
+    "Captures réelles à 1920 × 1080 ; appréciation créative et manette physique restent à examiner par le producteur."
+  ]
+}

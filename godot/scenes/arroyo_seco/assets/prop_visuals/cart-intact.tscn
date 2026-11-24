@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://scenes/arroyo_seco/assets/prop_visuals/cart-intact.tres" id="1_g5agw"]
+
+[node name="CartIntact" type="Sprite2D" unique_id=1406796115]
+texture_filter = 1
+scale = Vector2(0.342246, 0.20689656)
+texture = ExtResource("1_g5agw")
+metadata/prop_kind = "cart"
+metadata/visual_state = "intact"
+metadata/planned_breakable = false
+metadata/requires_collision = true

@@ -1,7 +1,7 @@
 {
-	"checks": 41,
+	"checks": 35,
 	"failures": [],
-	"rendered": true,
+	"rendered": false,
 	"scope": "Scènes réelles, collisions physiques, passages, parcours, commandes et menus. Pas de combat ou de validation créative.",
 	"status": "passed"
 }

@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" format=3]
+
+[ext_resource type="Texture2D" path="res://scenes/arroyo_seco/assets/environment-v4.png" id="1_guc4v"]
+
+[resource]
+atlas = ExtResource("1_guc4v")
+region = Rect2(926, 553, 374, 232)
+filter_clip = true
