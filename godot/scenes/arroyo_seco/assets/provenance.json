@@ -1,0 +1,51 @@
+[
+  {
+    "file": "terrain_atlas.png",
+    "source": "archives-originales/TheMexicanTequilaWar/Sprites/Enviro/Sand_Tileset.png",
+    "sha256": "0e479874a4bae67d2aac0fc1641b414e46216d8e81fdbda5bb2c5ff496a3ae2e",
+    "note": "Copie sans retouche. Baril et charrette : aperçus Pyxel de l’inventaire historique, IDs 137 et 146."
+  },
+  {
+    "file": "crate.png",
+    "source": "archives-originales/TheMexicanTequilaWar/Sprites/Enviro/Crate_Wood.png",
+    "sha256": "299790f16a9f89d65e57abbf90938e1d3d1d9195707f89a5bd4dec79fd5d03ce",
+    "note": "Copie sans retouche. Baril et charrette : aperçus Pyxel de l’inventaire historique, IDs 137 et 146."
+  },
+  {
+    "file": "chair.png",
+    "source": "archives-originales/TheMexicanTequilaWar/Sprites/Enviro/Chair.png",
+    "sha256": "2a7dc405e231551fb8017718e7e5cea43f4ae193cd0763ef327fdd34d1ce735a",
+    "note": "Copie sans retouche. Baril et charrette : aperçus Pyxel de l’inventaire historique, IDs 137 et 146."
+  },
+  {
+    "file": "table.png",
+    "source": "archives-originales/TheMexicanTequilaWar/Sprites/Enviro/Table_Large.png",
+    "sha256": "fcb9f90a16bd1e6a741840137b19ce4502ca763f24332d7a05f5458072f66b68",
+    "note": "Copie sans retouche. Baril et charrette : aperçus Pyxel de l’inventaire historique, IDs 137 et 146."
+  },
+  {
+    "file": "couch.png",
+    "source": "archives-originales/TheMexicanTequilaWar/Sprites/Enviro/couch.png",
+    "sha256": "6d59969545ed2a96acb94152de7b1107d8614726cff2e4a490112a5b843632f4",
+    "note": "Copie sans retouche. Baril et charrette : aperçus Pyxel de l’inventaire historique, IDs 137 et 146."
+  },
+  {
+    "file": "barrel.png",
+    "source": "output/anciens-graphismes/images/2da85ea1009cb3f12be3.png",
+    "sha256": "15ad94cebf6e36fa5e0e573ed703fe6d18d0e8aacc494309a0a802c97a5532c1",
+    "note": "Copie sans retouche. Baril et charrette : aperçus Pyxel de l’inventaire historique, IDs 137 et 146."
+  },
+  {
+    "file": "cart.png",
+    "source": "output/anciens-graphismes/images/cb8f1dc9d4d2ef621ea4.png",
+    "sha256": "4947b9ff0554164bc372e8d6bfbf79213127bc1f40d902080c757367557a42bb",
+    "note": "Copie sans retouche. Baril et charrette : aperçus Pyxel de l’inventaire historique, IDs 137 et 146."
+  },
+  {
+    "file": "environment-v4.png",
+    "source": "image_gen.imagegen (built-in)",
+    "sha256": "f97551d7c1e83a5bb56a5aa0765a8662de967e631ebc9a755ec4a68bc0ec3099",
+    "prompt": "output/arena/2026-11-23/atlas-v4-prompt.txt",
+    "note": "Planche originale de 8 sprites sur alpha, grille 4 × 2 ; régions détourées lues par Godot, aucune retouche des archives."
+  }
+]

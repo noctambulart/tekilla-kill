@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="800" viewBox="0 0 960 800" role="img" aria-labelledby="title desc">
+<title id="title">Arroyo Seco — plan annoté V1</title><desc id="desc">Proposition : quatre bâtiments accessibles par deux portes, rues en croix, bouteille centrale et quatre départs équidistants. Parcours de contournement et raccourci intérieur.</desc>
+<rect width="960" height="800" fill="#fcfaf4"/>
+<g font-family="system-ui, sans-serif">
+<text x="60" y="38" fill="#203037" font-size="24" text-anchor="start">ARROYO SECO — PLAN V1</text>
+<text x="60" y="66" fill="#203037" font-size="15" text-anchor="start">Proposition #27 · 28 × 16 tuiles · 896 × 512 px · 1 tuile = 32 px</text>
+<text x="60" y="89" fill="#203037" font-size="13" text-anchor="start">À examiner avec le producteur — dimensions et équilibrage à éprouver dans Godot</text>
+<rect x="60" y="110" width="840" height="480" fill="#f3dfab" stroke="#725c36" stroke-width="2"/>
+<path d="M90 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M120 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M150 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M180 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M210 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M240 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M270 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M300 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M330 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M360 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M390 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M420 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M450 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M480 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M510 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M540 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M570 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M600 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M630 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M660 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M690 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M720 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M750 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M780 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M810 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M840 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M870 110v480" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 140h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 170h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 200h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 230h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 260h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 290h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 320h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 350h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 380h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 410h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 440h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 470h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 500h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 530h840" stroke="#ddc997" stroke-width=".5"/>
+<path d="M60 560h840" stroke="#ddc997" stroke-width=".5"/>
+<text x="60" y="102" fill="#203037" font-size="11" text-anchor="middle">0</text>
+<text x="120" y="102" fill="#203037" font-size="11" text-anchor="middle">2</text>
+<text x="180" y="102" fill="#203037" font-size="11" text-anchor="middle">4</text>
+<text x="240" y="102" fill="#203037" font-size="11" text-anchor="middle">6</text>
+<text x="300" y="102" fill="#203037" font-size="11" text-anchor="middle">8</text>
+<text x="360" y="102" fill="#203037" font-size="11" text-anchor="middle">10</text>
+<text x="420" y="102" fill="#203037" font-size="11" text-anchor="middle">12</text>
+<text x="480" y="102" fill="#203037" font-size="11" text-anchor="middle">14</text>
+<text x="540" y="102" fill="#203037" font-size="11" text-anchor="middle">16</text>
+<text x="600" y="102" fill="#203037" font-size="11" text-anchor="middle">18</text>
+<text x="660" y="102" fill="#203037" font-size="11" text-anchor="middle">20</text>
+<text x="720" y="102" fill="#203037" font-size="11" text-anchor="middle">22</text>
+<text x="780" y="102" fill="#203037" font-size="11" text-anchor="middle">24</text>
+<text x="840" y="102" fill="#203037" font-size="11" text-anchor="middle">26</text>
+<text x="900" y="102" fill="#203037" font-size="11" text-anchor="middle">28</text>
+<text x="48" y="114" fill="#203037" font-size="11" text-anchor="end">0</text>
+<text x="48" y="174" fill="#203037" font-size="11" text-anchor="end">2</text>
+<text x="48" y="234" fill="#203037" font-size="11" text-anchor="end">4</text>
+<text x="48" y="294" fill="#203037" font-size="11" text-anchor="end">6</text>
+<text x="48" y="354" fill="#203037" font-size="11" text-anchor="end">8</text>
+<text x="48" y="414" fill="#203037" font-size="11" text-anchor="end">10</text>
+<text x="48" y="474" fill="#203037" font-size="11" text-anchor="end">12</text>
+<text x="48" y="534" fill="#203037" font-size="11" text-anchor="end">14</text>
+<text x="48" y="594" fill="#203037" font-size="11" text-anchor="end">16</text>
+<rect x="180" y="170" width="240" height="120" fill="#e0e2db" stroke="none" stroke-width="1"/>
+<rect x="540" y="170" width="240" height="120" fill="#e0e2db" stroke="none" stroke-width="1"/>
+<rect x="180" y="410" width="240" height="120" fill="#e0e2db" stroke="none" stroke-width="1"/>
+<rect x="540" y="410" width="240" height="120" fill="#e0e2db" stroke="none" stroke-width="1"/>
+<rect x="180" y="170" width="240" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="180" y="170" width="15.0" height="120" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="180" y="275.0" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="330" y="275.0" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="405.0" y="170" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="405.0" y="260" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="170" width="240" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="765.0" y="170" width="15.0" height="120" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="275.0" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="690" y="275.0" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="170" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="260" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="180" y="515.0" width="240" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="180" y="410" width="15.0" height="120" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="180" y="410" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="330" y="410" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="405.0" y="410" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="405.0" y="500" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="515.0" width="240" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="765.0" y="410" width="15.0" height="120" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="410" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="690" y="410" width="90" height="15.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="410" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="540" y="500" width="15.0" height="30" fill="#626a65" stroke="none" stroke-width="1"/>
+<rect x="213.75" y="203.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="367.5" y="188.75" width="15.0" height="15.0" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="723.75" y="203.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="577.5" y="188.75" width="15.0" height="15.0" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="213.75" y="473.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="367.5" y="496.25" width="15.0" height="15.0" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="723.75" y="473.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="577.5" y="496.25" width="15.0" height="15.0" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<rect x="423.75" y="293.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<path d="M423.75 293.75l22.5 22.5m0 -22.5l-22.5 22.5" stroke="#6d471f" fill="none"/>
+<rect x="513.75" y="293.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<path d="M513.75 293.75l22.5 22.5m0 -22.5l-22.5 22.5" stroke="#6d471f" fill="none"/>
+<rect x="423.75" y="383.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<path d="M423.75 383.75l22.5 22.5m0 -22.5l-22.5 22.5" stroke="#6d471f" fill="none"/>
+<rect x="513.75" y="383.75" width="22.5" height="22.5" fill="#bb783b" stroke="#6d471f" stroke-width="1"/>
+<path d="M513.75 383.75l22.5 22.5m0 -22.5l-22.5 22.5" stroke="#6d471f" fill="none"/>
+<polyline points="480,350 480,230 300,230 300,350 480,350" stroke="#216c8d" stroke-width="3" stroke-dasharray="7 4" fill="none"/>
+<polyline points="480,350 480,140 120,140 120,350 480,350" stroke="#87558f" stroke-width="3" stroke-dasharray="3 5" fill="none"/>
+<text x="300.0" y="235" fill="#203037" font-size="15" text-anchor="middle">A · Saloon</text>
+<text x="660.0" y="235" fill="#203037" font-size="15" text-anchor="middle">B · Épicerie</text>
+<text x="300.0" y="475" fill="#203037" font-size="15" text-anchor="middle">C · Maison</text>
+<text x="660.0" y="475" fill="#203037" font-size="15" text-anchor="middle">D · Remise</text>
+<circle cx="480" cy="200" r="15" fill="#fcfaf4" stroke="#203037" stroke-width="2"/>
+<text x="480" y="205" fill="#203037" font-size="12" text-anchor="middle">J1</text>
+<circle cx="480" cy="500" r="15" fill="#fcfaf4" stroke="#203037" stroke-width="2"/>
+<text x="480" y="505" fill="#203037" font-size="12" text-anchor="middle">J2</text>
+<circle cx="630" cy="350" r="15" fill="#fcfaf4" stroke="#203037" stroke-width="2"/>
+<text x="630" y="355" fill="#203037" font-size="12" text-anchor="middle">J3</text>
+<circle cx="330" cy="350" r="15" fill="#fcfaf4" stroke="#203037" stroke-width="2"/>
+<text x="330" y="355" fill="#203037" font-size="12" text-anchor="middle">J4</text>
+<circle cx="480" cy="350" r="13" fill="#377545"/>
+<text x="480" y="355" fill="#ffffff" font-size="13" text-anchor="middle">T</text>
+<text x="504" y="332" fill="#203037" font-size="13" text-anchor="start">Bouteille</text>
+<text x="120" y="380" fill="#203037" font-size="12" text-anchor="middle">4 t</text>
+<text x="750" y="149.0" fill="#203037" font-size="12" text-anchor="middle">Ruelle : 2 t</text>
+<text x="60" y="626" fill="#203037" font-size="17" text-anchor="start">Lecture du plan</text>
+<rect x="60" y="641.0" width="18.0" height="18.0" fill="#626a65" stroke="none" stroke-width="1"/>
+<text x="90" y="655" fill="#203037" font-size="14" text-anchor="start">Murs permanents · 2 ouvertures de 2 tuiles par bâtiment</text>
+<text x="60" y="682" fill="#bb783b" font-size="17" text-anchor="start">■</text>
+<text x="90" y="682" fill="#203037" font-size="14" text-anchor="start">Caisses, chaises et pots cassables · aucune obstruction au centre</text>
+<path d="M60 706h22" stroke="#216c8d" stroke-width="3" stroke-dasharray="7 4"/>
+<text x="90" y="711" fill="#203037" font-size="14" text-anchor="start">Raccourci intérieur : exemple de boucle par le saloon</text>
+<path d="M60 735h22" stroke="#87558f" stroke-width="3" stroke-dasharray="3 5"/>
+<text x="90" y="740" fill="#203037" font-size="14" text-anchor="start">Contournement extérieur : longer les façades pour casser les lignes de tir</text>
+<text x="60" y="776" fill="#203037" font-size="13" text-anchor="start">J1–J2 à deux · +J3 à trois · +J4 à quatre · chaque départ à 5 tuiles du centre</text>
+</g></svg>

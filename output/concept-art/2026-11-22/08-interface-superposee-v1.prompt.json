@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen (built-in)",
+  "file": "08-interface-superposee-v1.png",
+  "status": "proposition à valider",
+  "prompt": "Use case: compositing / ui-mockup.\nAsset type: one conceptual in-game HUD mockup for Tequila Kill, a top-down western pixel-art arena game.\nInput image 1 is the EDIT TARGET: keep its full arena composition, warm sand, grey-stone saloon interiors, wooden furniture, rocks, fences, lighting and top-down pixel-art mood. Input image 2 is an IDENTITY REFERENCE for Poncho. Input image 3 is an IDENTITY REFERENCE for Garcia. Redraw the portraits in a coherent refreshed expressive pixel-art style; do not simply paste the old portraits.\n\nPrimary edit: overlay four compact player information panels DIRECTLY ON TOP OF THE GAME IMAGE, one in each corner. The arena continues behind the panels. Preserve a wide landscape 16:9 game-screenshot composition. The center of the fight and the green tequila bottle remain clearly visible.\n\nHUD layout proposal:\n- Upper left: J1 PONCHO, cyan accent.\n- Upper right: J2 GARCIA, red accent.\n- Lower left: J3 PONCHO, violet accent.\n- Lower right: J4 GARCIA, golden-yellow accent.\n- Each panel occupies approximately 22 percent of screen width and 15 percent of screen height, with a small inset margin. Thin dark wood/paper pixel borders, subtle dark translucent backing, warm off-white legible pixel text, restrained western ornament.\n- Every panel contains ALL five elements: a NEW square expressive face portrait, a visible row of bullet/shell icons showing loaded and spent ammunition, a horizontal health bar labeled VIE, a compact DASH icon with its availability/cooldown, and a character skill icon labeled SPRINT for Poncho or CROSSE for Garcia. Show a few differing health/ammo/cooldown states to explain the design. Ammo counts are illustrative, not balance specifications.\n- Use small precise clear labels only: J1 PONCHO, J2 GARCIA, J3 PONCHO, J4 GARCIA, VIE, DASH, SPRINT, CROSSE. No explanatory paragraphs.\n- Keep the panels compact and convincingly superimposed over gameplay. There is NO full-width bottom band, NO separate HUD strip, NO reserved black margin, NO big title screen, NO developer controls.\n\nCharacters:\nExactly four arena avatars, using only the two established characters twice each: two Ponchos and two Garcias, NOT four distinct characters. Poncho has a wide pale sombrero with olive crown and brown fringed poncho. Garcia has a dark hat, blue-violet outfit, red scarf, strong moustache in his portrait. Replace the two anonymous research avatars in the target image with these duplicates. Each avatar has a small ground marker matching its panel accent and a player-number marker so its panel can be identified. One central Poncho carries the green bottle with a restrained ivory carrier highlight; keep the battle readable. Redraw the HUD portraits using the old portrait identities but fresh, polished matching pixel-art faces.\n\nStyle and invariants:\nCrisp pixel-inspired edges and warm western colors matching the target, consistent portrait and UI rendering. Preserve the arena and active battlefield across the entire frame; the HUD sits over it in the corners. Maintain the image proportions and top-down viewpoint. This is a polished design preview of placement, not a production sprite sheet or an implementation screenshot. No logos, no watermarks, no extra panels or characters.",
+  "referenced_image_paths": [
+    "output/concept-art/2026-11-22/06-scene-habitee-identites.png",
+    "archives-originales/TheMexicanTequilaWar/Faces/Poncho.png",
+    "archives-originales/TheMexicanTequilaWar/Faces/SgtGarcia.png"
+  ],
+  "transparent_background": false,
+  "mode": "built-in",
+  "source_generated_file": "ImageGen/exec-9bc2cbff-fb57-48ff-9d08-b95140ca271f.png",
+  "generated_size": {
+    "width": 1672,
+    "height": 941
+  },
+  "technical_note": "Maquette conceptuelle. Le projet cible 640 × 360 ; l'image ne garantit pas une grille pixel exacte ni les dimensions finales de l'interface."
+}

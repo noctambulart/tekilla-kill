@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/main/main.gd" id="1_main"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.82, 0.65, 0.41, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Content" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="Location" type="Label" parent="CenterContainer/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24, 0.16, 0.12, 1)
+theme_override_font_sizes/font_size = 11
+text = "ARROYO SECO · ARIZONA"
+horizontal_alignment = 1
+
+[node name="Title" type="Label" parent="CenterContainer/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.36, 0.1, 0.07, 1)
+theme_override_font_sizes/font_size = 36
+text = "TEQUILA KILL"
+horizontal_alignment = 1
+
+[node name="Tagline" type="Label" parent="CenterContainer/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24, 0.16, 0.12, 1)
+theme_override_font_sizes/font_size = 12
+text = "Une bouteille. Un village. Un seul vainqueur."
+horizontal_alignment = 1
+
+[node name="MovementButton" type="Button" parent="CenterContainer/Content"]
+custom_minimum_size = Vector2(140, 28)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 12
+text = "Tester les déplacements"
+
+[node name="ReplayButton" type="Button" parent="CenterContainer/Content"]
+custom_minimum_size = Vector2(140, 28)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 12
+text = "Revoir l’introduction"
+
+[node name="ArenaButton" type="Button" parent="CenterContainer/Content"]
+custom_minimum_size = Vector2(140, 28)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 12
+text = "Visiter Arroyo Seco"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/Content"]
+custom_minimum_size = Vector2(110, 28)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 12
+text = "Quitter"
+
+[connection signal="pressed" from="CenterContainer/Content/ReplayButton" to="." method="start_intro"]
+[connection signal="pressed" from="CenterContainer/Content/MovementButton" to="." method="start_movement_test"]
+[connection signal="pressed" from="CenterContainer/Content/ArenaButton" to="." method="start_arena_review"]
+[connection signal="pressed" from="CenterContainer/Content/QuitButton" to="." method="_on_quit_button_pressed"]

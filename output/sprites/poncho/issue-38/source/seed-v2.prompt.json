@@ -1,0 +1,10 @@
+{
+  "mission": 38,
+  "tool": "image_gen.imagegen (built-in)",
+  "prompt": "Use case: background-extraction / identity-preserve.\nAsset type: faithful Poncho seed sprite extraction for the 2D game Tequila Kill.\nThe supplied image is the edit target, not a loose inspiration. Extract ONLY the large colored PONCHO sprite in the upper-left character column, beneath the word PONCHO. Reproduce that exact design on a true transparent background.\nPreserve the source silhouette and projection: a broad horizontally oval pale straw brim, a TALL olive-green crown whose front/side is visible, dark brown triangular poncho underneath with individually readable golden fringes. Preserve the relative heights and widths of brim, crown and poncho. Keep the asymmetric warm shading, dark pixel outline and coarse pixel clusters exactly in the style of the source. Face remains concealed.\nDo NOT turn the brim into a circle, do NOT flatten the crown into a top-down cap, do NOT impose a more vertical camera, do NOT rotate or redesign the character.\nFor this composable BODY layer only, remove the small gun and its outstretched hand to the right, filling only the small exposed poncho/brim edge behind it consistently. Everything else about Poncho must remain the same. Weapons/arms will be separate layers.\nOutput exactly one body sprite centered on a transparent square canvas, generously padded all around. Enlarge its existing pixel clusters with a clean nearest-neighbor appearance for inspection; intended export is a 48x48 cell with a body about 32 pixels wide. Do not add tiny high-resolution textures, smooth gradients, gloss or antialiasing.\nNo labels, no parchment, no silhouettes row, no small-format row, no other characters, no shadow, no ring, no backdrop, no watermark. This is an extraction of the selected concept Poncho, not a new character proposal.",
+  "references": [
+    "output/concept-art/2026-11-22/07-recherche-silhouettes.png"
+  ],
+  "transparent_background": true,
+  "decision": "Producer explicitly selects the silhouette research Poncho. Preserve its projection and proportions; V1 circular top-down redesign is superseded."
+}

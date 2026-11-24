@@ -1,0 +1,36 @@
+{
+  "method": "image_gen.imagegen, outil intégré",
+  "prompts": [
+    {
+      "method": "image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. Production asset for a pixel-art Godot western intro. Edit reference image 1. Preserve the same full-bleed landscape 16:9 camera, sombrero, warm sunset, background, light and original El Poncho identity. Change only expression and top edge of poncho: lower his raised reddish-brown striped poncho just enough to clearly expose his nose tip, keeping mouth covered. Both eyes comically and unmistakably cross inward, pupils looking toward his own nose tip, eyebrows slightly raised while trying to remain serious. Nose visible and centered. No fly in this image: a tiny animated fly will be added by the engine. Same deliberately large crisp stepped pixel clusters, flat shadow planes, no photorealistic rendering. No text, border, layout, panels, watermark. One complete cinematic frame, not a storyboard. Keep framing and eye positions as close to the source as possible.",
+      "references": [
+        "passation-intro-jeu/images/retenues/duel-poncho-face.png"
+      ],
+      "asset": "godot/scenes/intro/assets/poncho-gag.png"
+    },
+    {
+      "method": "image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. Production cinematic frame for Tequila Kill. Edit reference image 1. Keep original full-bleed landscape 16:9 frame, original fictional Garcia face, huge dark horseshoe moustache, sombrero, red scarf, blue-violet uniform, sunset street, palette, lighting, camera and scale. Change only facial expression: his left eyebrow rises very high in puzzled suspicion while the other remains stern and lowered; he is reacting deadpan to a rival making a ridiculous face. Slight sideways glance but both eyes clearly visible. Same crisp chunky pixel art as the source. No smile, no added characters or objects, no text or borders, not a reference sheet. One complete frame.",
+      "references": [
+        "passation-intro-jeu/images/retenues/duel-garcia-face.png"
+      ],
+      "asset": "godot/scenes/intro/assets/garcia-reaction.png"
+    },
+    {
+      "method": "image_gen.imagegen",
+      "prompt": "Use case: stylized-concept. Create ONE full-bleed landscape 16:9 production frame for the ending of the Tequila Kill intro. Reference image 1 defines the exact original fictional El Poncho eye, stern angular eyebrow, skin palette, warm sunset and crisp chunky pixel-art style. Extreme macro of ONE brown eye, viewed straight-on at eye level under sombrero shadow. Entire eye opening visible with white sclera on both sides, upper and lower lids, portions of warm ochre skin and brow. Eye occupies about 85 percent of frame width and 55 percent of frame height. Large circular brown iris centered at x50% y50%, outer radius about 23% frame height, containing a large nearly black circular pupil, radius about 16% frame height. Leave the entire central pupil black and empty: the bottle reflection will be composited and animated inside this pupil by Godot. A small crisp curved ivory corneal glint near upper-left of iris, not across central pupil. Clearly recognizable as a single menacing human eye, not a portal. Same stepped square pixel clusters, no painterly smoothing or photo details, no bottle, no text, no border, no panels, no watermark.",
+      "references": [
+        "passation-intro-jeu/images/retenues/duel-poncho-face.png"
+      ],
+      "asset": "godot/scenes/intro/assets/eye-closeup.png"
+    },
+    {
+      "method": "image_gen.imagegen",
+      "transparent_background": true,
+      "reference": "passation-intro-jeu/images/retenues/bouteille-saloon-pixel-cinematique-1821.png",
+      "prompt": "Use case: background-extraction. Extract ONLY the single original green rectangular tequila bottle from the reference image, keeping its precise pixel-art silhouette, cork, straight short neck, green glass, red/gold bands, yellow label edged red and 1821 digits. Remove the entire saloon, counter, cast shadow and every background pixel. One upright bottle, centered, occupying about 88% of image height, generous transparent padding around all sides. Actual transparent alpha background, not a checkerboard. Preserve the reference's stepped crisp blocky pixel art; no new objects, no outline frame, no text outside existing label. This will be a small reflection composited inside a pupil in Godot.",
+      "asset": "godot/scenes/intro/assets/bottle.png"
+    }
+  ]
+}

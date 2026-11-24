@@ -1,0 +1,41 @@
+{
+  "source": "output/sprites/poncho/issue-38/source/seed-v2-raw.png",
+  "source_sha256": "63340c8d71b62e8d2786dac5823da243969bd00407db881a85fd6781ac69b95f",
+  "export": "output/sprites/poncho/issue-38/exports/poncho-idle-seed-v2.png",
+  "frame_size": [
+    48,
+    48
+  ],
+  "anchor": [
+    24,
+    40
+  ],
+  "source_pivot": [
+    626.5,
+    1055
+  ],
+  "source_content_bbox": [
+    164,
+    209,
+    1089,
+    1055
+  ],
+  "scale": 0.034594594594594595,
+  "normalized_offset": [
+    8,
+    11
+  ],
+  "content_bbox": [
+    8,
+    11,
+    40,
+    40
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "visible_colors": 23,
+  "normalization": "nearest-neighbor, alpha threshold 128, 24-color octree, no dithering",
+  "status": "faithful extraction of producer-selected silhouette; not integrated into gameplay"
+}

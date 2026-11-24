@@ -1,0 +1,24 @@
+# Versions du jeu d’origine et fichiers sources conservés localement.
+/archives-originales/
+
+# Caches et fichiers locaux générés par Godot.
+/godot/.godot/
+/godot/export_credentials.cfg
+/godot/builds/
+*.tmp
+
+# Caches et fichiers de travail locaux.
+.DS_Store
+__pycache__/
+*.pyc
+*.log
+/tmp/
+
+# Archives et copies d’aperçu reproductibles.
+/output/anciens-graphismes/
+/output/anciens-graphismes.zip
+/output/intro/**/*.mp4
+/output/movement/
+/output/pdf/the-mexican-tequila-war-fiche*.pdf
+/output/production/
+/output/sprites/poncho/*.zip

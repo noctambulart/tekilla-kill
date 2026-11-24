@@ -1,0 +1,121 @@
+{
+  "version": "v1",
+  "kind": "Graphismes extraits de la distribution Unity Windows",
+  "images": [
+    {
+      "name": "Face_DonRamiro_0",
+      "type": "Sprite",
+      "file": "Sprite_76_Face_DonRamiro_0.png",
+      "width": 120,
+      "height": 116,
+      "source": "sharedassets1.assets",
+      "path_id": 76,
+      "sha256": "281a29fa686036cd3879b0a7d6148ea89fec101c08aa83734c95c8bf1c269299",
+      "label": "Don Ramiro"
+    },
+    {
+      "name": "Face_PonchoMiguel_0",
+      "type": "Sprite",
+      "file": "Sprite_95_Face_PonchoMiguel_0.png",
+      "width": 213,
+      "height": 236,
+      "source": "sharedassets1.assets",
+      "path_id": 95,
+      "sha256": "509c377a85bd52f65e64df3f997776d683e704f269825ce4e070199e0a9451d9",
+      "label": "Poncho Miguel"
+    },
+    {
+      "name": "WantedPoster_WithoutNails_0",
+      "type": "Sprite",
+      "file": "Sprite_81_WantedPoster_WithoutNails_0.png",
+      "width": 318,
+      "height": 431,
+      "source": "sharedassets1.assets",
+      "path_id": 81,
+      "sha256": "d60ea6afee48df75216cdbef805ae59326f8c83fda03a3cce1627684d3446699",
+      "label": "Affiche Wanted"
+    },
+    {
+      "name": "Level_Plank_Plank",
+      "type": "Sprite",
+      "file": "Sprite_70_Level_Plank_Plank.png",
+      "width": 427,
+      "height": 122,
+      "source": "sharedassets1.assets",
+      "path_id": 70,
+      "sha256": "81d07c3ff64c1fe3e36b26ce221903fec7444bc19bda0ad16802e83ff1d6959f",
+      "label": "Panneau de bois"
+    },
+    {
+      "name": "MexicanHat_0",
+      "type": "Sprite",
+      "file": "Sprite_72_MexicanHat_0.png",
+      "width": 13,
+      "height": 17,
+      "source": "sharedassets1.assets",
+      "path_id": 72,
+      "sha256": "ce76b10c58d0eb4a786530c55b5e5df006575e2d82a0d50c711729e1c1d1380c",
+      "label": "Sombrero"
+    },
+    {
+      "name": "MexicanWeapon_0",
+      "type": "Sprite",
+      "file": "Sprite_74_MexicanWeapon_0.png",
+      "width": 8,
+      "height": 4,
+      "source": "sharedassets1.assets",
+      "path_id": 74,
+      "sha256": "7ac846dd0c71f92e39f20f0bf06bdd89999ea23409367c26f609866927b07895",
+      "label": "Arme"
+    },
+    {
+      "name": "BoxWooden",
+      "type": "Sprite",
+      "file": "Sprite_22_BoxWooden.png",
+      "width": 32,
+      "height": 32,
+      "source": "sharedassets2.assets",
+      "path_id": 22,
+      "sha256": "634b271bda0a6e6bfe54c540ce8a3ff05b0b630089b4303e9a6d6400e7008a30",
+      "label": "Caisse"
+    },
+    {
+      "name": "Barrier_SpriteSheet_0",
+      "type": "Sprite",
+      "file": "Sprite_19_Barrier_SpriteSheet_0.png",
+      "width": 18,
+      "height": 32,
+      "source": "sharedassets2.assets",
+      "path_id": 19,
+      "sha256": "3b229cb3cb72941e997c62536c85a2de94e627c126498b0bec87936d1a1f3043",
+      "label": "Barrière"
+    },
+    {
+      "name": "ShooterLife_Full_Icon_0",
+      "type": "Sprite",
+      "file": "Sprite_17_ShooterLife_Full_Icon_0.png",
+      "width": 23,
+      "height": 29,
+      "source": "sharedassets2.assets",
+      "path_id": 17,
+      "sha256": "8ad19a64bcb5912fa46612f454bddfea6d3766f2b34533dae2d75abd86090583",
+      "label": "Vie"
+    },
+    {
+      "name": "part_explosion_0",
+      "type": "Sprite",
+      "file": "Sprite_86_part_explosion_0.png",
+      "width": 734,
+      "height": 718,
+      "source": "sharedassets1.assets",
+      "path_id": 86,
+      "sha256": "4955486c0e9a080cca16f8988ee52eba1f6cda8dc88a815afe1597ef85d78f7f",
+      "label": "Explosion"
+    }
+  ],
+  "arena": {
+    "file": "arena-reconstituee.png",
+    "scene": "level2",
+    "method": "Composition des SpriteRenderer actifs avec leurs sprites, transformations hiérarchiques et ordres de tri. Sans exécution du jeu, simulation ni rendu des shaders."
+  }
+}

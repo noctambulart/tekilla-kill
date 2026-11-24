@@ -1,0 +1,734 @@
+{
+  "title": "Arroyo Seco — plan V1",
+  "date": "2026-11-23",
+  "issue": 27,
+  "status": "Proposition à examiner avec le producteur ; non validée et non intégrée dans Godot.",
+  "coordinate_system": {
+    "unit": "tile",
+    "tile_px": 32,
+    "origin": "Coin nord-ouest ; x vers la droite, y vers le bas. Les centres et rectangles sont explicites ; rectangles [x,y,largeur,hauteur]."
+  },
+  "arena": {
+    "size_tiles": [
+      28,
+      16
+    ],
+    "size_px": [
+      896,
+      512
+    ],
+    "boundary": "Fermée sur x=0, x=28, y=0, y=16 ; pas de traversée des bords. Collision en dehors du rectangle.",
+    "bottle_center_tiles": [
+      14,
+      8
+    ]
+  },
+  "spawns": [
+    {
+      "id": "J1",
+      "center_tiles": [
+        14,
+        3
+      ]
+    },
+    {
+      "id": "J2",
+      "center_tiles": [
+        14,
+        13
+      ]
+    },
+    {
+      "id": "J3",
+      "center_tiles": [
+        19,
+        8
+      ]
+    },
+    {
+      "id": "J4",
+      "center_tiles": [
+        9,
+        8
+      ]
+    }
+  ],
+  "compositions": {
+    "2": [
+      "J1",
+      "J2"
+    ],
+    "3": [
+      "J1",
+      "J2",
+      "J3"
+    ],
+    "4": [
+      "J1",
+      "J2",
+      "J3",
+      "J4"
+    ]
+  },
+  "spawn_intent": "Chaque départ est à 5 tuiles (160 px) du centre par un trajet droit libre. Aucune protection initiale ajoutée. Cette égalité de distance ne prouve pas l’équilibrage, notamment à trois et entre axes horizontal et vertical.",
+  "buildings": [
+    {
+      "id": "A",
+      "name": "Saloon",
+      "rect_tiles": [
+        4,
+        2,
+        8,
+        4
+      ],
+      "doors": [
+        {
+          "side": "south",
+          "start_tiles": [
+            7,
+            6
+          ],
+          "width_tiles": 2
+        },
+        {
+          "side": "east",
+          "start_tiles": [
+            12,
+            3
+          ],
+          "width_tiles": 2
+        }
+      ],
+      "roof": "Absent ou découpé pour laisser personnages et bouteille visibles."
+    },
+    {
+      "id": "B",
+      "name": "Épicerie",
+      "rect_tiles": [
+        16,
+        2,
+        8,
+        4
+      ],
+      "doors": [
+        {
+          "side": "south",
+          "start_tiles": [
+            19,
+            6
+          ],
+          "width_tiles": 2
+        },
+        {
+          "side": "west",
+          "start_tiles": [
+            16,
+            3
+          ],
+          "width_tiles": 2
+        }
+      ],
+      "roof": "Absent ou découpé pour laisser personnages et bouteille visibles."
+    },
+    {
+      "id": "C",
+      "name": "Maison",
+      "rect_tiles": [
+        4,
+        10,
+        8,
+        4
+      ],
+      "doors": [
+        {
+          "side": "north",
+          "start_tiles": [
+            7,
+            10
+          ],
+          "width_tiles": 2
+        },
+        {
+          "side": "east",
+          "start_tiles": [
+            12,
+            11
+          ],
+          "width_tiles": 2
+        }
+      ],
+      "roof": "Absent ou découpé pour laisser personnages et bouteille visibles."
+    },
+    {
+      "id": "D",
+      "name": "Remise",
+      "rect_tiles": [
+        16,
+        10,
+        8,
+        4
+      ],
+      "doors": [
+        {
+          "side": "north",
+          "start_tiles": [
+            19,
+            10
+          ],
+          "width_tiles": 2
+        },
+        {
+          "side": "west",
+          "start_tiles": [
+            16,
+            11
+          ],
+          "width_tiles": 2
+        }
+      ],
+      "roof": "Absent ou découpé pour laisser personnages et bouteille visibles."
+    }
+  ],
+  "walls": [
+    {
+      "id": "A-wall-1",
+      "rect_tiles": [
+        4,
+        2,
+        8,
+        0.5
+      ]
+    },
+    {
+      "id": "A-wall-2",
+      "rect_tiles": [
+        4,
+        2,
+        0.5,
+        4
+      ]
+    },
+    {
+      "id": "A-wall-3",
+      "rect_tiles": [
+        4,
+        5.5,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "A-wall-4",
+      "rect_tiles": [
+        9,
+        5.5,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "A-wall-5",
+      "rect_tiles": [
+        11.5,
+        2,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "A-wall-6",
+      "rect_tiles": [
+        11.5,
+        5,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "B-wall-1",
+      "rect_tiles": [
+        16,
+        2,
+        8,
+        0.5
+      ]
+    },
+    {
+      "id": "B-wall-2",
+      "rect_tiles": [
+        23.5,
+        2,
+        0.5,
+        4
+      ]
+    },
+    {
+      "id": "B-wall-3",
+      "rect_tiles": [
+        16,
+        5.5,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "B-wall-4",
+      "rect_tiles": [
+        21,
+        5.5,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "B-wall-5",
+      "rect_tiles": [
+        16,
+        2,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "B-wall-6",
+      "rect_tiles": [
+        16,
+        5,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "C-wall-1",
+      "rect_tiles": [
+        4,
+        13.5,
+        8,
+        0.5
+      ]
+    },
+    {
+      "id": "C-wall-2",
+      "rect_tiles": [
+        4,
+        10,
+        0.5,
+        4
+      ]
+    },
+    {
+      "id": "C-wall-3",
+      "rect_tiles": [
+        4,
+        10,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "C-wall-4",
+      "rect_tiles": [
+        9,
+        10,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "C-wall-5",
+      "rect_tiles": [
+        11.5,
+        10,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "C-wall-6",
+      "rect_tiles": [
+        11.5,
+        13,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "D-wall-1",
+      "rect_tiles": [
+        16,
+        13.5,
+        8,
+        0.5
+      ]
+    },
+    {
+      "id": "D-wall-2",
+      "rect_tiles": [
+        23.5,
+        10,
+        0.5,
+        4
+      ]
+    },
+    {
+      "id": "D-wall-3",
+      "rect_tiles": [
+        16,
+        10,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "D-wall-4",
+      "rect_tiles": [
+        21,
+        10,
+        3,
+        0.5
+      ]
+    },
+    {
+      "id": "D-wall-5",
+      "rect_tiles": [
+        16,
+        10,
+        0.5,
+        1
+      ]
+    },
+    {
+      "id": "D-wall-6",
+      "rect_tiles": [
+        16,
+        13,
+        0.5,
+        1
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "A-chair",
+      "type": "chair",
+      "center_tiles": [
+        5.5,
+        3.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    },
+    {
+      "id": "A-pot",
+      "type": "pot",
+      "center_tiles": [
+        10.5,
+        2.875
+      ],
+      "size_tiles": [
+        0.5,
+        0.5
+      ],
+      "destructible": true
+    },
+    {
+      "id": "B-chair",
+      "type": "chair",
+      "center_tiles": [
+        22.5,
+        3.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    },
+    {
+      "id": "B-pot",
+      "type": "pot",
+      "center_tiles": [
+        17.5,
+        2.875
+      ],
+      "size_tiles": [
+        0.5,
+        0.5
+      ],
+      "destructible": true
+    },
+    {
+      "id": "C-chair",
+      "type": "chair",
+      "center_tiles": [
+        5.5,
+        12.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    },
+    {
+      "id": "C-pot",
+      "type": "pot",
+      "center_tiles": [
+        10.5,
+        13.125
+      ],
+      "size_tiles": [
+        0.5,
+        0.5
+      ],
+      "destructible": true
+    },
+    {
+      "id": "D-chair",
+      "type": "chair",
+      "center_tiles": [
+        22.5,
+        12.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    },
+    {
+      "id": "D-pot",
+      "type": "pot",
+      "center_tiles": [
+        17.5,
+        13.125
+      ],
+      "size_tiles": [
+        0.5,
+        0.5
+      ],
+      "destructible": true
+    },
+    {
+      "id": "central-crate-1",
+      "type": "crate",
+      "center_tiles": [
+        12.5,
+        6.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    },
+    {
+      "id": "central-crate-2",
+      "type": "crate",
+      "center_tiles": [
+        15.5,
+        6.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    },
+    {
+      "id": "central-crate-3",
+      "type": "crate",
+      "center_tiles": [
+        12.5,
+        9.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    },
+    {
+      "id": "central-crate-4",
+      "type": "crate",
+      "center_tiles": [
+        15.5,
+        9.5
+      ],
+      "size_tiles": [
+        0.75,
+        0.75
+      ],
+      "destructible": true
+    }
+  ],
+  "routes": [
+    {
+      "id": "direct",
+      "name": "Course à la bouteille",
+      "polylines": [
+        [
+          [
+            14,
+            3
+          ],
+          [
+            14,
+            8
+          ]
+        ],
+        [
+          [
+            14,
+            13
+          ],
+          [
+            14,
+            8
+          ]
+        ],
+        [
+          [
+            19,
+            8
+          ],
+          [
+            14,
+            8
+          ]
+        ],
+        [
+          [
+            9,
+            8
+          ],
+          [
+            14,
+            8
+          ]
+        ]
+      ],
+      "intent": "Même distance initiale ; centre ouvert exposé aux quatre approches."
+    },
+    {
+      "id": "interior",
+      "name": "Raccourci par le saloon",
+      "polylines": [
+        [
+          [
+            14,
+            8
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            14,
+            8
+          ]
+        ]
+      ],
+      "intent": "Deux portes de 2 tuiles ; traverser pour couper une poursuite. Boucle de 20 tuiles sur cet exemple ; mobilier hors du trajet."
+    },
+    {
+      "id": "outer",
+      "name": "Contournement extérieur",
+      "polylines": [
+        [
+          [
+            14,
+            8
+          ],
+          [
+            14,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            14,
+            8
+          ]
+        ]
+      ],
+      "intent": "Passer derrière les murs pour couper les lignes de tir ; détour plus long, 38 tuiles sur cet exemple. Pas de cul-de-sac imposé."
+    }
+  ],
+  "widths_tiles": {
+    "central_horizontal_street": 4,
+    "central_vertical_street": 4,
+    "outer_north_south": 2,
+    "outer_east_west": 4,
+    "doorways": 2,
+    "wall_thickness": 0.5
+  },
+  "width_note": "Largeurs géométriques avant prise en compte du rayon des personnages. Ne fixent ni la taille finale des sprites ni leurs collisions.",
+  "gameplay_intent": [
+    "Géométrie symétrique selon les axes x=14 et y=8 ; habillages distincts pour reconnaître les quartiers.",
+    "Le centre reste ramassable par passage : aucun socle ou meuble bloquant sous la bouteille.",
+    "Les quatre caisses centrales donnent des abris temporaires ; leur destruction ouvre les diagonales.",
+    "Les murs et bâtiments restent permanents ; caisses, chaises et pots bloquent tirs et déplacements avant destruction, puis libèrent leur espace.",
+    "Le porteur peut fuir en restant poursuivable via un second accès ou un contournement. Ni porte verrouillée ni nouvelle mécanique."
+  ],
+  "handoff": {
+    "28": [
+      "Construire ce tracé avec des formes simples après validation du plan et disponibilité du tir (#20).",
+      "Convertir les coordonnées en pixels en multipliant par 32 ; garder les collisions des murs, objets et limites séparées.",
+      "Placer les quatre départs et la bouteille ; conserver intérieurs visibles et toutes les portes ouvertes."
+    ],
+    "29": [
+      "Brancher les résistances réglables, dégâts et états de casse sans ajouter de bonus.",
+      "Éprouver poursuite, accès au centre, récupération après impact et retour de fantôme dans les passages.",
+      "Corriger le tracé avec le producteur après essais à deux ; compléter les essais à quatre dans #55."
+    ],
+    "41": [
+      "Terrain sable et dallage à grille 32 px ; raccords, bords, angles et ouvertures pour quatre volumes de 8 × 4 tuiles.",
+      "Quatre identités proposées : saloon, épicerie, maison, remise ; silhouettes et sols reconnaissables sans occulter l’action.",
+      "Planche et assemblage aperçu avec sources, exports et provenance. Pas de production finale avant validation."
+    ],
+    "42": [
+      "Trois types cassables : caisse (4 placements), chaise (4), pot (4). Fournir intacts, cassés et débris.",
+      "Empreintes .75/.75/.5 tuile ici = hypothèses de collision, pas des formats de dessin imposés ; préciser ancrages dans le brief.",
+      "Ne pas meubler les trajets entre les deux portes ; mobilier supplémentaire à proposer après essai."
+    ],
+    "43": [
+      "Habiller le tracé testé sans fermer les passages ni déplacer les collisions silencieusement."
+    ]
+  },
+  "validation_pending": [
+    "Producteur : intention de place à quatre bâtiments, densité, ouvertures et identité des lieux.",
+    "Godot #28/#29 : rayon réel des personnages, croisement dans 2 tuiles, dash contre angles et bouteille près d’un mur ou objet.",
+    "Combat : longues lignes de tir est-ouest, exposition au départ, intérêt du revolver face au fusil à dispersion.",
+    "Caméra #46 : dispersion extrême, fantôme éloigné, bouteille au sol ; lisibilité réelle en 640 × 360 avec HUD.",
+    "Équilibre #55 : deux, trois puis quatre participants ; temps d’accès, fréquentation des chemins, domination d’un intérieur ou fuite perpétuelle."
+  ],
+  "camera_note": "Sans marge, cadrer 896 × 512 dans 640 × 360 impose au plus min(640/896,360/512)=0.703125. Avec HUD et marges le zoom doit être plus faible. Ce calcul ne garantit ni lisibilité ni bon rendu des pixels.",
+  "references": [
+    "https://github.com/noctambulart/tequila-kill/issues/27",
+    "https://github.com/noctambulart/tequila-kill/issues/17",
+    "https://github.com/noctambulart/tequila-kill/issues/3#issuecomment-7068280809",
+    "https://github.com/noctambulart/tequila-kill/issues/13#issuecomment-7079723366",
+    "https://github.com/noctambulart/tequila-kill/issues/8#issuecomment-7080947423",
+    "docs/assets/unity-v3/arena-reconstituee.png",
+    "output/concept-art/2026-11-22/01-arroyo-seco-arene.png"
+  ],
+  "heritage": "Intérieurs visibles, sable, dallage et mobilier repris comme intentions des archives. Géométrie nouvelle proposée ; la concept art est une référence d’ambiance et ne détermine pas les collisions."
+}

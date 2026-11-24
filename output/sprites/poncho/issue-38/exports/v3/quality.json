@@ -1,0 +1,73 @@
+{
+  "idle": {
+    "unique_frames": 1,
+    "sha256": "463d5d8fd99a9ab61307ef5066cbeaa8fe2ed4c5412c368519a3535194191999"
+  },
+  "walk": {
+    "unique_frames": 5,
+    "sha256": "9fbe0d2706426323272c669115a4d993b8b0d152d3b270c0938c5630404c59f1"
+  },
+  "sprint": {
+    "unique_frames": 5,
+    "sha256": "9fbe0d2706426323272c669115a4d993b8b0d152d3b270c0938c5630404c59f1"
+  },
+  "dash": {
+    "unique_frames": 3,
+    "sha256": "ef4b737d3e3d57f1f34721447d5844b9b9956873a1c06cb82892cc1cfb23057c"
+  },
+  "fire": {
+    "unique_frames": 4,
+    "sha256": "3f7e1415d37f86181f689a2b33e6285173f888d9f9f78a40eb570b032c4a6dc5"
+  },
+  "reload": {
+    "unique_frames": 4,
+    "sha256": "cf67207c475e69babbc9f3e94aa78925eb9a26c1c822931d97b885a837bbafac"
+  },
+  "drink": {
+    "unique_frames": 4,
+    "sha256": "d3006c70bdd516d98da850920ccf4ffec106fd528c7e1b2308ad63b1161d8e2e"
+  },
+  "arm_idle": {
+    "unique_frames": 1,
+    "sha256": "a4cee4a8f3b1c8d2abccfc724acf245aec8dd6ffa0d8f89cb19f39fe850580fb"
+  },
+  "walk_arm": {
+    "unique_frames": 6,
+    "sha256": "4de9a6297a0c4601b7b03b061d2efdcd3f0bc09f0f389405295f75548d4e5a65"
+  },
+  "sprint_arm": {
+    "unique_frames": 6,
+    "sha256": "4de9a6297a0c4601b7b03b061d2efdcd3f0bc09f0f389405295f75548d4e5a65"
+  },
+  "locomotion_hand": {
+    "visible_skin_centroids": [
+      [
+        36.583,
+        31.833
+      ],
+      [
+        36.556,
+        32.889
+      ],
+      [
+        35.8,
+        32.4
+      ],
+      [
+        34.625,
+        32.0
+      ],
+      [
+        35.0,
+        31.2
+      ],
+      [
+        34.333,
+        32.167
+      ]
+    ],
+    "vertical_swing_px": 1.6890000000000036,
+    "below_brim": true,
+    "body_pixels_unchanged": true
+  }
+}

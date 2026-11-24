@@ -1,0 +1,65 @@
+{
+  "document": "../../../output/pdf/tequila-kill-fiche.pdf",
+  "description": "Fiche unique du concept, avec une sélection de dix graphismes issus des trois ensembles historiques.",
+  "images": [
+    {
+      "role": "arena",
+      "file": "docs/assets/unity-v3/arena-reconstituee.png",
+      "sha256": "7b4e48a7ea0eb9d074d7830e9ccf39cfa02c7b64e164c8d11f4ede295d769bba"
+    },
+    {
+      "role": "bottle",
+      "file": "docs/assets/concept/bouteille.png",
+      "sha256": "da5b82de8e08673047247c0c189dd9f9f5f941deb3d83eb603a0ac5a0446749e"
+    },
+    {
+      "role": "poncho",
+      "file": "docs/assets/unity-v3/Texture2D_10_poncho_portrait.png",
+      "sha256": "b834137e24a56af955c5e6baa1eca24b7bc440c74d29ec358144359e7cbbd6d2"
+    },
+    {
+      "role": "garcia",
+      "file": "docs/assets/unity-v3/Texture2D_4_garcia_portrait.png",
+      "sha256": "ca2a8b2146a04f53d69b0677b8565aedeec5e1bb88a07d383a7a4001fb6568bf"
+    },
+    {
+      "role": "selection",
+      "file": "docs/assets/concept/selection-personnages.png",
+      "sha256": "e0c803007e4406ec4c32647ebe5b8fc2f170b540c402042c8ed89bbe6460868c"
+    },
+    {
+      "role": "hat",
+      "file": "docs/assets/unity-v3/Sprite_22_spr_poncho_hat_0.png",
+      "sha256": "9b7d4a74ad3cb8aa3e4bcb75d8d9540e6f5f08bfa4770b1a926c9fe61d7a837b"
+    },
+    {
+      "role": "crate",
+      "file": "docs/assets/unity-v1/Sprite_22_BoxWooden.png",
+      "sha256": "b9e68b91afa2bd9629ba359048a2c2eb3b6ffa06611070fb664678d9076bd9b7"
+    },
+    {
+      "role": "fence",
+      "file": "docs/assets/unity-v1/Sprite_19_Barrier_SpriteSheet_0.png",
+      "sha256": "a9aa7c3cc229bd5656aad619bd1506820755a202c5c66b25d57c3d7577880107"
+    },
+    {
+      "role": "table",
+      "file": "docs/assets/unity-v3/Sprite_31_table.png",
+      "sha256": "0b101adb63296ad2875149897bdfa8607b6a2fc72e2f406673aaaf3af760bbce"
+    },
+    {
+      "role": "life",
+      "file": "docs/assets/unity-v1/Sprite_17_ShooterLife_Full_Icon_0.png",
+      "sha256": "fcab49ae0012d7921b7d8d5f7da7cc6d57cf447edb96bfdf51b5be9010a32817"
+    }
+  ],
+  "original_sources": {
+    "bouteille.png": "archives-originales/TheMexicanTequilaWar/Faces/Tequila_Rectangle_3.png",
+    "selection-personnages.png": "archives-originales/TheMexicanTequilaWar/GUI/selection_perso_tekilla_kill.png"
+  },
+  "unity_sources": [
+    "../unity-v1/sources.json",
+    "../unity-v3/sources.json"
+  ],
+  "arena_note": "Reconstitution statique de la scène Unity v3, sans exécution du jeu."
+}

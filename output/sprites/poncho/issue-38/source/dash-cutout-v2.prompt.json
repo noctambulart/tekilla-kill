@@ -1,0 +1,8 @@
+{
+  "key": "dash_cutout_v2",
+  "paths": [
+    "output/sprites/poncho/issue-38/source/dash-v2-raw.png"
+  ],
+  "prompt": "Use case: background-extraction. Edit target: this four-frame Poncho sprite strip.\nRemove ONLY the pale white backdrop and gray drop-shadow halos around the four sprites. Replace all of that background and those cast shadows with true transparent alpha. The existing transparent areas must stay transparent.\nPreserve all four colored Poncho bodies exactly: same pixels, same oval straw brim, same tall olive crown, same brown fringed poncho, same different poses, same proportions, same positions and same four equal columns. Keep the near-black outline belonging to each body. Do not erase the pale straw highlights inside the brim.\nOutput a clean transparent sprite strip with the same four bodies and no white matte, no gray halo, no drop shadow, no text and no new artwork. This is background cleanup only; do not redesign or repaint the characters.",
+  "tool": "image_gen.imagegen (built-in)"
+}

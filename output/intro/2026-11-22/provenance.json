@@ -1,0 +1,20 @@
+{
+  "issue": "https://github.com/noctambulart/tequila-kill/issues/9",
+  "methode_originale": "image_gen.imagegen, outil intégré, généré précédemment dans cette conversation",
+  "copies": [
+    {
+      "fichier": "comparaison-reflet-pupille.png",
+      "source": "ImageGen/exec-1f228e4c-16b8-4b77-bb79-09c92099fbd8.png",
+      "sha256": "5fb6755257aa1095efa00dbf41b68eda74d949433ec2172b45a61ee9b224713e",
+      "statut": "référence de cadrage, pas un asset animé prêt à intégrer",
+      "note": "Comparaison de pistes ; reflet dans l’œil retenu."
+    },
+    {
+      "fichier": "storyboard-intro-v1.png",
+      "source": "ImageGen/exec-bd6f081b-d801-4f4f-8c5d-1828da19fc3f.png",
+      "sha256": "538d7ed940463aa3d923040e6e472b558731c2e4c5516540092ba0119f0a77ab",
+      "statut": "référence de cadrage, pas un asset animé prêt à intégrer",
+      "note": "Storyboard exploratoire en neuf plans ; rythme révisé vers 50 secondes après sa génération."
+    }
+  ]
+}

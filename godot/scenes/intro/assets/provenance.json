@@ -1,0 +1,42 @@
+{
+  "issue": 16,
+  "assets": [
+    {
+      "file": "street.png",
+      "source": "passation-intro-jeu/images/retenues/duel-a-aplats.png",
+      "sha256": "2546cdd18ef7bd457346eef8437b372eb792b3ddfe2cfbb0c00d68010b6b8c28"
+    },
+    {
+      "file": "poncho.png",
+      "source": "passation-intro-jeu/images/retenues/duel-poncho-face.png",
+      "sha256": "c2bb0c0b7f9f28420053acc72807ac79039b3ad802e72a9b012177183e480748"
+    },
+    {
+      "file": "garcia.png",
+      "source": "passation-intro-jeu/images/retenues/duel-garcia-face.png",
+      "sha256": "245c0f3c75c15bbc0488f85c436ba773cc0677e03847d44b981e08396c54e656"
+    },
+    {
+      "file": "poncho-gag.png",
+      "source": "ImageGen/exec-a97a6535-05ae-46fa-9bc9-d5c68e44d61d.png",
+      "sha256": "eb1a64074283c3a215f59e8bf13379922165b4a2698669fb73d168c62644e27f"
+    },
+    {
+      "file": "garcia-reaction.png",
+      "source": "ImageGen/exec-8a3fbfbf-5d69-41c1-b4ee-79847739f671.png",
+      "sha256": "7e9eede9f83b4082257fcb2edf939306506ce8ca31b7cf59120d4a011f331404"
+    },
+    {
+      "file": "eye-closeup.png",
+      "source": "ImageGen/exec-e1f35a82-dd1e-4391-883f-26c1c7b1b8bb.png",
+      "sha256": "36df76c5ce72332db10824cc4ee7f194387317c8951ab1f652e843b153ef8a84"
+    },
+    {
+      "file": "bottle.png",
+      "source": "ImageGen/exec-f09b9c66-15c7-428a-a7a1-afba1f4ab7d8.png",
+      "sha256": "dce1e43815c570a411319197dd42aea803ab418146e9dc97de5e09daab364234"
+    }
+  ],
+  "generation_prompts": "output/intro/2026-11-22/generation-v1.json",
+  "source_archive": "passation-intro-jeu.zip"
+}

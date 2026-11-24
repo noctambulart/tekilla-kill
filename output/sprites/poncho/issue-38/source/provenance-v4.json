@@ -1,0 +1,15 @@
+{
+  "change": "Hand is concealed behind brim, as in selected concept; V3 had placed it too low.",
+  "new_image_generation": false,
+  "art_sources": [
+    "exports/v2/fire",
+    "exports/v2/reload",
+    "exports/v3/idle",
+    "exports/v3/walk",
+    "exports/v3/sprint",
+    "exports/v3/dash"
+  ],
+  "animation": "six attachment offsets, phase coupled to walk/sprint",
+  "normalization": "scripts/poncho/build_v4.py",
+  "current_manifest": "exports/v4/manifest.json"
+}

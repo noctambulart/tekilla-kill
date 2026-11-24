@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "new_sources": [
+    {
+      "file": "run-arm-v3-raw.png",
+      "sha256": "0446e50aaa68e79ad422cd932c4f55077b7e86548a9df51880e85fc3e2033970"
+    },
+    {
+      "file": "weapon-arm-v3-raw.png",
+      "sha256": "1b68bb0966a600e0f01e54128d458d0cf977f8e45728ea2d41f422ee47cb53b9"
+    }
+  ],
+  "body_source": "exports/v2 (unchanged pixel-for-pixel)",
+  "normalization": "scripts/poncho/build_v3.py",
+  "occlusion": "exact upper 32 rows of each original body frame, no repainting",
+  "feedback": "hand should move when running and emerge under the hat brim"
+}

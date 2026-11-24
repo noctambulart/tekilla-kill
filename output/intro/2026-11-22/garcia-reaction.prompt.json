@@ -1,0 +1,7 @@
+{
+  "method": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Production cinematic frame for Tequila Kill. Edit reference image 1. Keep original full-bleed landscape 16:9 frame, original fictional Garcia face, huge dark horseshoe moustache, sombrero, red scarf, blue-violet uniform, sunset street, palette, lighting, camera and scale. Change only facial expression: his left eyebrow rises very high in puzzled suspicion while the other remains stern and lowered; he is reacting deadpan to a rival making a ridiculous face. Slight sideways glance but both eyes clearly visible. Same crisp chunky pixel art as the source. No smile, no added characters or objects, no text or borders, not a reference sheet. One complete frame.",
+  "references": [
+    "passation-intro-jeu/images/retenues/duel-garcia-face.png"
+  ]
+}

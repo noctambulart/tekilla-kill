@@ -1,0 +1,9 @@
+{
+  "key": "drink_v2",
+  "paths": [
+    "output/sprites/poncho/issue-38/source/seed-v2-raw.png",
+    "output/concept-art/2026-11-22/06-scene-habitee-identites.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: composable tiny LEFT ARM AND GREEN BOTTLE sprite animation for the adult cartoon character Poncho in Tequila Kill.\nImage 1 is body identity/palette/scale reference ONLY: do not draw this body. Image 2 gives the small green bottle design beside the central Poncho: green glass, tiny warm ochre label, light cork.\nCreate exactly FOUR separate arm-and-bottle poses in ONE evenly spaced horizontal row of four equal slots on a truly transparent background. Each slot contains ONLY a small warm-brown hand, a short dark brown poncho cuff and that green bottle. The hand and short cuff extend toward the RIGHT side of the bottle, because this layer sits on the LEFT side of the character. No body, hat, face, arm extending off-canvas, shadow, scenery, text, splashes or particles.\nFrame 1 bottle held upright at the left side of the body. Frame 2 hand lifts it a little and tips it toward the hidden mouth to the right. Frame 3 bottle tipped toward the right for a sip, hand in the same grip. Frame 4 bottle lowers toward the first pose to make a loop. Four readable distinct stages, same green bottle size and identity in all frames. No extra bottles or hands.\nTiny game pixel art, meant to occupy around 10 by 13 logical pixels next to a body 32 pixels wide. Sharp chunky pixel clusters, a few dark green and bright green shades, warm skin and brown cuff, no high-resolution anatomical detail or realistic glass. Generous transparent margins separating the four equal slots. Render the sprite clusters enlarged for inspection, not a poster or illustration.",
+  "tool": "image_gen.imagegen (built-in)"
+}

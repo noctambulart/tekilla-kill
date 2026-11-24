@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scenes/arroyo_seco/arena_review.gd" id="1_review"]
+[ext_resource type="PackedScene" path="res://scenes/arroyo_seco/arroyo_seco.tscn" id="2_map"]
+[ext_resource type="PackedScene" path="res://scenes/character/character.tscn" id="3_character"]
+
+[node name="ArroyoReview" type="Node2D"]
+script = ExtResource("1_review")
+
+[node name="ArroyoSeco" parent="." instance=ExtResource("2_map")]
+
+[node name="Explorer" parent="." instance=ExtResource("3_character")]
+position = Vector2(576, 544)
+z_index = 5
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(512, 320)
+zoom = Vector2(0.5, 0.5)
+position_smoothing_enabled = false
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Top" type="HBoxContainer" parent="HUD"]
+offset_left = 8.0
+offset_top = 2.0
+offset_right = 632.0
+offset_bottom = 22.0
+theme_override_constants/separation = 6
+
+[node name="Title" type="Label" parent="HUD/Top"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.2, 0.16, 0.11, 1)
+theme_override_font_sizes/font_size = 12
+text = "ARROYO SECO · Rue du saloon"
+
+[node name="View" type="Button" parent="HUD/Top"]
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 10
+text = "Voir de près · F"
+
+[node name="Plan" type="Button" parent="HUD/Top"]
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 10
+text = "Plan · P"
+
+[node name="Return" type="Button" parent="HUD/Top"]
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 10
+text = "Titre · Échap"
+
+[node name="Help" type="Label" parent="HUD"]
+offset_left = 8.0
+offset_top = 344.0
+offset_right = 632.0
+offset_bottom = 360.0
+theme_override_colors/font_color = Color(0.2, 0.16, 0.11, 1)
+theme_override_font_sizes/font_size = 10
+text = "ZQSD / WASD · Souris pour viser · R : revenir au départ · Visite du village"
+
+[connection signal="pressed" from="HUD/Top/View" to="." method="toggle_view"]
+[connection signal="pressed" from="HUD/Top/Plan" to="." method="toggle_plan"]
+[connection signal="pressed" from="HUD/Top/Return" to="." method="return_to_title"]

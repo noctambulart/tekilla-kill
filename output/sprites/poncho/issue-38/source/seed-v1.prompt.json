@@ -1,0 +1,12 @@
+{
+  "mission": 38,
+  "tool": "image_gen.imagegen (built-in)",
+  "status": "candidate seed; pending review and approval before animation strips",
+  "references": [
+    "output/concept-art/2026-11-22/06-scene-habitee-identites.png",
+    "output/concept-art/2026-11-22/07-recherche-silhouettes.png",
+    "archives-originales/TheMexicanTequilaWar/Faces/Poncho.png",
+    "archives-originales/TheMexicanTequilaWar/Sprites/Characters/Poncho_Hat.png"
+  ],
+  "transparent_background": true
+}

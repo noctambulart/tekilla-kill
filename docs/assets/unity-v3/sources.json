@@ -1,0 +1,121 @@
+{
+  "version": "v3",
+  "kind": "Graphismes extraits de la distribution Unity Windows",
+  "images": [
+    {
+      "name": "poncho_portrait",
+      "type": "Texture2D",
+      "file": "Texture2D_10_poncho_portrait.png",
+      "width": 96,
+      "height": 96,
+      "source": "resources.assets",
+      "path_id": 10,
+      "sha256": "5e37906c2c7b4980dd6570b6bc5663c76609501b7cdf6851d80fc7c24056f287",
+      "label": "El Poncho"
+    },
+    {
+      "name": "garcia_portrait",
+      "type": "Texture2D",
+      "file": "Texture2D_4_garcia_portrait.png",
+      "width": 96,
+      "height": 96,
+      "source": "resources.assets",
+      "path_id": 4,
+      "sha256": "3fed141c0baaabd8a6d4b48a525deafeeb084b7bd3c8ba897e543abaf3d115d7",
+      "label": "Garcia"
+    },
+    {
+      "name": "spr_gui_plank_perso_0",
+      "type": "Texture2D",
+      "file": "Texture2D_9_spr_gui_plank_perso_0.png",
+      "width": 143,
+      "height": 283,
+      "source": "sharedassets0.assets",
+      "path_id": 9,
+      "sha256": "0ccfd885f48baca293941b13bd7c33512a1a4e8d5744c90100a4a357c32cc60a",
+      "label": "Panneau"
+    },
+    {
+      "name": "bck_select_perso",
+      "type": "Texture2D",
+      "file": "Texture2D_10_bck_select_perso.png",
+      "width": 640,
+      "height": 360,
+      "source": "sharedassets0.assets",
+      "path_id": 10,
+      "sha256": "67f4d10de2e84a0e0ca8ccd6c2b2701b0c9930ace0c3f7e0cbd7a5b3e8cce440",
+      "label": "Fond du menu"
+    },
+    {
+      "name": "spr_poncho_hat_0",
+      "type": "Sprite",
+      "file": "Sprite_22_spr_poncho_hat_0.png",
+      "width": 29,
+      "height": 32,
+      "source": "resources.assets",
+      "path_id": 22,
+      "sha256": "6be45b294864dc55e5093a9799f8a26790f638580514e6e9862699b160126838",
+      "label": "Sombrero"
+    },
+    {
+      "name": "spr_gun_0",
+      "type": "Sprite",
+      "file": "Sprite_42_spr_gun_0.png",
+      "width": 11,
+      "height": 8,
+      "source": "sharedassets1.assets",
+      "path_id": 42,
+      "sha256": "96a94ffce62c31ef5a6b43b0c2b76a84483d8f899ef8e88c466d02f81eb87df9",
+      "label": "Arme"
+    },
+    {
+      "name": "crate_wood",
+      "type": "Texture2D",
+      "file": "Texture2D_16_crate_wood.png",
+      "width": 32,
+      "height": 32,
+      "source": "sharedassets1.assets",
+      "path_id": 16,
+      "sha256": "f59f8e2c30e7b8dac3fca6b510d199b8ade9de3797bf41797a669c6af45abe5d",
+      "label": "Caisse"
+    },
+    {
+      "name": "table",
+      "type": "Sprite",
+      "file": "Sprite_31_table.png",
+      "width": 48,
+      "height": 48,
+      "source": "sharedassets1.assets",
+      "path_id": 31,
+      "sha256": "c96c74658c8f05b84f7c6e793e6dd03120b939da63bf30606ad837d468bbb962",
+      "label": "Table"
+    },
+    {
+      "name": "chair",
+      "type": "Sprite",
+      "file": "Sprite_39_chair.png",
+      "width": 27,
+      "height": 32,
+      "source": "sharedassets1.assets",
+      "path_id": 39,
+      "sha256": "03a917b517c55c630d28e6728766a227786ddd1c24e21520911cf2cea0d10d7b",
+      "label": "Chaise"
+    },
+    {
+      "name": "couch",
+      "type": "Texture2D",
+      "file": "Texture2D_15_couch.png",
+      "width": 96,
+      "height": 32,
+      "source": "sharedassets1.assets",
+      "path_id": 15,
+      "sha256": "0427b20d03604b401d3a699affc0ac248efb1ca23a307da0b86e0d5d4117828f",
+      "label": "Canapé"
+    }
+  ],
+  "arena": {
+    "file": "arena-reconstituee.png",
+    "scene": "level1",
+    "method": "Composition des SpriteRenderer actifs avec leurs sprites, transformations hiérarchiques et ordres de tri. Sans exécution du jeu, simulation ni rendu des shaders."
+  }
+}

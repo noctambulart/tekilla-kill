@@ -1,0 +1,84 @@
+{
+  "idle": {
+    "sha256": "463d5d8fd99a9ab61307ef5066cbeaa8fe2ed4c5412c368519a3535194191999",
+    "unique_frames": 1
+  },
+  "walk": {
+    "sha256": "9fbe0d2706426323272c669115a4d993b8b0d152d3b270c0938c5630404c59f1",
+    "unique_frames": 5
+  },
+  "sprint": {
+    "sha256": "9fbe0d2706426323272c669115a4d993b8b0d152d3b270c0938c5630404c59f1",
+    "unique_frames": 5
+  },
+  "dash": {
+    "sha256": "ef4b737d3e3d57f1f34721447d5844b9b9956873a1c06cb82892cc1cfb23057c",
+    "unique_frames": 3
+  },
+  "fire": {
+    "sha256": "a119aec3c757751cf93339756940b1399469d5f734155227ec43ed913d52698a",
+    "unique_frames": 4
+  },
+  "reload": {
+    "sha256": "ce04cf08cd87ba1f137470e31883239d9e0bbda8b819245c6e6d385b6d697f95",
+    "unique_frames": 4
+  },
+  "drink": {
+    "sha256": "d3006c70bdd516d98da850920ccf4ffec106fd528c7e1b2308ad63b1161d8e2e",
+    "unique_frames": 4
+  },
+  "arm_idle": {
+    "sha256": "bf31e26e3e97de04faabee1c9bdeaa02cef58f823f81b8c122d846019529c721",
+    "unique_frames": 1
+  },
+  "walk_arm": {
+    "sha256": "84c955be4d97e629d5155a3ff4578480acefd2a38ee2a7502d7972a8521a3dc4",
+    "unique_frames": 5
+  },
+  "sprint_arm": {
+    "sha256": "84c955be4d97e629d5155a3ff4578480acefd2a38ee2a7502d7972a8521a3dc4",
+    "unique_frames": 5
+  },
+  "under_hat": {
+    "right_facing_walk_frames": [
+      {
+        "skin_visible": 1,
+        "skin_total": 10,
+        "skin_hidden_fraction": 0.9,
+        "visible_metal_pixels": 11
+      },
+      {
+        "skin_visible": 2,
+        "skin_total": 10,
+        "skin_hidden_fraction": 0.8,
+        "visible_metal_pixels": 11
+      },
+      {
+        "skin_visible": 2,
+        "skin_total": 10,
+        "skin_hidden_fraction": 0.8,
+        "visible_metal_pixels": 11
+      },
+      {
+        "skin_visible": 1,
+        "skin_total": 10,
+        "skin_hidden_fraction": 0.9,
+        "visible_metal_pixels": 12
+      },
+      {
+        "skin_visible": 0,
+        "skin_total": 10,
+        "skin_hidden_fraction": 1.0,
+        "visible_metal_pixels": 11
+      },
+      {
+        "skin_visible": 0,
+        "skin_total": 10,
+        "skin_hidden_fraction": 1.0,
+        "visible_metal_pixels": 9
+      }
+    ],
+    "distinct_visible_arm_states": 6,
+    "body_pixels_unchanged": true
+  }
+}

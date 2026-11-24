@@ -1,0 +1,128 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scenes/movement_test/movement_test.gd" id="1_test"]
+[ext_resource type="PackedScene" path="res://scenes/character/character.tscn" id="2_character"]
+
+[sub_resource type="RectangleShape2D" id="Wall_horizontal"]
+size = Vector2(608, 16)
+
+[sub_resource type="RectangleShape2D" id="Wall_vertical"]
+size = Vector2(16, 232)
+
+[sub_resource type="RectangleShape2D" id="Obstacle_center"]
+size = Vector2(68, 104)
+
+[sub_resource type="RectangleShape2D" id="Obstacle_small"]
+size = Vector2(64, 32)
+
+[sub_resource type="StyleBoxFlat" id="HUD_background"]
+bg_color = Color(0.18, 0.13, 0.1, 1)
+
+[sub_resource type="Theme" id="HUD_theme"]
+default_font_size = 11
+
+[node name="MovementTest" type="Node2D"]
+script = ExtResource("1_test")
+
+[node name="World" type="StaticBody2D" parent="."]
+collision_layer = 1
+collision_mask = 0
+
+[node name="Top" type="CollisionShape2D" parent="World"]
+position = Vector2(320, 56)
+shape = SubResource("Wall_horizontal")
+
+[node name="Bottom" type="CollisionShape2D" parent="World"]
+position = Vector2(320, 304)
+shape = SubResource("Wall_horizontal")
+
+[node name="Left" type="CollisionShape2D" parent="World"]
+position = Vector2(16, 180)
+shape = SubResource("Wall_vertical")
+
+[node name="Right" type="CollisionShape2D" parent="World"]
+position = Vector2(624, 180)
+shape = SubResource("Wall_vertical")
+
+[node name="CenterObstacle" type="CollisionShape2D" parent="World"]
+position = Vector2(320, 180)
+shape = SubResource("Obstacle_center")
+
+[node name="TopObstacle" type="CollisionShape2D" parent="World"]
+position = Vector2(160, 112)
+shape = SubResource("Obstacle_small")
+
+[node name="BottomObstacle" type="CollisionShape2D" parent="World"]
+position = Vector2(480, 248)
+shape = SubResource("Obstacle_small")
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="J1" parent="Players" instance=ExtResource("2_character")]
+position = Vector2(160, 208)
+
+[node name="J2" parent="Players" instance=ExtResource("2_character")]
+position = Vector2(480, 144)
+player_number = 2
+player_color = Color(0.72, 0.24, 0.17, 1)
+
+[node name="HumanControls" parent="Players/J2" index="1"]
+source = 1
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Controls" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("HUD_theme")
+
+[node name="Header" type="Panel" parent="HUD/Controls"]
+offset_right = 640.0
+offset_bottom = 48.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("HUD_background")
+
+[node name="Title" type="Label" parent="HUD/Controls"]
+offset_left = 16.0
+offset_top = 6.0
+offset_right = 500.0
+offset_bottom = 22.0
+theme_override_font_sizes/font_size = 14
+text = "TEQUILA KILL · Déplacements et visée"
+
+[node name="Subtitle" type="Label" parent="HUD/Controls"]
+offset_left = 16.0
+offset_top = 27.0
+offset_right = 520.0
+offset_bottom = 43.0
+text = "Deux joueurs · Traverse la zone et contourne les obstacles"
+
+[node name="ReturnButton" type="Button" parent="HUD/Controls"]
+offset_left = 540.0
+offset_top = 10.0
+offset_right = 624.0
+offset_bottom = 38.0
+focus_mode = 0
+text = "Retour au titre"
+
+[node name="KeyboardHelp" type="Label" parent="HUD/Controls"]
+offset_left = 16.0
+offset_top = 310.0
+offset_right = 624.0
+offset_bottom = 328.0
+text = "J1 · ZQSD / WASD : déplacement · Souris : visée"
+
+[node name="JoypadStatus" type="Label" parent="HUD/Controls"]
+offset_left = 16.0
+offset_top = 332.0
+offset_right = 624.0
+offset_bottom = 350.0
+
+[connection signal="pressed" from="HUD/Controls/ReturnButton" to="." method="return_to_title"]
+
+[editable path="Players/J2"]

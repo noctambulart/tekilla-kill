@@ -1,0 +1,9 @@
+{
+  "key": "dash_v2",
+  "paths": [
+    "output/sprites/poncho/issue-38/source/dash-v2-edit-canvas.png",
+    "output/sprites/poncho/issue-38/source/seed-v2-raw.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: FOUR-frame short dash body sprite animation for Poncho.\nImage 1 is the edit target, a transparent square reference canvas divided into exactly FOUR equal columns with the seed body in the first slot around mid-height. Image 2 shows the same body at large size.\nCreate ONE row of exactly FOUR equal-size bodies, centered in the four slots. Preserve the first neutral seed and its proportions and palette: wide oval straw sombrero, tall olive crown, dark brown triangular poncho with golden fringe, same concealed face and same upright oblique projection. Never turn the hat into a round overhead disk, never rotate the entire body sideways.\nFrame 1 neutral reference. Frame 2 a brief compact anticipation, brim/crown dip by about one game pixel and fringe folds inward. Frame 3 the dash pose: torso slightly leans to the right and the fringe streams gently left, but the hat retains its size and tall olive crown. Frame 4 upright recovery toward the exact neutral shape. Minimal pixel motion, preserve costume, crisp coarse square pixels and consistent dark outlines.\nBody only: no weapon, hands, bottle, ground, shadow, ring, streak, dust, text or grid. True transparent alpha. Exactly four bodies in a single horizontal strip, generously separated, identical global scale and baseline.",
+  "tool": "image_gen.imagegen (built-in)"
+}

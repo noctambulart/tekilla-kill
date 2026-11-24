@@ -1,0 +1,8 @@
+{
+  "key": "gun_motion_v2",
+  "paths": [
+    "output/sprites/poncho/issue-38/source/gun-v2-raw.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: eight-frame miniature cartoon game prop and hand animation strip.\nThe reference is the exact small pixel-art prop to preserve: a right-facing silver-gray western revolver held by a little brown hand with a dark cuff. Keep this exact coarse pixel design, same barrel length, same colors, same grip and same hand/cuff proportions throughout.\nCreate ONE horizontal row with EIGHT equally spaced frame slots on a truly transparent background. Each slot contains ONLY that small prop and holding hand. Intended game footprint is about 14 by 6 logical pixels per pose; keep crisp enlarged pixel clusters. No character body, hat, face, scenery, text, diagrams, bullets, effects, smoke or internal mechanisms.\nFrames 1–4 show a small stylized recoil/rest motion: 1 reference rest pose, 2 wrist and prop shift back slightly and tip upward by one pixel, 3 recover halfway, 4 exact rest pose.\nFrames 5–8 show a generic game reload gesture without mechanical detail: 5 the hand lowers and tilts the whole prop, 6 a second tiny hand briefly touches its side, 7 the second hand withdraws while the prop is still lowered, 8 the main hand raises it to rest. Do not depict an instructional process, weapon parts or cartridges.\nThis is expressive miniature sprite motion in a cartoon game. Eight same-scale tiny cutout poses total, one row, with generous transparent space between them and no extra rows.",
+  "tool": "image_gen.imagegen (built-in)"
+}

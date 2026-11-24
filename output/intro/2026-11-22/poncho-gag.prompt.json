@@ -1,0 +1,7 @@
+{
+  "method": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Production asset for a pixel-art Godot western intro. Edit reference image 1. Preserve the same full-bleed landscape 16:9 camera, sombrero, warm sunset, background, light and original El Poncho identity. Change only expression and top edge of poncho: lower his raised reddish-brown striped poncho just enough to clearly expose his nose tip, keeping mouth covered. Both eyes comically and unmistakably cross inward, pupils looking toward his own nose tip, eyebrows slightly raised while trying to remain serious. Nose visible and centered. No fly in this image: a tiny animated fly will be added by the engine. Same deliberately large crisp stepped pixel clusters, flat shadow planes, no photorealistic rendering. No text, border, layout, panels, watermark. One complete cinematic frame, not a storyboard. Keep framing and eye positions as close to the source as possible.",
+  "references": [
+    "passation-intro-jeu/images/retenues/duel-poncho-face.png"
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "character": "Poncho",
+  "version": "v3",
+  "issue": 38,
+  "reference": "output/concept-art/2026-11-22/07-recherche-silhouettes.png",
+  "frame_size": [
+    48,
+    48
+  ],
+  "ground_anchor": [
+    24,
+    40
+  ],
+  "aim_pivot": [
+    24,
+    29
+  ],
+  "body_orientation": "upright concept projection; do not rotate the whole body",
+  "aim": "rotate arm layers around (24,29), then restore the current body's hat_front",
+  "timing": "fps are art-preview suggestions, not gameplay cooldowns or reload rules",
+  "effects": "ghost/desaturation and damage tint are runtime presentation; external VFX in #47",
+  "integration": "not integrated into playable characters; #40 remains separate",
+  "sources": [
+    {
+      "source": "run-arm-v3-raw.png",
+      "shared_scale": 0.05806451612903226,
+      "union_bounds": [
+        21,
+        306,
+        331,
+        448
+      ],
+      "placement": "strip-relative offsets preserved; nominal origin (28,28)"
+    },
+    {
+      "source": "weapon-arm-v3-raw.png",
+      "shared_scale": 0.06707317073170732,
+      "union_bounds": [
+        12,
+        302,
+        259,
+        466
+      ],
+      "placement": "strip-relative offsets preserved; nominal origin (28,28)"
+    }
+  ],
+  "animations": {
+    "idle": {
+      "atlas": "idle.png",
+      "frames_directory": "idle",
+      "frames": 1,
+      "fps_preview": 1,
+      "layer": "body",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "walk": {
+      "atlas": "walk.png",
+      "frames_directory": "walk",
+      "frames": 6,
+      "fps_preview": 8,
+      "layer": "body",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "sprint": {
+      "atlas": "sprint.png",
+      "frames_directory": "sprint",
+      "frames": 6,
+      "fps_preview": 12,
+      "layer": "body",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "dash": {
+      "atlas": "dash.png",
+      "frames_directory": "dash",
+      "frames": 4,
+      "fps_preview": 20,
+      "layer": "body",
+      "loop": false,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "fire": {
+      "atlas": "fire.png",
+      "frames_directory": "fire",
+      "frames": 4,
+      "fps_preview": 18,
+      "layer": "right_arm_weapon",
+      "loop": false,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "reload": {
+      "atlas": "reload.png",
+      "frames_directory": "reload",
+      "frames": 4,
+      "fps_preview": 8,
+      "layer": "right_arm_weapon",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "drink": {
+      "atlas": "drink.png",
+      "frames_directory": "drink",
+      "frames": 4,
+      "fps_preview": 6,
+      "layer": "left_arm_bottle",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "arm_idle": {
+      "atlas": "arm_idle.png",
+      "frames_directory": "arm_idle",
+      "frames": 1,
+      "fps_preview": 1,
+      "layer": "right_arm_weapon",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ]
+    },
+    "walk_arm": {
+      "atlas": "walk_arm.png",
+      "frames_directory": "walk_arm",
+      "frames": 6,
+      "fps_preview": 8,
+      "layer": "right_arm_weapon",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ],
+      "sync_with": "walk"
+    },
+    "sprint_arm": {
+      "atlas": "sprint_arm.png",
+      "frames_directory": "sprint_arm",
+      "frames": 6,
+      "fps_preview": 12,
+      "layer": "right_arm_weapon",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ],
+      "sync_with": "sprint"
+    }
+  },
+  "reused_body_source": "../v2/",
+  "hat_occlusion": {
+    "idle": "occlusion/idle",
+    "walk": "occlusion/walk",
+    "sprint": "occlusion/sprint",
+    "dash": "occlusion/dash"
+  },
+  "draw_order": [
+    "body",
+    "right_arm_weapon",
+    "left_arm_bottle",
+    "hat_front"
+  ],
+  "locomotion_sync": {
+    "walk_arm": "walk",
+    "sprint_arm": "sprint"
+  },
+  "composition": "Use the same phase/frame for locomotion body and arm. Preserve strip-relative arm offsets.",
+  "moving_action_attachment_offsets": [
+    [
+      0,
+      0
+    ],
+    [
+      -1,
+      -1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "moving_action_note": "When a fire/reload gesture replaces a locomotion arm, retain the walking shoulder track in aim-local coordinates.",
+  "hat_cut_y": 32,
+  "rotation_bounds": "48px cells are layer canvases; do not clip the rotated composed actor to 48x48. Padded review uses 64x64."
+}

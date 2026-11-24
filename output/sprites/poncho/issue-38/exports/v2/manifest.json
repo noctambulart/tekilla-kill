@@ -1,0 +1,131 @@
+{
+  "character": "Poncho",
+  "version": "v2",
+  "issue": 38,
+  "reference": "output/concept-art/2026-11-22/07-recherche-silhouettes.png",
+  "frame_size": [
+    48,
+    48
+  ],
+  "ground_anchor": [
+    24,
+    40
+  ],
+  "aim_pivot": [
+    24,
+    26
+  ],
+  "body_orientation": "upright concept projection; do not rotate the whole body",
+  "aim": "rotate right_arm_weapon around aim_pivot; behind body when aiming upward",
+  "timing": "fps are art-preview suggestions, not gameplay cooldowns or reload rules",
+  "effects": "ghost/desaturation and damage tint are runtime presentation; external VFX in #47",
+  "integration": "not integrated into playable characters; #40 remains separate",
+  "sources": [
+    {
+      "source": "walk-v2-raw.png",
+      "shared_scale": 0.18181818181818182,
+      "count": 6
+    },
+    {
+      "source": "dash-cutout-v2-raw.png",
+      "shared_scale": 0.08791208791208792,
+      "count": 4
+    },
+    {
+      "source": "gun-motion-v2-raw.png",
+      "shared_scale": 0.06722689075630252,
+      "count": 8
+    },
+    {
+      "source": "drink-v2-raw.png",
+      "shared_scale": 0.03896103896103896,
+      "count": 4
+    }
+  ],
+  "animations": {
+    "idle": {
+      "atlas": "idle.png",
+      "frames": 1,
+      "fps_preview": 1,
+      "layer": "body",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ],
+      "frames_directory": "idle"
+    },
+    "walk": {
+      "atlas": "walk.png",
+      "frames": 6,
+      "fps_preview": 8,
+      "layer": "body",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ],
+      "frames_directory": "walk"
+    },
+    "sprint": {
+      "atlas": "sprint.png",
+      "frames": 6,
+      "fps_preview": 12,
+      "layer": "body",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ],
+      "frames_directory": "sprint"
+    },
+    "dash": {
+      "atlas": "dash.png",
+      "frames": 4,
+      "fps_preview": 20,
+      "layer": "body",
+      "loop": false,
+      "anchor": [
+        24,
+        40
+      ],
+      "frames_directory": "dash"
+    },
+    "fire": {
+      "atlas": "fire.png",
+      "frames": 4,
+      "fps_preview": 18,
+      "layer": "right_arm_weapon",
+      "loop": false,
+      "anchor": [
+        24,
+        40
+      ],
+      "frames_directory": "fire"
+    },
+    "reload": {
+      "atlas": "reload.png",
+      "frames": 4,
+      "fps_preview": 8,
+      "layer": "right_arm_weapon",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ],
+      "frames_directory": "reload"
+    },
+    "drink": {
+      "atlas": "drink.png",
+      "frames": 4,
+      "fps_preview": 6,
+      "layer": "left_arm_bottle",
+      "loop": true,
+      "anchor": [
+        24,
+        40
+      ],
+      "frames_directory": "drink"
+    }
+  }
+}

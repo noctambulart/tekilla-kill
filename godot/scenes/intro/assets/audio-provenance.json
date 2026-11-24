@@ -1,0 +1,13 @@
+{
+  "music": {
+    "duration": 50,
+    "sample_rate": 22050,
+    "peak": 0.298643
+  },
+  "ambience": {
+    "duration": 50,
+    "sample_rate": 22050,
+    "peak": 0.072738
+  },
+  "provenance": "Composition et synthèse originales pour Tequila Kill ; aucun sample externe. Première proposition sonore à écouter."
+}

@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "scope": "Vérification géométrique hors moteur ; aucun essai de gameplay ou de caméra.",
+  "assumptions": {
+    "character_radius_tiles": 0.25,
+    "character_diameter_px": 16,
+    "sampling_step_tiles": 0.25,
+    "route_sampling_step_tiles": 0.03125
+  },
+  "reachable_sample_points": 5873,
+  "spawn_distance_tiles": [
+    5.0,
+    5.0,
+    5.0,
+    5.0
+  ],
+  "route_lengths_tiles": {
+    "direct": [
+      5.0,
+      5.0,
+      5.0,
+      5.0
+    ],
+    "interior": [
+      20.0
+    ],
+    "outer": [
+      38.0
+    ]
+  },
+  "checks": [
+    "Les quatre départs et les centres des quatre intérieurs sont reliés à la bouteille.",
+    "Aucun point libre de la grille échantillonnée n’est isolé avec les objets intacts.",
+    "Les trajets directs et les deux exemples de boucles évitent les murs et objets intacts pour le rayon hypothétique.",
+    "Les quatre départs ont un accès droit de 5 tuiles au centre."
+  ],
+  "limitations": [
+    "Collisions et taille des personnages non fixées ; géométrie à vérifier dans Godot.",
+    "Équilibre, sensations, visibilité de la bouteille et cadrage restent à éprouver en jeu."
+  ]
+}

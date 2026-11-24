@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen (built-in)",
+  "file": "09-interface-vie-comparaison.png",
+  "status": "Option B retenue par le producteur pour la présentation de la vie ; nombre de segments illustratif, non intégré à Godot.",
+  "prompt": "Use case: precise-object-edit / UI comparison concept. Input image is a Tequila Kill pixel-art gameplay mockup, used as visual identity reference for the tiny cyan Poncho HUD at top left. Produce a clean, enlarged close-up comparison sheet of JUST that compact HUD in two alternatives, NOT a full gameplay scene. Quiet pale sand background, crisp pixel-art, wide landscape canvas, ample whitespace. Two equally enlarged horizontal HUD strips, one above the other, aligned at exactly the same x and with exactly the same footprint. Label above upper example 'A — JAUGE', above lower example 'B — POINTS'. These comparison captions are outside the HUD and not part of the game UI. Do not write any other words or numbers.\nCOMMON NEW LAYOUT FOR BOTH: small circular Poncho portrait at left, matching his broad straw sombrero olive crown, shadowed face and brown poncho from the reference. A tiny boot icon representing his sprint skill is overlaid ON the lower-right edge of the portrait as a badge, without hiding his face. Skill cooldown is shown by a thin warm-gold progress arc around the portrait perimeter, about 45 percent complete. Keep a separate very fine cyan identity outline. REMOVE the separate skill icon to the right. To the right of portrait, row of exactly five small ammo cartridges, four gold loaded and one dark empty. Below ammo, life indicator. Directly BELOW LIFE, a much thinner cyan dash recharge bar about 70 percent filled, only a third of the height of life indicator. REMOVE the separate dash arrow and circular dash icon. No frames or plaques or background panels, no wood, no labels life/dash/sprint, no names, no numerals. Compact grouping, discreet dark outlines only. Entire strip's proportions must be suitable for a tiny corner HUD like the input, but shown enlarged here for discussion.\nA life treatment: one slim continuous green horizontal bar, about 60 percent filled.\nB life treatment: in exactly the same slot, exactly five clearly separated compact green square health pips, three filled and two dark hollow. Simple geometric life pips, not hearts and NOT bullets. Distinguishable from the ammunition above by shape and color.\nAll other content, size, spacing, portrait, ammo, dash level, skill icon and cooldown must be IDENTICAL between A and B; change only the life representation. No extra samples, no full arena, no new gameplay objects, no fancy ornament, no glossy 3D rendering. This is a visual comparison only; five pips is an illustrative count, not a game rule.",
+  "referenced_image_paths": [
+    "output/concept-art/2026-11-22/08-interface-superposee-v3.png"
+  ],
+  "transparent_background": false,
+  "source_generated_file": "ImageGen/exec-13bf0c13-6684-4959-9e48-07e25ba94b31.png",
+  "generated_size": {
+    "width": 1536,
+    "height": 1024
+  },
+  "review_note": "Le dash devient une barre fine sous la vie. L’icône de compétence se superpose au portrait, dont le pourtour affiche sa recharge. Les cinq points de l’exemple sont illustratifs. Comparaison en gros plan, pas dimensions réelles à l’écran.",
+  "producer_decision": "Vie en petits segments. Dash en barre fine sous la vie. Compétence sur le portrait et recharge sur son pourtour."
+}

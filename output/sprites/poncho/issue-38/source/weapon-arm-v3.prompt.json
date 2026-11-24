@@ -1,0 +1,9 @@
+{
+  "key": "weapon-arm-v3",
+  "prompt": "Use case: identity-preserve. Asset type: EIGHT-frame composable arm-and-prop sprite animation for Poncho.\nEdit the arm designs in reference image 1, using reference image 2 only to understand the unchanged Poncho body scale. Do not draw the body.\nKeep the exact small silver-gray right-facing western revolver, warm brown holding hand and dark-brown cuff style. Add a short bent brown FOREARM extending LEFT from the hand toward an attachment root hidden UNDER the character's hat. The hand must hang BELOW the brim level, connected by this visible bent sleeve, rather than appearing pasted onto the side/top of the sombrero. The root is on the left, the hand is lower and to the right, and the small barrel points right above the grip.\nONE transparent horizontal strip of EIGHT equal frame slots, same scale and left attachment position in each. Frames 1-4: rest, tiny stylized recoil/backward wrist motion, recover, rest. Frames 5-8: hand lowers and tilts the whole prop, a second tiny hand touches its side briefly, second hand withdraws, holding hand raises it back to rest. Generic expressive cartoon game gestures only, no mechanisms, parts, instructions or cartridges.\nIntended full sleeve/hand/prop footprint about 18 by 10 game pixels, coarse sharp enlarged pixel clusters, restrained colors matching the source. No character body, hat, face, background, shadow, text, effects or extra views. Exactly eight isolated arm sprites in one row on true transparent alpha.",
+  "paths": [
+    "output/sprites/poncho/issue-38/source/gun-motion-v2-raw.png",
+    "output/sprites/poncho/issue-38/exports/poncho-idle-seed-v2.png"
+  ],
+  "tool": "image_gen.imagegen (built-in)"
+}

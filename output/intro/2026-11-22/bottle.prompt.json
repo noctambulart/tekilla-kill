@@ -1,0 +1,6 @@
+{
+  "method": "image_gen.imagegen",
+  "transparent_background": true,
+  "reference": "passation-intro-jeu/images/retenues/bouteille-saloon-pixel-cinematique-1821.png",
+  "prompt": "Use case: background-extraction. Extract ONLY the single original green rectangular tequila bottle from the reference image, keeping its precise pixel-art silhouette, cork, straight short neck, green glass, red/gold bands, yellow label edged red and 1821 digits. Remove the entire saloon, counter, cast shadow and every background pixel. One upright bottle, centered, occupying about 88% of image height, generous transparent padding around all sides. Actual transparent alpha background, not a checkerboard. Preserve the reference's stepped crisp blocky pixel art; no new objects, no outline frame, no text outside existing label. This will be a small reflection composited inside a pupil in Godot."
+}

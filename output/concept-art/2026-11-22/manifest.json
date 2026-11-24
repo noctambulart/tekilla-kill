@@ -1,0 +1,80 @@
+{
+  "concepts": [
+    {
+      "slug": "01-arroyo-seco-arene",
+      "prompt": "Use case: stylized-concept. Create one concept image for the existing video game TEQUILA KILL, a humorous top-down western arena brawler in Arroyo Seco, Arizona, where colorful bandits fight over the last green tequila bottle. Art direction: confident hand-placed-looking pixel art with crisp square pixel clusters, controlled limited palette, no antialiasing, no blur, no painterly rendering, no 3D render. Design language based on an old prototype: pale golden sand, cool blue gray stone paving, dark worn wood, burgundy upholstered couch, yellow crates, large round straw sombreros, bold character portraits. Improve coherence and simplify floor texture to make action legible. Strong warm sun and consistent hard shadows cast down-left, rich dark navy-brown outlines, sparse cactus green accents. Think of a 640x360 internal 16:9 screen with 32px terrain tiles; show chunky readable pixels at integer enlargement, 16:9 landscape composition. This is a visual development proposal, not a production tileset. No photorealism, no realistic violence, no gore, no watermark. Primary request: a polished full-screen gameplay environment concept, full arena seen from an overhead orthographic camera, almost directly vertical like classic top-down 2D games, NOT isometric. One coherent compact village arena: square central sandy plaza, open-roof blue-gray stone saloon on left with wooden bar and round tables, a small stone courtyard on right, cactus and rock border, crates and broken wooden fences creating short cover islands and two clear circulation loops. Wide open lanes occupy most of the playable area. Exactly four tiny readable fighters with round sombreros and distinct poncho colors located apart around the plaza, a small vivid green bottle on a low wooden center table as visual focal point. Mostly environment showcase, restrained tiny action, no HUD, no typography. Tile-sized characters, not large illustrations. A warm mischievous western atmosphere, not a deserted grim village.",
+      "file": "01-arroyo-seco-arene.png",
+      "generated_size": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "slug": "02-combat-bouteille",
+      "prompt": "Use case: stylized-concept. Create one concept image for the existing video game TEQUILA KILL, a humorous top-down western arena brawler in Arroyo Seco, Arizona, where colorful bandits fight over the last green tequila bottle. Art direction: confident hand-placed-looking pixel art with crisp square pixel clusters, controlled limited palette, no antialiasing, no blur, no painterly rendering, no 3D render. Design language based on an old prototype: pale golden sand, cool blue gray stone paving, dark worn wood, burgundy upholstered couch, yellow crates, large round straw sombreros, bold character portraits. Improve coherence and simplify floor texture to make action legible. Strong warm sun and consistent hard shadows cast down-left, rich dark navy-brown outlines, sparse cactus green accents. Think of a 640x360 internal 16:9 screen with 32px terrain tiles; show chunky readable pixels at integer enlargement, 16:9 landscape composition. This is a visual development proposal, not a production tileset. No photorealism, no realistic violence, no gore, no watermark. Primary request: a lively in-game combat concept screen with strictly overhead 2D view, NOT isometric, same coherent pixel art universe. Show a readable compact 4-player encounter in a sun-baked sandy plaza flanked by cropped open-roof blue-gray stone saloon floors, wooden crates, one cactus and a round table. Large open negative space for gameplay. Four distinct small fighters, roughly 36-48 source pixels tall at 640x360: EL PONCHO in dark brown poncho, GARCIA in blue-violet uniform with red scarf and big moustache, another fighter ochre accents and another teal accents. Wide round straw sombreros dominate their top-down silhouettes; visible gun arms indicate facing. Brown Poncho carries the last green tequila bottle, highlighted by a modest cream outline and a small clear floating green bottle marker. Garcia fires a single small warm projectile, one other player dashes with two compact dust puffs, fourth approaches. Small distinct color-ring player markers, no enormous VFX. Slim HUD at top showing green bottle icon and amount remaining, four very compact corner player cards each with expressive square portrait, hearts, bullet pips, two simple ability indicators. HUD leaves most of screen clear. Use symbols rather than many words; no invented gameplay rules shown, no numbers beyond player IDs 1 2 3 4. Prioritize objective, fighters, then props, then low-contrast ground. No text title banner.",
+      "file": "02-combat-bouteille.png",
+      "generated_size": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "slug": "03-selection-personnages",
+      "prompt": "Use case: stylized-concept. Create one concept image for the existing video game TEQUILA KILL, a humorous top-down western arena brawler in Arroyo Seco, Arizona, where colorful bandits fight over the last green tequila bottle. Art direction: confident hand-placed-looking pixel art with crisp square pixel clusters, controlled limited palette, no antialiasing, no blur, no painterly rendering, no 3D render. Design language based on an old prototype: pale golden sand, cool blue gray stone paving, dark worn wood, burgundy upholstered couch, yellow crates, large round straw sombreros, bold character portraits. Improve coherence and simplify floor texture to make action legible. Strong warm sun and consistent hard shadows cast down-left, rich dark navy-brown outlines, sparse cactus green accents. Think of a 640x360 internal 16:9 screen with 32px terrain tiles; show chunky readable pixels at integer enlargement, 16:9 landscape composition. This is a visual development proposal, not a production tileset. No photorealism, no realistic violence, no gore, no watermark. Primary request: an appealing character-selection screen concept for the same game, polished pixel-art UI at 16:9. Exact prominent title text at top: \"TEQUILA KILL\". Two large worn wooden character placards centered side by side against a simple warm orange sunset with distant Arizona mesas and cactus silhouettes. Each placard contains a large expressive square pixel portrait, a small top-down playable sprite below it, an engraved-looking name strip and restrained player-color accent. Left portrait name exactly \"EL PONCHO\": mysterious face mostly in shadow under a huge broad straw hat with olive crown, heavy black moustache, dark brown poncho, warm sunset light, mischievous stare. Right portrait name exactly \"GARCIA\": broad round face, enormous black curled moustache, black wide-brim hat, blue-violet military jacket and red neckerchief, comically stern expression. Charming caricature, consistent pixel scale in each portrait, simple shading clusters. One small green tequila bottle centered between panels as thematic decoration. Small bottom footer text exactly \"ARROYO SECO\". Generous spacing and legible composition, discreet pale cream selection border around Poncho, no fake additional characters, no gradient glow, no futuristic glossy UI. Chunky carved wood and weathered parchment, sparse ornamentation. The goal is to evolve the historical portraits while preserving their identities.",
+      "file": "03-selection-personnages.png",
+      "generated_size": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "slug": "08-interface-superposee-v1",
+      "file": "08-interface-superposee-v1.png",
+      "prompt_file": "08-interface-superposee-v1.prompt.json",
+      "generated_size": {
+        "width": 1672,
+        "height": 941
+      },
+      "status": "proposition à valider"
+    },
+    {
+      "slug": "08-interface-superposee-v2",
+      "file": "08-interface-superposee-v2.png",
+      "prompt_file": "08-interface-superposee-v2.prompt.json",
+      "generated_size": {
+        "width": 1672,
+        "height": 941
+      },
+      "status": "Proposition à examiner : panneaux superposés dans les quatre coins, portraits refaits. Non validée et non intégrée à Godot."
+    },
+    {
+      "slug": "08-interface-superposee-v3",
+      "file": "08-interface-superposee-v3.png",
+      "prompt_file": "08-interface-superposee-v3.prompt.json",
+      "generated_size": {
+        "width": 1672,
+        "height": 941
+      },
+      "status": "Maquette allégée proposée après retour du producteur ; à valider, non intégrée à Godot."
+    },
+    {
+      "slug": "09-interface-vie-comparaison",
+      "file": "09-interface-vie-comparaison.png",
+      "prompt_file": "09-interface-vie-comparaison.prompt.json",
+      "generated_size": {
+        "width": 1536,
+        "height": 1024
+      },
+      "status": "Option B retenue par le producteur pour la présentation de la vie ; nombre de segments illustratif, non intégré à Godot."
+    }
+  ],
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen (built-in)",
+  "purpose": "Concept arts exploratoires pour Tequila Kill, non intégrés au jeu et non validés comme assets de production.",
+  "technicalNote": "Le projet cible 640 × 360 avec tiles de 32 × 32. Les images générées illustrent la direction artistique ; elles ne garantissent ni une grille pixel exacte ni la projection verticale des archives. Le cadrage et les interfaces restent à valider.",
+  "review_notes": [
+    "Les scènes générées utilisent une vue de trois quarts plus inclinée que la vue verticale retenue pour le gameplay.",
+    "Les portraits proposent une évolution de Poncho et Garcia ; les deux autres combattants sont des silhouettes exploratoires.",
+    "Les icônes d'interface sont des propositions graphiques ; elles ne valident pas de nouvelles compétences. Les bouteilles de décor devront être retirées pour respecter la dernière bouteille unique."
+  ]
+}

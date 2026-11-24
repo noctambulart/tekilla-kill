@@ -1,0 +1,44 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "reference_selected_by_producer": "output/concept-art/2026-11-22/07-recherche-silhouettes.png",
+  "raw_sources": [
+    {
+      "file": "dash-cutout-v2-raw.png",
+      "sha256": "1aaac2e9431a97af328bb98727a6b3c1ebcc17b919d05e328373c6c45db5b91c"
+    },
+    {
+      "file": "dash-v2-raw.png",
+      "sha256": "3614e2958caac385cc248f40190857d0131dc5dbd12442d58e1538e4bbf6c03a"
+    },
+    {
+      "file": "drink-v2-raw.png",
+      "sha256": "ab25dd8b14056742ffb381d92379154d4f3d27013804d511d76309909d1c4bc4"
+    },
+    {
+      "file": "gun-motion-v2-raw.png",
+      "sha256": "f11a4a409c8c2a9c1277bb782de28257ebf6d9c70df0b7fe01a5e6f2c6d8384b"
+    },
+    {
+      "file": "gun-v2-raw.png",
+      "sha256": "8fd746c69c37d9e9f9751d6850112ffacc537860d27bbde303d5cced0d53a759"
+    },
+    {
+      "file": "seed-v2-raw.png",
+      "sha256": "63340c8d71b62e8d2786dac5823da243969bd00407db881a85fd6781ac69b95f"
+    },
+    {
+      "file": "walk-v2-raw.png",
+      "sha256": "c9614512d209eafa9f3e146d890e43309e7053b40740bfce0f36bd0569cbba7e"
+    }
+  ],
+  "normalization_scripts": [
+    "scripts/poncho/prepare_seed.py --version v2",
+    "scripts/poncho/build_lot.py"
+  ],
+  "notes": [
+    "V1 circular hat superseded by producer-selected silhouette.",
+    "Original dash had a partially opaque pale matte; dash-cutout-v2-raw.png is the generated background cleanup used for export.",
+    "The first weapon animation request failed output moderation and produced no file. gun-motion-v2-raw.png comes from the later miniature prop-and-hand animation request; prompts are retained.",
+    "No gameplay integration or creative signoff of animation is asserted."
+  ]
+}

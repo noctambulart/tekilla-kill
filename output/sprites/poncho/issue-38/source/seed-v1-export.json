@@ -1,0 +1,41 @@
+{
+  "source": "output/sprites/poncho/issue-38/source/seed-v1-raw.png",
+  "source_sha256": "5c7ea31581ad0aa18e6365594fbaea53a6037573b6989591ad24dc61ae6eb3ec",
+  "export": "output/sprites/poncho/issue-38/exports/poncho-idle-seed-v1.png",
+  "frame_size": [
+    48,
+    48
+  ],
+  "anchor": [
+    24,
+    24
+  ],
+  "source_pivot": [
+    631,
+    589
+  ],
+  "source_content_bbox": [
+    266,
+    239,
+    996,
+    1059
+  ],
+  "scale": 0.04371584699453552,
+  "normalized_offset": [
+    8,
+    9
+  ],
+  "content_bbox": [
+    8,
+    9,
+    40,
+    45
+  ],
+  "alpha_values": [
+    0,
+    255
+  ],
+  "visible_colors": 23,
+  "normalization": "nearest-neighbor, alpha threshold 128, 24-color octree, no dithering",
+  "status": "candidate seed, awaiting creative approval; not integrated into gameplay"
+}

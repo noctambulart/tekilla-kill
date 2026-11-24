@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen (built-in)",
+  "file": "08-interface-superposee-v3.png",
+  "status": "Maquette allégée proposée après retour du producteur ; à valider, non intégrée à Godot.",
+  "prompt": "Use case: precise-object-edit. Edit target: the supplied Tequila Kill mockup. Primary request: radically reduce and simplify ONLY the four corner HUDs, which currently obscure far too much of the gameplay. Preserve the exact arena framing, canvas, warm pixel-art environment and every gameplay character, weapon, bottle, projectile, player marker and their positions. Reveal/reconstruct the underlying scenery where the old huge panels are removed; do NOT crop or zoom the world.\nEach new HUD must be tiny and airy, no more than approximately 240 pixels wide by 85 pixels high on this 1672x941 canvas (about 14% screen width and 9% screen height). All four together should occupy about 5% of the screen. These are small discreet corner overlays, not large panels. Same corners and player-color mapping: cyan Poncho upper left, red Garcia upper right, purple Poncho lower left, gold Garcia lower right. Keep the recognizable refreshed portrait identities, but shrink each portrait to about 60x60 pixels. Next to each portrait: one thin green health meter, one short row of small cartridge pips, and two small unlabelled pictograms for dash and special ability (boot/sprint for Poncho, buttstroke for Garcia), with discreet radial cooldown shading where relevant. These must all fit the tiny footprint. Use at most a hairline dark outline around portrait and icons, tiny color accent to identify player. World visible in all gaps; optionally a very faint dark backing only immediately behind indicators for legibility.\nRemove ALL character names and ALL HUD lettering: no PONCHO, no GARCIA, no VIE, no DASH, no SPRINT, no CROSSE, no top nameplates. No thick frames, no wood plaques, no rivets, no metal ornaments, no stars, no parchment, no large background rectangles, no glow. Keep existing in-world player badges J1/J2/J3/J4 unchanged. Crisp pixel-art UI matching scene. Highest priority: the scene dominates; interface extremely compact, simple and functional. Do not merely remove text from the old giant frames: completely eliminate the old frames and shrink the full HUD footprint dramatically.",
+  "referenced_image_paths": [
+    "output/concept-art/2026-11-22/08-interface-superposee-v2.png"
+  ],
+  "transparent_background": false,
+  "source_generated_file": "ImageGen/exec-95998180-bac3-426a-ae48-09d9ba7221d9.png",
+  "generated_size": {
+    "width": 1672,
+    "height": 941
+  },
+  "review_note": "Le producteur demande une interface beaucoup plus discrète, sans cadre épais, nom de personnage ni libellés vie/dash/sprint. Cette image illustre la réduction ; lisibilité à 640 × 360 à vérifier ensuite."
+}

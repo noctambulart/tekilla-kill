@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-22",
+  "tool": "image_gen.imagegen (built-in)",
+  "file": "08-interface-superposee-v2.png",
+  "status": "Proposition à examiner : panneaux superposés dans les quatre coins, portraits refaits. Non validée et non intégrée à Godot.",
+  "prompt": "Edit the first supplied Tequila Kill gameplay mockup with ONE targeted correction only: make the two lower arena avatars match their HUD character identities. J3 near lower-left (currently a generic blue cowboy) must become a duplicate of J1 PONCHO: the same very broad pale straw sombrero with olive-green crown and dark brown fringed poncho, seen from above, in the same position, keeping the J3 violet ground marker and badge and small dash dust puffs. J4 near lower-right (currently a generic straw-hat fighter) must become a duplicate of J2 GARCIA: the same dark charcoal wide-brim hat, blue-violet military shoulders and red neckerchief, seen from above, same position, keeping J4 gold ground marker and badge. Do not swap these two identities. Preserve every other part of the supplied image: exact canvas, framing, warm pixel art scenery, arena, J1 carrying the green bottle, J2 firing, all four large overlaid HUD panels at the corners with their new portraits, lettering, bullets, health bars, dash and skill icons, their sizes and positions, colors and details. No new UI, no other alterations, no extra characters. The second supplied image is a silhouette identity reference: only its first two columns (Poncho and Garcia) are relevant; ignore research A/B. Crisp pixel-art style matching input.",
+  "referenced_image_paths": [
+    "ImageGen/exec-9bc2cbff-fb57-48ff-9d08-b95140ca271f.png",
+    "output/concept-art/2026-11-22/07-recherche-silhouettes.png"
+  ],
+  "transparent_background": false,
+  "source_generated_file": "ImageGen/exec-0ca34fd4-e5ce-42f8-97cd-b14b65e39aa2.png",
+  "generated_size": {
+    "width": 1672,
+    "height": 941
+  },
+  "technical_note": "Maquette conceptuelle. Le projet cible 640 × 360 ; l'image ne garantit pas une grille pixel exacte ni les dimensions finales de l'interface."
+}

@@ -1,0 +1,10 @@
+{
+  "key": "walk_v2",
+  "paths": [
+    "output/sprites/poncho/issue-38/source/walk-v2-edit-canvas.png",
+    "output/sprites/poncho/issue-38/source/seed-v2-raw.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset type: a SIX-frame horizontal walking body spritesheet for Poncho in Tequila Kill.\nImage 1 is the edit target: a transparent 960x960 reference canvas, divided conceptually into exactly SIX equal 160-pixel columns. The seed sprite occupies the FIRST slot around the middle height. Image 2 is the same character at large size for identity details.\nFill the remaining five slots to make ONE six-frame WALK LOOP, one character per column, exactly six bodies total on one row across the full canvas width. Retain the first frame as the neutral seed. All frames must have the SAME body scale, baseline and facing/projection as the first: broad horizontally oval pale straw brim, tall olive crown with visible front, triangular dark brown poncho and golden fringes, face concealed. Do not convert it into a round top-down disk or rotate the whole body.\nAnimation: frame 1 neutral; 2 one small brown boot peeks below left fringe and cloth swings subtly right; 3 passing pose with a tiny downward bob; 4 neutral; 5 opposite boot peeks under right fringe and cloth swings subtly left; 6 passing pose returning toward 1. Restrained, readable small-pixel movement: one or two logical pixels of difference, do not bounce wildly, do not resize the hat. The moving fringes and alternating boot tips must visibly differ across frames; this is not six duplicate pictures. Body remains upright and forward-facing in every frame, able to be translated in any screen direction. Same palette, costume, proportions, coarse crisp clusters and dark outline as seed.\nNo arms, weapon, bottle, ground shadow, ring, effects, labels, background or grid lines. True transparent alpha everywhere around sprites, with generous empty margins between all six bodies. Exactly one row, SIX equal slots, no second row and no other figures.",
+  "tool": "image_gen.imagegen (built-in)",
+  "status": "generated"
+}

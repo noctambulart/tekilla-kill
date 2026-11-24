@@ -1,0 +1,7 @@
+{
+  "method": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Create ONE full-bleed landscape 16:9 production frame for the ending of the Tequila Kill intro. Reference image 1 defines the exact original fictional El Poncho eye, stern angular eyebrow, skin palette, warm sunset and crisp chunky pixel-art style. Extreme macro of ONE brown eye, viewed straight-on at eye level under sombrero shadow. Entire eye opening visible with white sclera on both sides, upper and lower lids, portions of warm ochre skin and brow. Eye occupies about 85 percent of frame width and 55 percent of frame height. Large circular brown iris centered at x50% y50%, outer radius about 23% frame height, containing a large nearly black circular pupil, radius about 16% frame height. Leave the entire central pupil black and empty: the bottle reflection will be composited and animated inside this pupil by Godot. A small crisp curved ivory corneal glint near upper-left of iris, not across central pupil. Clearly recognizable as a single menacing human eye, not a portal. Same stepped square pixel clusters, no painterly smoothing or photo details, no bottle, no text, no border, no panels, no watermark.",
+  "references": [
+    "passation-intro-jeu/images/retenues/duel-poncho-face.png"
+  ]
+}

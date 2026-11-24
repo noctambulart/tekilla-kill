@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scenes/character/character.gd" id="1_character"]
+[ext_resource type="Script" path="res://scenes/character/human_controls.gd" id="2_controls"]
+
+[sub_resource type="CircleShape2D" id="Circle_character"]
+radius = 8.0
+
+[node name="Character" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+motion_mode = 1
+script = ExtResource("1_character")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("Circle_character")
+
+[node name="HumanControls" type="Node" parent="."]
+script = ExtResource("2_controls")

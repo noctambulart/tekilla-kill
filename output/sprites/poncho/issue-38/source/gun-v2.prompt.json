@@ -1,0 +1,8 @@
+{
+  "key": "gun_v2",
+  "paths": [
+    "output/concept-art/2026-11-22/07-recherche-silhouettes.png"
+  ],
+  "prompt": "Use case: background-extraction. Asset type: one small cartoon game prop sprite extracted from a character concept.\nIn the FIRST PONCHO column of the supplied pixel-art reference, isolate ONLY the small silver-gray western revolver held by the little brown hand to the right of Poncho's hat. Preserve that exact tiny stylized prop's right-facing silhouette, short brown grip, simple cool-gray barrel, brown hand and dark brown cuff.\nOutput a SINGLE isolated gun-and-hand sprite centered with generous padding on a true transparent background. Its barrel points right and hand/cuff are at the left. Intended game size about 14 x 6 pixels, with enlarged crisp square pixel clusters in the output. Same coarse palette and pixel style as the supplied concept.\nDo not draw the hat, body, face, other characters, lettering, background, bullets, effects or additional views. Do not show internal mechanisms, assembly or operation. This is only a faithful cutout of the already visible cartoon prop, no redesign.",
+  "tool": "image_gen.imagegen (built-in)"
+}
