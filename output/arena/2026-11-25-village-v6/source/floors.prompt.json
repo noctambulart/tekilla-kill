@@ -1,0 +1,12 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Production tileable terrain materials for the same approved warm pixel-art village as the reference.\nOutput one wide OPAQUE image made of exactly TWO EQUAL SQUARE PANELS, no gap, labels, frames, shadows, walls, props or scenery.\nLEFT panel: warm worn wooden plank floor for a small western shed. Flat orthographic overhead view, long narrow HORIZONTAL amber/ochre boards, subtle broad grain and a few tiny wear marks, staggered fine joints. Soft shaded pixel-art material, very low contrast. No large square grid, no perspective, no bevelled block shapes or dramatic lighting.\nRIGHT panel: packed dusty earth for an outdoor livestock yard, slightly darker and more muted ochre than the bright village sand, with sparse little flat pebbles, faint straw flecks and shallow scuff marks. Calm low-contrast warm earth, not mud, no big stones, plants, hoofprints or objects.\nEach panel should be a quiet seamless tile, opposite edges joining naturally. Match the reference's clear pixel clusters and warm gently shaded surfaces. No fine dither, photorealistic noise or blur. The floor must support reading tiny characters and projectiles.",
+  "references": [
+    "output/concept-art/2026-11-25/09-village-passages-fondu.png"
+  ],
+  "grid": [
+    2,
+    1
+  ],
+  "issue": 60
+}

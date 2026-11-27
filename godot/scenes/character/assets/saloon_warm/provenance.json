@@ -1,0 +1,74 @@
+{
+  "issue": 60,
+  "tool": "image_gen.imagegen",
+  "cell": [
+    144,
+    144
+  ],
+  "draw_size_world": [
+    48,
+    48
+  ],
+  "ground_y_world": 16,
+  "style_reference": "godot/scenes/arroyo_seco/saloon_study/assets/house.png",
+  "characters": {
+    "poncho": {
+      "source": "output/arena/2026-11-25-saloon-study/character-warm/source/poncho-raw.png",
+      "sha256": "0dc790ddec4db1d535801941db175f8119d1541289380b39b6292c7c05af653e",
+      "shared_scale": 0.41025641025641024,
+      "ground_anchor": [
+        72,
+        126
+      ],
+      "aim_pivot": [
+        72,
+        78
+      ],
+      "palette_colours": 128,
+      "quality": {
+        "idle": {
+          "frames": 1,
+          "distinct": 1
+        },
+        "walk": {
+          "frames": 6,
+          "distinct": 6
+        },
+        "dash": {
+          "frames": 4,
+          "distinct": 3
+        }
+      }
+    },
+    "garcia": {
+      "source": "output/arena/2026-11-25-saloon-study/character-warm/source/garcia-raw.png",
+      "sha256": "6e2f7f24b5b8b0e5835758b0b8dddfab1d71198b380d8b34f0c44ade301c6253",
+      "shared_scale": 0.3622641509433962,
+      "ground_anchor": [
+        72,
+        126
+      ],
+      "aim_pivot": [
+        72,
+        78
+      ],
+      "palette_colours": 128,
+      "quality": {
+        "idle": {
+          "frames": 1,
+          "distinct": 1
+        },
+        "walk": {
+          "frames": 6,
+          "distinct": 6
+        },
+        "dash": {
+          "frames": 4,
+          "distinct": 3
+        }
+      }
+    }
+  },
+  "weapon": "Existing aiming/recoil strip unchanged.",
+  "scope": "Saloon study; previous character artwork retained for comparison."
+}

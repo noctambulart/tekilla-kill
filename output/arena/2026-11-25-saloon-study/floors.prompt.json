@@ -1,0 +1,12 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: stylized-concept. Production terrain material sheet, Tequila Kill.\nReference image is the approved game concept. Reproduce its ground MATERIALS faithfully, not its buildings or props. Output a wide image divided into exactly TWO EQUAL SQUARE PANELS, left and right, with no gap, no frame, no text or labels. Entire image opaque.\nLEFT PANEL: calm warm pale peach-gold desert sand seen vertically from above, like the village plaza in reference. Subtle broad wind-brushed variation, little soft irregular clustered speckles and a few shallow fine tracks. Warm light, soft organic texture, clean crisp pixel-art clusters. Very low contrast so characters remain readable. No stones, bushes, props, objects, paths or shadows.\nRIGHT PANEL: cool muted blue-gray saloon floor like reference, seen vertically from above. Long narrow horizontal worn plank-like stone slabs, very fine broken/staggered joints, subtle small color variation and grain, occasional tiny worn marks. Each thin horizontal course spans much of the panel, rows about 12 to 18 pixels high in a 256-square logical tile; no regular square grid. Soft blue-gray material, not bright cyan, not concrete noise. Calm low contrast, gently shaded pixel art. No props, wall edges, doorways, scenery, dramatic shadows or highlights.\nBoth panels are seamless tileable materials: opposite edges of EACH panel should join quietly. Flat orthographic top view, consistent texture density, no perspective, no bevelled 3D block effect. Keep medium-scale quiet variation, never random high-frequency dithering, no blurring. Use the concept's softly shaded pixel-art surface style.",
+  "references": [
+    "output/concept-art/2026-11-25/09-village-passages-fondu.png"
+  ],
+  "grid": [
+    2,
+    1
+  ],
+  "issue": 60
+}

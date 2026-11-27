@@ -1,0 +1,12 @@
+{
+	"checks": 130,
+	"connectivity": {
+		"isolated": [],
+		"reachable_cells": 4066,
+		"step": 16,
+		"walkable_cells": 4066
+	},
+	"failures": [],
+	"rendered": false,
+	"scope": "Village V6 entier, passages et marges aux pieds, scènes réelles et combat conservé. Validation créative et équilibrage à essayer."
+}

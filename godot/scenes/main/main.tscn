@@ -31,7 +31,7 @@ grow_vertical = 2
 
 [node name="Content" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
-theme_override_constants/separation = 12
+theme_override_constants/separation = 7
 alignment = 1
 
 [node name="Location" type="Label" parent="CenterContainer/Content"]
@@ -55,19 +55,12 @@ theme_override_font_sizes/font_size = 12
 text = "Une bouteille. Un village. Un seul vainqueur."
 horizontal_alignment = 1
 
-[node name="PlayButton" type="Button" parent="CenterContainer/Content"]
+[node name="SoloTrialButton" type="Button" parent="CenterContainer/Content"]
 custom_minimum_size = Vector2(140, 28)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 12
-text = "Jouer à deux · La bouteille"
-
-[node name="MovementButton" type="Button" parent="CenterContainer/Content"]
-custom_minimum_size = Vector2(140, 28)
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 12
-text = "Tester le tir et les déplacements"
+text = "Jouer"
 
 [node name="ReplayButton" type="Button" parent="CenterContainer/Content"]
 custom_minimum_size = Vector2(140, 28)
@@ -75,13 +68,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 12
 text = "Revoir l’introduction"
-
-[node name="ArenaButton" type="Button" parent="CenterContainer/Content"]
-custom_minimum_size = Vector2(140, 28)
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 12
-text = "Visiter Arroyo Seco"
 
 [node name="QuitButton" type="Button" parent="CenterContainer/Content"]
 custom_minimum_size = Vector2(110, 28)
@@ -91,7 +77,5 @@ theme_override_font_sizes/font_size = 12
 text = "Quitter"
 
 [connection signal="pressed" from="CenterContainer/Content/ReplayButton" to="." method="start_intro"]
-[connection signal="pressed" from="CenterContainer/Content/MovementButton" to="." method="start_movement_test"]
-[connection signal="pressed" from="CenterContainer/Content/ArenaButton" to="." method="start_arena_review"]
 [connection signal="pressed" from="CenterContainer/Content/QuitButton" to="." method="_on_quit_button_pressed"]
-[connection signal="pressed" from="CenterContainer/Content/PlayButton" to="." method="start_match"]
+[connection signal="pressed" from="CenterContainer/Content/SoloTrialButton" to="." method="start_match"]

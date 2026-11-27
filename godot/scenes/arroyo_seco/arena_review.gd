@@ -11,6 +11,8 @@ var overview := false
 
 
 func _ready() -> void:
+	if arena.layout.get("grounded_characters", false):
+		explorer.use_village_art()
 	explorer.position = arena.tile_point(arena.layout.spawns[0])
 	get_window().focus_exited.connect(explorer.stop_movement)
 	set_overview(false)
@@ -67,7 +69,9 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			explorer.stop_movement()
 			explorer.position = arena.tile_point(arena.layout.spawns[0])
 		KEY_ESCAPE:
+			get_viewport().set_input_as_handled()
 			return_to_title()
+			return
 		_:
 			return
 	get_viewport().set_input_as_handled()

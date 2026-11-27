@@ -1,0 +1,18 @@
+{
+	"checks": 2,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": true,
+	"results": [
+		{
+			"description": "Capture : ivresse-close",
+			"passed": true
+		},
+		{
+			"description": "Capture : ivresse-far",
+			"passed": true
+		}
+	],
+	"scene": "res://scenes/match/match.tscn",
+	"status": "passed"
+}

@@ -1,0 +1,286 @@
+{
+	"checks": 69,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": true,
+	"results": [
+		{
+			"description": "Jouer ouvre le duel fixe Poncho humain / Garcia bot",
+			"passed": true
+		},
+		{
+			"description": "Le bot et les quantités attendent le départ commun",
+			"passed": true
+		},
+		{
+			"description": "Aucune ivresse initiale, interface graphique sans HUD textuel de scores",
+			"passed": true
+		},
+		{
+			"description": "Capture : countdown",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : saloon",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : saloon",
+			"passed": true
+		},
+		{
+			"description": "Capture : bot-saloon",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : épicerie",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : épicerie",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : remise",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : remise",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : enclos",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : enclos",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : près du couvert",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : près du couvert",
+			"passed": true
+		},
+		{
+			"description": "Garcia vise et blesse Poncho porteur avec un vrai projectile",
+			"passed": true
+		},
+		{
+			"description": "Le tir du bot fait perdre la bouteille au porteur",
+			"passed": true
+		},
+		{
+			"description": "Le bot dépense ses vraies cartouches",
+			"passed": true
+		},
+		{
+			"description": "Chargeur vide : le bot demande la recharge sans remplissage instantané",
+			"passed": true
+		},
+		{
+			"description": "Six insertions au rythme existant puis reprise du tir",
+			"passed": true
+		},
+		{
+			"description": "Capture : bot-combat",
+			"passed": true
+		},
+		{
+			"description": "Clavier et manette ne détournent pas les intentions de Garcia bot",
+			"passed": true
+		},
+		{
+			"description": "Garcia porte et boit avant le fantôme",
+			"passed": true
+		},
+		{
+			"description": "Garcia fantôme s’écarte très lentement pendant une récupération progressive",
+			"passed": true
+		},
+		{
+			"description": "Le bot fantôme ne tire, ne recharge et ne ramasse pas",
+			"passed": true
+		},
+		{
+			"description": "Fantôme désaturé, toutes les étoiles d’ivresse masquées",
+			"passed": true
+		},
+		{
+			"description": "Garcia fantôme est invulnérable",
+			"passed": true
+		},
+		{
+			"description": "Capture : ghost-close",
+			"passed": true
+		},
+		{
+			"description": "Capture : ghost-far",
+			"passed": true
+		},
+		{
+			"description": "Pause : bot, vie, consommation, caméra et étoiles figés",
+			"passed": true
+		},
+		{
+			"description": "Capture : ghost-pause",
+			"passed": true
+		},
+		{
+			"description": "Retour de Garcia sur place, à pleine vie et chargeur plein",
+			"passed": true
+		},
+		{
+			"description": "Score, ivresse et couleurs restaurés après le fantôme",
+			"passed": true
+		},
+		{
+			"description": "Capture : ghost-return",
+			"passed": true
+		},
+		{
+			"description": "Retour vulnérable sans nouveau round ni résultat",
+			"passed": true
+		},
+		{
+			"description": "Le bot cesse immédiatement de viser et tirer sur un adversaire devenu fantôme",
+			"passed": true
+		},
+		{
+			"description": "La manette choisie commande déplacement et visée de Poncho",
+			"passed": true
+		},
+		{
+			"description": "RT tire avec le revolver commun de Poncho",
+			"passed": true
+		},
+		{
+			"description": "X / carré recharge Poncho à la manette",
+			"passed": true
+		},
+		{
+			"description": "Déconnexion de la manette de Poncho : pause commune",
+			"passed": true
+		},
+		{
+			"description": "Reconnexion : pas de reprise automatique",
+			"passed": true
+		},
+		{
+			"description": "Reprise volontaire puis retour aux commandes clavier/souris",
+			"passed": true
+		},
+		{
+			"description": "Le bot ne tire pas dans le bâtiment qui masque le porteur",
+			"passed": true
+		},
+		{
+			"description": "Garcia contourne le bâtiment, retrouve une ligne de tir et touche le porteur",
+			"passed": true
+		},
+		{
+			"description": "Capture : ground-close",
+			"passed": true
+		},
+		{
+			"description": "Capture : ground-far",
+			"passed": true
+		},
+		{
+			"description": "Prise : un son, ivresse forte raccordée aux quantités réellement bues",
+			"passed": true
+		},
+		{
+			"description": "Capture : poncho-carried-close",
+			"passed": true
+		},
+		{
+			"description": "Capture : poncho-carried-far",
+			"passed": true
+		},
+		{
+			"description": "Perte : un son distinct et ivresse conservée sans marquage de possession",
+			"passed": true
+		},
+		{
+			"description": "Le porteur moins ivre reçoit immédiatement le marquage prioritaire",
+			"passed": true
+		},
+		{
+			"description": "Capture : transfer-close",
+			"passed": true
+		},
+		{
+			"description": "Capture : transfer-far",
+			"passed": true
+		},
+		{
+			"description": "Étoiles en vol : origine stable, mouvement effectif, origine renouvelée à la naissance suivante",
+			"passed": true
+		},
+		{
+			"description": "Les étoiles montent puis retombent en cloche",
+			"passed": true
+		},
+		{
+			"description": "Capture : low-reserve-close",
+			"passed": true
+		},
+		{
+			"description": "Capture : low-reserve-far",
+			"passed": true
+		},
+		{
+			"description": "Bouteille fixe V10 : tous les pixels visibles contenus dans l’ovale extérieur",
+			"passed": true
+		},
+		{
+			"description": "Résultat public : gagnant et pourcentage de la bouteille initiale",
+			"passed": true
+		},
+		{
+			"description": "Bouteille vide : un seul son, sa lecture reste possible au résultat",
+			"passed": true
+		},
+		{
+			"description": "Résultat : aucun nouveau son ni animation de jeu",
+			"passed": true
+		},
+		{
+			"description": "Capture : result-poncho",
+			"passed": true
+		},
+		{
+			"description": "Rejouer remet partie, bot, réserve, scores, vie et sons à zéro",
+			"passed": true
+		},
+		{
+			"description": "Égalité exacte : victoire partagée et pourcentage commun",
+			"passed": true
+		},
+		{
+			"description": "Capture : result-tie",
+			"passed": true
+		},
+		{
+			"description": "Retour au titre existant sans relire l’introduction",
+			"passed": true
+		},
+		{
+			"description": "Round complet sans fixture de quantité ou téléportation jusqu’à bouteille vide",
+			"passed": true
+		},
+		{
+			"description": "Contenu d’origine conservé, prise réelle de Garcia et victoire calculée",
+			"passed": true
+		},
+		{
+			"description": "Capture : full-round-result",
+			"passed": true
+		}
+	],
+	"scene": "res://scenes/match/match.tscn",
+	"status": "passed"
+}

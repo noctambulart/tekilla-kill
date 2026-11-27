@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-25",
+  "tool": "image_gen.imagegen (outil intégré)",
+  "purpose": "Itérations de direction artistique : proportions, passages visibles et objets cassables. Maquettes non intégrées au moteur.",
+  "previous_map": "07-village-espaces-combat.png",
+  "latest_map": "09-village-passages-cassables.png",
+  "decisions": {
+    "q8": "Élargir place et rues, agrandir également les intérieurs, maintenir un gabarit cohérent entre personnages et mobilier.",
+    "q9": "Réduire le contraste du décor, les joints de sol et les ombres ; réserver les détails aux bords ; garder les dégradés doux.",
+    "roster": "Poncho, Garcia et deux silhouettes provisoires de la planche 07.",
+    "q11": "Accès séparés retenus ; les ouvertures doivent être visibles dans le dessin lui-même.",
+    "functional_visuals": "Murs et gros meubles permanents ; chaises, caisses et pots cassables, selon la classification du layout actuel.",
+    "preferred_ground_transitions": "Première image09 avec fondu des sols retenue comme base par le producteur ; variante aux seuils nets conservée."
+  },
+  "concepts": [
+    {
+      "title": "Village · Espaces de combat et intérieurs plus vastes",
+      "image": "07-village-espaces-combat.png",
+      "prompts": [
+        "07-village-espaces-combat.prompt.json",
+        "07-village-espaces-combat-cleanup.prompt.json"
+      ],
+      "width": 1585,
+      "height": 992,
+      "sha256": "47bd25448c61a11e128212f36eb2172001d4d21191e1f0a50acf42b8aafbdccf",
+      "status": "Proposition à examiner : rapport d’échelle et hiérarchie visuelle. Effets et lisibilité en mouvement non testés."
+    },
+    {
+      "title": "Village · Passages visibles et objets cassables",
+      "image": "09-village-passages-cassables.png",
+      "prompts": [
+        "09-village-passages-cassables.prompt.json",
+        "09-village-passages-cassables-seuils.prompt.json"
+      ],
+      "source": "source/09-village-passages-cassables-v1.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "53cae45b308eefb04d36d875532a464668c0f7e3e2bc09275dc4ff732a061924",
+      "status": "Variante aux seuils nets conservée ; le producteur préfère la première image09 avec fondu."
+    },
+    {
+      "title": "Village · Base retenue avec fondu",
+      "image": "09-village-passages-fondu.png",
+      "prompts": [
+        "09-village-passages-cassables.prompt.json"
+      ],
+      "source": "source/09-village-passages-cassables-v1.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "f84660fdad6ebcbb7962ea2285a4701a2adf4e6755e7814a13cfcff983c66a06",
+      "status": "Première image09 retenue comme base pour la suite : passages visibles et fondu des sols. Pas une validation de collision, de combat ou du jalon."
+    }
+  ],
+  "source": "source/07-village-espaces-combat-v1.png",
+  "annotations": [
+    {
+      "title": "Zones de marche proposées et accès à revoir",
+      "image": "08-zones-marche.png",
+      "vector": "08-zones-marche.svg",
+      "geometry": "08-zones-marche.geometry.json",
+      "generator": "source/build_passage_review.py",
+      "tool": "Annotation vectorielle déterministe, aucun redessin de la source artistique.",
+      "status": "Interprétation visuelle, pas les collisions du moteur. Les bandes orange proposent de créer ou élargir des accès.",
+      "review_points": [
+        "Saloon",
+        "Épicerie",
+        "Remise",
+        "Enclos et arrière"
+      ],
+      "sha256": "722c24d1900a6e744d6f9183ea3003ff4f61fb967a179803f972cb2180d938f7"
+    }
+  ],
+  "selected_map": "09-village-passages-fondu.png"
+}

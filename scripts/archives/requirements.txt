@@ -1,0 +1,3 @@
+-r ../requirements-art.txt
+psd-tools==1.27.0
+UnityPy==1.25.4

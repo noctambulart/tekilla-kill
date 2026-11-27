@@ -1,0 +1,28 @@
+{
+  "renderedStates": 18,
+  "assets": 7,
+  "originalBottle": true,
+  "bottleInsideOuterOval": true,
+  "lightInnerRimOverlap": true,
+  "ovalGeometry": {
+    "maxOuter": 0.7905969699384618,
+    "maxInner": 1.0694017483076512
+  },
+  "drunkennessLevels": 3,
+  "variedOrigins": true,
+  "originChangesOnRespawn": true,
+  "stableFlightOrigin": true,
+  "starsRiseThenFall": true,
+  "starsMove": true,
+  "soberHasNoStars": true,
+  "noNumericScore": true,
+  "possessionIndependent": true,
+  "ghostSuppression": true,
+  "ghostRestoration": true,
+  "bottleBobbing": true,
+  "animationStops": true,
+  "replay": true,
+  "title": true,
+  "tie": true,
+  "manualReview": "Voir README.md"
+}

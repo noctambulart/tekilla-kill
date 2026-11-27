@@ -1,0 +1,8 @@
+{
+	"empty_corner": "(232.0, 222.0)",
+	"failures": [
+		"Pieds visibles et centre de collision séparés de 16.0 unités",
+		"Coin transparent de maison bloquant à (232.0, 222.0)"
+	],
+	"foot_offset": "(0.0, 16.0)"
+}

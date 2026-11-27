@@ -22,7 +22,23 @@ before creating the first issue of a session.
 Use native sub-issues and blocking dependencies.
 If unavailable, record "Part of #<parent>" or "Blocked by: #<number>"
 at the top of the issue body.
-A ticket is startable when all blockers are closed.
+A delivery ticket is startable when all blockers are closed and it belongs to the active version milestone. Follow the [producer validation and milestone workflow](organisation.md#lancement-et-autonomie).
+
+## Handoff between conversations
+
+Keep the mission issue as the entry point for another conversation. Its body
+links the selected reference, the current export or manifest, the playable
+scene or preview, and the acceptance criteria. Record a replacement reference
+in the body and explain the change in a comment.
+
+Use concept documents for lasting design decisions and the root README for
+launch instructions. Dated lot READMEs describe that delivery's sources and
+checks; link them from the issue without treating them as the current project
+status. Record implementation, technical checks and producer validation
+separately, following the [validation workflow](organisation.md#lancement-et-autonomie).
+Before closing a version milestone, record its final commit SHA and pushed
+GitHub tag in the assembly review issue, following the
+[version preservation procedure](organisation.md#commit-et-tag-de-chaque-version).
 
 ## Skill conventions
 

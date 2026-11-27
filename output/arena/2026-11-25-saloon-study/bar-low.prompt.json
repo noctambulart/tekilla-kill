@@ -1,0 +1,9 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. EDIT TARGET reference 1 is the current transparent saloon bar sprite. STYLE AND PROPORTION reference 2 is the approved village concept, specifically its low long L-shaped saloon bar at upper left.\nRedraw the bar so it is LOW AND LONG, with total occupied width about THREE TIMES its occupied height (3:1). Keep the L return on the LEFT extending upward, but make that return much shorter than the current one. The horizontal front face must be shallow, about 12% of total bar width, with modest short planks, not a tall massive wall. Show its warm wooden top, one SMALL ochre jug, two TINY ivory mugs and a little folded cream cloth as in the concept. Mugs about 3% of bar width, jug about 7% of bar width; these are tabletop details, not giant objects.\nPreserve overhead view with front face downward, amber honey wood with soft shaded pixel-art volume, dark selective brown outline, little top left highlights, same visual family. Do not squash or stretch the existing bitmap: redraw the forms with correct proportions. No stools, floor, scenery, cast shadow, glow, text or UI. One complete reusable L-shaped bar centered on a genuinely transparent background, plenty of clear margins.",
+  "references": [
+    "godot/scenes/arroyo_seco/saloon_study/assets/bar.png",
+    "output/concept-art/2026-11-25/09-village-passages-fondu.png"
+  ],
+  "issue": 60
+}

@@ -5,6 +5,7 @@ var failures: Array[String] = []
 var checks := 0
 var output := ""
 var legacy := false
+var warm_art := false
 
 
 class DirectionBoard extends Node2D:
@@ -56,14 +57,17 @@ func _capture(name: String) -> void:
 	if DisplayServer.get_name() == "headless":
 		return
 	await process_frame
-	await RenderingServer.frame_post_draw
+	RenderingServer.force_draw()
 	_check(root.get_texture().get_image().save_png(output.path_join(name + ".png")) == OK,
 		"Capture " + name)
 
 
 func _run() -> void:
 	legacy = OS.get_cmdline_user_args().has("--legacy")
-	output = ProjectSettings.globalize_path("res://../output/sprites/players/issue-58/v2/review")
+	warm_art = OS.get_cmdline_user_args().has("--warm") and not legacy
+	output = ProjectSettings.globalize_path("res://../output/arena/2026-11-25-integration/players")
+	if warm_art:
+		output = ProjectSettings.globalize_path("res://../output/arena/2026-11-25-saloon-study/character-warm/players")
 	if legacy:
 		output = output.path_join("legacy")
 	DirAccess.make_dir_recursive_absolute(output)
@@ -75,9 +79,13 @@ func _run() -> void:
 	var visual = first.get_node("Visual")
 	visual.refined_art = not legacy
 	second.get_node("Visual").refined_art = not legacy
+	visual.warm_art = warm_art
+	second.get_node("Visual").warm_art = warm_art
 	await _frames(2)
 	_check(visual._textures.idle.get_height() == (48 if legacy else 144),
 		"Densité des dessins source chargée dans les scènes réelles")
+	_check(legacy or visual._textures.idle.resource_path.contains("/saloon_warm/" if warm_art else "/village/"),
+		"Lot graphique demandé réellement chargé")
 	_check(visual.character_style == 0 and second.get_node("Visual").character_style == 1,
 		"La scène jouable affecte Poncho à J1 et Garcia à J2")
 	_check(first.player_color != second.player_color, "Repères de joueurs distincts des personnages")
@@ -141,6 +149,7 @@ func _run() -> void:
 			actor.player_color = Color("3c879b") if style == 0 else Color("b83d2b")
 			var art = actor.get_node("Visual")
 			art.refined_art = not legacy
+			art.warm_art = warm_art
 			art.character_style = style
 			art._process(0.0)
 			_check(is_equal_approx(art.weapon_angle, actor.aim_direction.angle())
@@ -152,6 +161,7 @@ func _run() -> void:
 	change_scene_to_file("res://scenes/arroyo_seco/arena_review.tscn")
 	await _frames(5)
 	current_scene.explorer.get_node("Visual").refined_art = not legacy
+	current_scene.explorer.get_node("Visual").warm_art = warm_art
 	await _frames(2)
 	_check(current_scene.explorer.get_node("Visual").character_style == 0,
 		"Poncho présent dans la visite réelle")
@@ -159,7 +169,7 @@ func _run() -> void:
 	current_scene.set_overview(true)
 	await _frames(3)
 	await _capture("arroyo-seco-overview")
-	var report := {"checks": checks, "failures": failures, "refined_art": not legacy,
+	var report := {"checks": checks, "failures": failures, "refined_art": not legacy, "warm_art": warm_art,
 		"rendered": DisplayServer.get_name() != "headless",
 		"scope": "Sprites des scènes réelles, transitions repos/marche/dash, visée indépendante et visite. Pas de validation créative ou matérielle."}
 	var file := FileAccess.open(output.path_join("verification.json"), FileAccess.WRITE)

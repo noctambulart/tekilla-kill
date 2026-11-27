@@ -1,0 +1,156 @@
+{
+  "issue": 60,
+  "tool": "image_gen.imagegen",
+  "style_reference": "godot/scenes/arroyo_seco/saloon_study/assets/house.png",
+  "normalization": "Whole connected silhouettes, uniform fit, binary alpha, nearest-neighbor.",
+  "sources": {
+    "props-raw.png": "779271d75589ed3a148db1e9a78eadc02a0b64063d8b8e75ae5d4d622e5f10e8",
+    "floors-raw.png": "e2ac5d886916abd148ebeb9d24f4efe1f4703ff171245c35305e9f141be72de6"
+  },
+  "assets": {
+    "store_counter": {
+      "world_size": [
+        86.66666666666667,
+        42.0
+      ],
+      "native_size": [
+        260,
+        126
+      ],
+      "source_bounds": [
+        44,
+        153,
+        401,
+        326
+      ],
+      "uniform_scale": 0.7283236994219653,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    },
+    "produce": {
+      "world_size": [
+        27.666666666666668,
+        28.0
+      ],
+      "native_size": [
+        83,
+        84
+      ],
+      "source_bounds": [
+        590,
+        159,
+        742,
+        313
+      ],
+      "uniform_scale": 0.5454545454545454,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    },
+    "goods": {
+      "world_size": [
+        64.0,
+        24.0
+      ],
+      "native_size": [
+        192,
+        72
+      ],
+      "source_bounds": [
+        936,
+        170,
+        1281,
+        299
+      ],
+      "uniform_scale": 0.5565217391304348,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    },
+    "goods_v": {
+      "world_size": [
+        24.0,
+        51.666666666666664
+      ],
+      "native_size": [
+        72,
+        155
+      ],
+      "source_bounds": [
+        1479,
+        66,
+        1626,
+        383
+      ],
+      "uniform_scale": 0.4897959183673469,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    },
+    "tools": {
+      "world_size": [
+        44.666666666666664,
+        32.0
+      ],
+      "native_size": [
+        134,
+        96
+      ],
+      "source_bounds": [
+        91,
+        584,
+        354,
+        773
+      ],
+      "uniform_scale": 0.5079365079365079,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    },
+    "trough": {
+      "world_size": [
+        56.666666666666664,
+        24.0
+      ],
+      "native_size": [
+        170,
+        72
+      ],
+      "source_bounds": [
+        532,
+        627,
+        799,
+        740
+      ],
+      "uniform_scale": 0.6371681415929203,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    },
+    "house_small": {
+      "world_size": [
+        145.33333333333334,
+        140.0
+      ],
+      "native_size": [
+        436,
+        420
+      ],
+      "source_bounds": [
+        919,
+        475,
+        1298,
+        840
+      ],
+      "uniform_scale": 1.1506849315068493,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    },
+    "bush": {
+      "world_size": [
+        30.666666666666668,
+        24.0
+      ],
+      "native_size": [
+        92,
+        72
+      ],
+      "source_bounds": [
+        1494,
+        583,
+        1618,
+        680
+      ],
+      "uniform_scale": 0.7422680412371134,
+      "source": "output/arena/2026-11-25-village-v6/source/props-raw.png"
+    }
+  }
+}

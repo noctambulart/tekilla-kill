@@ -1,0 +1,18 @@
+{
+  "identical": true,
+  "files": 12,
+  "sha256": {
+    "godot/scenes/arroyo_seco/layout.json": "b478a55b1aef3b573c60d8d1bc2454c23db509ecf5cb6cc5678d9c972e79e9f2",
+    "godot/scenes/arroyo_seco/assets/village_v6/produce.png": "b03ddcd73f5917f537582a43f6fc3736b58f0052979424a8036f57974f5b197f",
+    "godot/scenes/arroyo_seco/assets/village_v6/provenance.json": "efa1b7d59a8e6505a2daa85faea3d56764ba5e7f522bab694c051cf6f1fbba89",
+    "godot/scenes/arroyo_seco/assets/village_v6/goods_v.png": "1d94611c7c1632bffb83c29184bf0ca8a05b4b3fb731d0777d1530cf765327e8",
+    "godot/scenes/arroyo_seco/assets/village_v6/goods.png": "b3217284e84aaa8447188df47c79801b08088269b577b778d9ec7f3b411bf8f8",
+    "godot/scenes/arroyo_seco/assets/village_v6/wood.png": "75ba4d687c3e8f3f28aac1efa26f2406b73605918c3c29cdc9450e8ce1baf99e",
+    "godot/scenes/arroyo_seco/assets/village_v6/tools.png": "877c6baf983e5bf3fe8f234b74c964b5ac1ca50eaa1b6e7acec91b20c53d38c8",
+    "godot/scenes/arroyo_seco/assets/village_v6/earth.png": "f132eb1d8a62f406126e7cd069fde6f57e4ef758c1f5606f83cccd0ae083284d",
+    "godot/scenes/arroyo_seco/assets/village_v6/house_small.png": "c6412c318c8aa0444ee6b56575012b06a23e1f7afef9fd894d510c0fb804a573",
+    "godot/scenes/arroyo_seco/assets/village_v6/store_counter.png": "d6d815193207fd58aa4c5da874504b52dc74e511ce6c82b8fe626620d78339f4",
+    "godot/scenes/arroyo_seco/assets/village_v6/trough.png": "a943036a58693b9fbf2e3fa57a5987da5ce41f6b3440e8a08071120acb606220",
+    "godot/scenes/arroyo_seco/assets/village_v6/bush.png": "e101f1a95aba3bf1acbf129f43f42655af0d62d732301f1455d270760447eb3b"
+  }
+}

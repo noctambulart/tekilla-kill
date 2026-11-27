@@ -1,0 +1,11 @@
+{
+  "selected_image": "01-saloon-poncho.png",
+  "prompt": "01-saloon-poncho.prompt.json",
+  "producer_feedback": "Je prefere ta premiere version avec les dégradé doux",
+  "direction": "Conserver les dégradés doux et le volume de la première étude, avec les silhouettes simplifiées et lisibles.",
+  "status": "Référence préférée pour la poursuite de l'étude ; aucune intégration au jeu ni validation de l'ensemble du jalon.",
+  "complete_saloon_reference": "04-saloon-complet-deux-personnages.png",
+  "complete_saloon_feedback": "Très bien. Enregistre ces concepts art. Reprend la carte et dessine moi la carte complète avec ce style et les 2 personnages",
+  "latest_map_proposal": "06-arroyo-seco-village-quatre-personnages.png",
+  "map_decisions": "Agrandissement progressif ; quatre silhouettes ; rue principale, place, ruelles et cours ; habitations fermées et limites naturelles."
+}

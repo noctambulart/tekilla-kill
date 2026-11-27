@@ -1,0 +1,10 @@
+{
+  "issue": 64,
+  "reference": "v11",
+  "approved_on": "2026-11-26",
+  "producer_statement": "Ok`",
+  "context": "Réponse à la demande de validation du fantôme, du résultat temporaire et des trois sons de la V11.",
+  "overall_concept_approved": true,
+  "includes": ["bouteille fixe et cadre V10", "étoiles à départs variés V5 et réglages utilisateur", "porteur et bouteille au sol", "fantôme gris et retour", "résultat temporaire avec pourcentage du gagnant", "direction sonore et fichiers rétro V1"],
+  "implementation_status": "concepts et fichiers sonores validés ; intégration Godot à réaliser"
+}

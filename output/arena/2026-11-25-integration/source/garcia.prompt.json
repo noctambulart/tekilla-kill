@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: identity-preserve, production game sprite animation.\nCreate ONE transparent 6-column x 2-row sprite atlas of GARCIA, the charcoal-hat western character of Tequila Kill. Reference1 is the approved village art style and small Garcia identity in the square. Reference2 is his CURRENT IN-GAME IDLE SEED; preserve the same very broad charcoal-gray hat with a little pale gold star, raised dark crown, blue-violet jacket shoulders, red neckerchief, dark trousers and small boots planted on the floor. Same palette, same outfit proportions, same fixed overhead facing and silhouette family in every cell. Gentle soft-shaded volumes with simple crisp pixel clusters, no fine embroidery, no scene or poster.\nEXACT six equal columns by two equal rows, twelve cells, one complete body centered in each with transparent margins. Same scale and bottom ground baseline across every cell. Transparent background with real alpha. BODY ONLY: no arms, hands, guns, weapon, muzzle flash, cast shadow or dust. Existing engine draws the independently aiming weapon and contact shadow separately.\nCamera: fixed Zelda-like top-down front/overhead view, see top of hat and the shoulders/neckerchief/boots below. Hat never rotates between frames. Remain upright, no side-view walking sheet. Body footprint approximately32pixels wide and32pixels high inside a conceptual48x48 game cell, consistently enlarged for generation.\nROW1: six subtle WALK CYCLE poses. Small alternating boot steps, slight shoulder sway and a little neckerchief motion. Hat size/position stable, no large vertical bounce. Clearly different poses forming a loop, not duplicate copies.\nROW2: one neutral IDLE, four DASH poses (anticipation, impulse, travel, recovery), one matching idle. Compact lean and cloth movement, never tumbling or flying. Feet remain near ground baseline.\nSame friendly western caricature style as reference. No text, labels, frame, UI, rings, icons, extra people, props or scenery. Do not replace Garcia's hat with a straw hat or change the violet sleeves/red scarf. All twelve bodies belong to one consistent character.",
+  "references": [
+    "output/concept-art/2026-11-25/09-village-passages-fondu.png",
+    "godot/scenes/character/assets/refined/garcia/idle.png"
+  ],
+  "grid": [
+    6,
+    2
+  ],
+  "issue": 60
+}

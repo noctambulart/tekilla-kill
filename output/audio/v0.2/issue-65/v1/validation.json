@@ -1,0 +1,9 @@
+{
+  "issue": 65,
+  "reference": "v1",
+  "approved_on": "2026-11-26",
+  "producer_statement": "Ok`",
+  "context": "Accord sur la V11 et les trois sons rétro présentés dans la conversation.",
+  "files_approved": ["take.wav", "drop.wav", "empty.wav"],
+  "integration_status": "branchement et équilibre sonore en partie à réaliser dans #66"
+}

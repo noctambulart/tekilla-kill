@@ -1,0 +1,15 @@
+{
+  "issue": 64,
+  "reference": "v5",
+  "approved_on": "2026-11-26",
+  "scope": "particules d’ivresse",
+  "producer_statement": "C’est mieux partons la dessus pour les particules.",
+  "retained": [
+    "Petites étoiles à cinq branches",
+    "Points d’émission variés sur la silhouette, renouvelés à chaque émission",
+    "Montée puis chute en cloche, rotation légère et effacement",
+    "Densité croissante selon l’ivresse, intensité plafonnée"
+  ],
+  "implementation_status": "référence de maquette validée ; intégration Godot à réaliser",
+  "overall_concept_approved": false
+}

@@ -1,0 +1,22 @@
+{
+  "files": 16,
+  "identical": true,
+  "sha256": {
+    "godot/scenes/character/assets/saloon_warm/provenance.json": "47726b25ea3a949c1bd61bfd4f17affec8398299ce1ac844e23f886406cc5ce3",
+    "godot/scenes/character/assets/saloon_warm/poncho/dash.png": "07c0bb350b7ede0eddeae2517d5a42cfbb487e010ef80a9202f355477df3da76",
+    "godot/scenes/character/assets/saloon_warm/poncho/fire.png": "4b6f5edb83dc7c146a8d9e405e6e5cddc31e982115bef4b4e902420c3b9f9b66",
+    "godot/scenes/character/assets/saloon_warm/poncho/walk_arm.png": "50b3f52ecede39206d42d367e6ef5dfc0cd8abc31c719e07cb5e703a3ce85055",
+    "godot/scenes/character/assets/saloon_warm/poncho/hat_walk.png": "bac12ecf0e1a57228e7d005cff22e3f6a56c646eec96c652865fe197098e345c",
+    "godot/scenes/character/assets/saloon_warm/poncho/idle.png": "38ca75f1e46a8752a4667945c97c8e0f060ccfbced3df081a6c82464e6bceb9e",
+    "godot/scenes/character/assets/saloon_warm/poncho/arm_idle.png": "4af6bebdd272631f35f3b67c74b74c093d6633de7ca9b75b485d861d6aff511e",
+    "godot/scenes/character/assets/saloon_warm/poncho/hat_idle.png": "1f10b340a9b94e68ef5ba5357d8d81719dbda97951d31c41cd92bec147f7e44f",
+    "godot/scenes/character/assets/saloon_warm/poncho/walk.png": "4414c2aab7c4cada3d36f6053dedbc520859b9ad04960804ff2266caf7fa4ad2",
+    "godot/scenes/character/assets/saloon_warm/poncho/hat_dash.png": "4f9b2f447a0cf7213d91f7354f5ad382f5b6086d0ca505c0ba1493bb71919a3a",
+    "godot/scenes/character/assets/saloon_warm/garcia/dash.png": "4bb9784cef0d62f15b97144f7ac44d6babb871e33d46e7899f0beb56d857b957",
+    "godot/scenes/character/assets/saloon_warm/garcia/hat_walk.png": "45525e2db16944d3c91c7ac17977b5cd4cafcb17449c9e22813cbab79db112a2",
+    "godot/scenes/character/assets/saloon_warm/garcia/idle.png": "15521497d430fef99fee373a0cf8ddfd320b424a74419e6c02a121b2b8f9e307",
+    "godot/scenes/character/assets/saloon_warm/garcia/hat_idle.png": "9636e680beca5af6e95dcc1d95aca60b183f3d6df8eaecbe30b16d499b409827",
+    "godot/scenes/character/assets/saloon_warm/garcia/walk.png": "dd6e9524b95698ccd5d11959c89ce0810b076351b74304dcc2b7212f130c4013",
+    "godot/scenes/character/assets/saloon_warm/garcia/hat_dash.png": "584278f600e5d9f40d9dc1d57af728b336c491901ba2f4615e7b3411ec0f8a97"
+  }
+}

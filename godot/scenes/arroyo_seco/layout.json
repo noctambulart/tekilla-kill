@@ -1,1277 +1,1730 @@
 {
-  "version": 4,
-  "name": "Arroyo Seco — rue du saloon",
+  "version": 6,
+  "name": "Arroyo Seco — village chaleureux",
   "tile_px": 32,
   "size_tiles": [
-    48,
+    45,
     30
   ],
-  "status": "Première carte visitable ; équilibre, tir, casse et caméra de partie à éprouver.",
+  "size": [
+    1440,
+    960
+  ],
+  "coordinate_units": "logical_world_pixels",
+  "grounded_characters": true,
+  "actor_foot_offset": [
+    0,
+    16
+  ],
+  "source_concept": "output/concept-art/2026-11-25/09-village-passages-fondu.png",
+  "approved_reference": "output/arena/2026-11-25-saloon-study/character-warm/house-after.png",
   "perimeter": [
     [
-      0.0,
-      4.5
+      16,
+      208
     ],
     [
-      3.0,
-      4.5
+      64,
+      208
     ],
     [
-      3.0,
-      0.0
+      64,
+      16
     ],
     [
-      37.5,
-      0.0
+      608,
+      16
     ],
     [
-      37.5,
-      3.0
+      608,
+      0
     ],
     [
-      46.5,
-      3.0
+      816,
+      0
     ],
     [
-      46.5,
-      10.5
+      816,
+      16
     ],
     [
-      48.0,
-      10.5
+      1360,
+      16
     ],
     [
-      48.0,
-      25.5
+      1360,
+      112
     ],
     [
-      43.5,
-      25.5
+      1424,
+      112
     ],
     [
-      43.5,
-      30.0
+      1424,
+      704
     ],
     [
-      6.0,
-      30.0
+      1360,
+      704
     ],
     [
-      6.0,
-      27.0
+      1360,
+      944
     ],
     [
-      0.0,
-      27.0
+      816,
+      944
+    ],
+    [
+      816,
+      960
+    ],
+    [
+      608,
+      960
+    ],
+    [
+      608,
+      944
+    ],
+    [
+      80,
+      944
+    ],
+    [
+      80,
+      864
+    ],
+    [
+      16,
+      864
     ]
   ],
-  "buildings": [
+  "rooms": [
     {
       "id": "saloon",
       "name": "Saloon",
-      "polygon": [
-        [
-          4.5,
-          6.0
-        ],
-        [
-          12.0,
-          6.0
-        ],
-        [
-          12.0,
-          7.5
-        ],
-        [
-          22.5,
-          7.5
-        ],
-        [
-          22.5,
-          21.0
-        ],
-        [
-          4.5,
-          21.0
-        ]
+      "rect": [
+        80,
+        272,
+        448,
+        352
       ],
+      "floor": "stone",
       "doors": {
-        "0": [
-          [
-            7.5,
-            10.5
-          ]
+        "north": [
+          280,
+          376
         ],
-        "3": [
-          [
-            16.5,
-            19.5
-          ]
+        "east": [
+          440,
+          568
         ],
-        "4": [
-          [
-            16.5,
-            19.5
-          ]
+        "south": [
+          280,
+          424
         ]
-      },
-      "label": [
-        17.25,
-        9.0
-      ],
-      "floor": "stone"
+      }
     },
     {
       "id": "shop",
       "name": "Épicerie",
-      "polygon": [
-        [
-          36.0,
-          13.5
-        ],
-        [
-          43.5,
-          13.5
-        ],
-        [
-          43.5,
-          15.0
-        ],
-        [
-          45.0,
-          15.0
-        ],
-        [
-          45.0,
-          22.5
-        ],
-        [
-          36.0,
-          22.5
-        ]
+      "rect": [
+        872,
+        384,
+        384,
+        288
       ],
+      "floor": "stone",
       "doors": {
-        "4": [
-          [
-            40.5,
-            43.5
-          ]
+        "west": [
+          468,
+          596
         ],
-        "5": [
-          [
-            16.5,
-            19.5
-          ]
+        "east": [
+          472,
+          552
+        ],
+        "south": [
+          1000,
+          1128
         ]
-      },
-      "label": [
-        37.5,
-        15.75
-      ],
-      "floor": "stone"
+      }
     },
     {
       "id": "shed",
       "name": "Remise",
-      "polygon": [
-        [
-          7.5,
-          24.0
-        ],
-        [
-          16.5,
-          24.0
-        ],
-        [
-          16.5,
-          27.75
-        ],
-        [
-          13.5,
-          27.75
-        ],
-        [
-          13.5,
-          28.5
-        ],
-        [
-          7.5,
-          28.5
-        ]
+      "rect": [
+        112,
+        736,
+        288,
+        160
       ],
+      "floor": "wood",
       "doors": {
-        "1": [
-          [
-            24.375,
-            27.375
-          ]
+        "north": [
+          208,
+          304
         ],
-        "4": [
-          [
-            9.0,
-            12.0
-          ]
+        "east": [
+          776,
+          856
+        ],
+        "south": [
+          224,
+          320
         ]
-      },
-      "label": [
-        12.0,
-        24.75
-      ],
-      "floor": "wood"
+      }
     },
     {
       "id": "yard",
       "name": "Enclos",
-      "polygon": [
-        [
-          33.0,
-          3.0
-        ],
-        [
-          43.5,
-          3.0
-        ],
-        [
-          43.5,
-          10.5
-        ],
-        [
-          34.5,
-          10.5
-        ],
-        [
-          34.5,
-          8.25
-        ],
-        [
-          33.0,
-          8.25
-        ]
-      ],
-      "doors": {
-        "2": [
-          [
-            37.5,
-            40.5
-          ]
-        ],
-        "5": [
-          [
-            4.5,
-            7.5
-          ]
-        ]
-      },
-      "label": [
-        39.0,
-        4.5
+      "rect": [
+        1064,
+        128,
+        264,
+        176
       ],
       "floor": "earth",
-      "material": "fence"
+      "doors": {
+        "west": [
+          176,
+          256
+        ],
+        "south": [
+          1136,
+          1232
+        ]
+      }
     }
   ],
   "walls": [
     {
-      "id": "perimeter-0-0",
+      "id": "perimeter-0",
       "rect": [
-        0.0,
-        4.25,
-        3.0,
-        0.5
+        16,
+        204.0,
+        48,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-1-1",
+      "id": "perimeter-1",
       "rect": [
-        2.75,
-        0.0,
-        0.5,
-        4.5
+        60.0,
+        16,
+        8,
+        192
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-2-2",
+      "id": "perimeter-2",
       "rect": [
-        3.0,
-        -0.25,
-        34.5,
-        0.5
+        64,
+        12.0,
+        544,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-3-3",
+      "id": "perimeter-3",
       "rect": [
-        37.25,
-        0.0,
-        0.5,
-        3.0
+        604.0,
+        0,
+        8,
+        16
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-4-4",
+      "id": "perimeter-4",
       "rect": [
-        37.5,
-        2.75,
-        9.0,
-        0.5
+        608,
+        -4.0,
+        208,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-5-5",
+      "id": "perimeter-5",
       "rect": [
-        46.25,
-        3.0,
-        0.5,
-        7.5
+        812.0,
+        0,
+        8,
+        16
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-6-6",
+      "id": "perimeter-6",
       "rect": [
-        46.5,
-        10.25,
-        1.5,
-        0.5
+        816,
+        12.0,
+        544,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-7-7",
+      "id": "perimeter-7",
       "rect": [
-        47.75,
-        10.5,
-        0.5,
-        15.0
+        1356.0,
+        16,
+        8,
+        96
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-8-8",
+      "id": "perimeter-8",
       "rect": [
-        43.5,
-        25.25,
-        4.5,
-        0.5
+        1360,
+        108.0,
+        64,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-9-9",
+      "id": "perimeter-9",
       "rect": [
-        43.25,
-        25.5,
-        0.5,
-        4.5
+        1420.0,
+        112,
+        8,
+        592
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-10-10",
+      "id": "perimeter-10",
       "rect": [
-        6.0,
-        29.75,
-        37.5,
-        0.5
+        1360,
+        700.0,
+        64,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-11-11",
+      "id": "perimeter-11",
       "rect": [
-        5.75,
-        27.0,
-        0.5,
-        3.0
+        1356.0,
+        704,
+        8,
+        240
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-12-12",
+      "id": "perimeter-12",
       "rect": [
-        0.0,
-        26.75,
-        6.0,
-        0.5
+        816,
+        940.0,
+        544,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "perimeter-13-13",
+      "id": "perimeter-13",
       "rect": [
-        -0.25,
-        4.5,
-        0.5,
-        22.5
+        812.0,
+        944,
+        8,
+        16
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "saloon-0-0",
+      "id": "perimeter-14",
       "rect": [
-        4.5,
-        5.75,
-        3.0,
-        0.5
+        608,
+        956.0,
+        208,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "saloon-0-1",
+      "id": "perimeter-15",
       "rect": [
-        10.5,
-        5.75,
-        1.5,
-        0.5
+        604.0,
+        944,
+        8,
+        16
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "saloon-1-2",
+      "id": "perimeter-16",
       "rect": [
-        11.75,
-        6.0,
-        0.5,
-        1.5
+        80,
+        940.0,
+        528,
+        8
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "saloon-2-3",
+      "id": "perimeter-17",
+      "rect": [
+        76.0,
+        864,
+        8,
+        80
+      ],
+      "fence": true
+    },
+    {
+      "id": "perimeter-18",
+      "rect": [
+        16,
+        860.0,
+        64,
+        8
+      ],
+      "fence": true
+    },
+    {
+      "id": "perimeter-19",
       "rect": [
         12.0,
-        7.25,
-        10.5,
-        0.5
+        208,
+        8,
+        656
       ],
-      "material": "stone"
+      "fence": true
     },
     {
-      "id": "saloon-3-4",
+      "id": "saloon-north-0",
       "rect": [
-        22.25,
-        7.5,
-        0.5,
-        9.0
+        80,
+        266.0,
+        200,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "saloon-3-5",
+      "id": "saloon-north-1",
       "rect": [
-        22.25,
-        19.5,
-        0.5,
-        1.5
+        376,
+        266.0,
+        152,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "saloon-4-6",
+      "id": "saloon-east-2",
       "rect": [
-        4.5,
-        20.75,
-        12.0,
-        0.5
+        522.0,
+        272,
+        12,
+        168
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "saloon-4-7",
+      "id": "saloon-east-3",
       "rect": [
-        19.5,
-        20.75,
-        3.0,
-        0.5
+        522.0,
+        568,
+        12,
+        56
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "saloon-5-8",
+      "id": "saloon-south-4",
       "rect": [
-        4.25,
-        6.0,
-        0.5,
-        15.0
+        80,
+        618.0,
+        200,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": true
     },
     {
-      "id": "shop-0-0",
+      "id": "saloon-south-5",
       "rect": [
-        36.0,
-        13.25,
-        7.5,
-        0.5
+        424,
+        618.0,
+        104,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": true
     },
     {
-      "id": "shop-1-1",
+      "id": "saloon-west-6",
       "rect": [
-        43.25,
-        13.5,
-        0.5,
-        1.5
+        74.0,
+        272,
+        12,
+        352
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shop-2-2",
+      "id": "shop-north-0",
       "rect": [
-        43.5,
-        14.75,
-        1.5,
-        0.5
+        872,
+        378.0,
+        384,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shop-3-3",
+      "id": "shop-east-1",
       "rect": [
-        44.75,
-        15.0,
-        0.5,
-        7.5
+        1250.0,
+        384,
+        12,
+        88
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shop-4-4",
+      "id": "shop-east-2",
       "rect": [
-        36.0,
-        22.25,
-        4.5,
-        0.5
+        1250.0,
+        552,
+        12,
+        120
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shop-4-5",
+      "id": "shop-south-3",
       "rect": [
-        43.5,
-        22.25,
-        1.5,
-        0.5
+        872,
+        666.0,
+        128,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": true
     },
     {
-      "id": "shop-5-6",
+      "id": "shop-south-4",
       "rect": [
-        35.75,
-        13.5,
-        0.5,
-        3.0
+        1128,
+        666.0,
+        128,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": true
     },
     {
-      "id": "shop-5-7",
+      "id": "shop-west-5",
       "rect": [
-        35.75,
-        19.5,
-        0.5,
-        3.0
+        866.0,
+        384,
+        12,
+        84
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shed-0-0",
+      "id": "shop-west-6",
       "rect": [
-        7.5,
-        23.75,
-        9.0,
-        0.5
+        866.0,
+        596,
+        12,
+        76
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shed-1-1",
+      "id": "shed-north-0",
       "rect": [
-        16.25,
-        24.0,
-        0.5,
-        0.375
+        112,
+        730.0,
+        96,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shed-1-2",
+      "id": "shed-north-1",
       "rect": [
-        16.25,
-        27.375,
-        0.5,
-        0.375
+        304,
+        730.0,
+        96,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shed-2-3",
+      "id": "shed-east-2",
       "rect": [
-        13.5,
-        27.5,
-        3.0,
-        0.5
+        394.0,
+        736,
+        12,
+        40
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shed-3-4",
+      "id": "shed-east-3",
       "rect": [
-        13.25,
-        27.75,
-        0.5,
-        0.75
+        394.0,
+        856,
+        12,
+        40
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "shed-4-5",
+      "id": "shed-south-4",
       "rect": [
-        7.5,
-        28.25,
-        1.5,
-        0.5
+        112,
+        890.0,
+        112,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": true
     },
     {
-      "id": "shed-4-6",
+      "id": "shed-south-5",
       "rect": [
-        12.0,
-        28.25,
-        1.5,
-        0.5
+        320,
+        890.0,
+        80,
+        12
       ],
-      "material": "stone"
+      "fence": false,
+      "front": true
     },
     {
-      "id": "shed-5-7",
+      "id": "shed-west-6",
       "rect": [
-        7.25,
-        24.0,
-        0.5,
-        4.5
+        106.0,
+        736,
+        12,
+        160
       ],
-      "material": "stone"
+      "fence": false,
+      "front": false
     },
     {
-      "id": "yard-0-0",
+      "id": "yard-north-0",
       "rect": [
-        33.0,
-        2.875,
-        10.5,
-        0.25
+        1064,
+        124.0,
+        264,
+        8
       ],
-      "material": "fence"
+      "fence": true,
+      "front": false
     },
     {
-      "id": "yard-1-1",
+      "id": "yard-east-1",
       "rect": [
-        43.375,
-        3.0,
-        0.25,
-        7.5
+        1324.0,
+        128,
+        8,
+        176
       ],
-      "material": "fence"
+      "fence": true,
+      "front": false
     },
     {
-      "id": "yard-2-2",
+      "id": "yard-south-2",
       "rect": [
-        34.5,
-        10.375,
-        3.0,
-        0.25
+        1064,
+        300.0,
+        72,
+        8
       ],
-      "material": "fence"
+      "fence": true,
+      "front": true
     },
     {
-      "id": "yard-2-3",
+      "id": "yard-south-3",
       "rect": [
-        40.5,
-        10.375,
-        3.0,
-        0.25
+        1232,
+        300.0,
+        96,
+        8
       ],
-      "material": "fence"
+      "fence": true,
+      "front": true
     },
     {
-      "id": "yard-3-4",
+      "id": "yard-west-4",
       "rect": [
-        34.375,
-        8.25,
-        0.25,
-        2.25
+        1060.0,
+        128,
+        8,
+        48
       ],
-      "material": "fence"
+      "fence": true,
+      "front": false
     },
     {
-      "id": "yard-4-5",
+      "id": "yard-west-5",
       "rect": [
-        33.0,
-        8.125,
-        1.5,
-        0.25
+        1060.0,
+        256,
+        8,
+        48
       ],
-      "material": "fence"
+      "fence": true,
+      "front": false
     },
     {
-      "id": "yard-5-6",
+      "id": "courtyard-0",
       "rect": [
-        32.875,
-        3.0,
-        0.25,
-        1.5
+        344,
+        64,
+        8,
+        112
       ],
-      "material": "fence"
+      "fence": true
     },
     {
-      "id": "yard-5-7",
+      "id": "courtyard-1",
       "rect": [
-        32.875,
-        7.5,
-        0.25,
-        0.75
+        344,
+        172,
+        48,
+        8
       ],
-      "material": "fence"
+      "fence": true
+    },
+    {
+      "id": "courtyard-2",
+      "rect": [
+        80,
+        160,
+        24,
+        8
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-3",
+      "rect": [
+        808,
+        64,
+        8,
+        128
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-4",
+      "rect": [
+        808,
+        188,
+        16,
+        8
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-5",
+      "rect": [
+        848,
+        776,
+        8,
+        128
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-6",
+      "rect": [
+        848,
+        900,
+        24,
+        8
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-7",
+      "rect": [
+        1136,
+        784,
+        136,
+        8
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-8",
+      "rect": [
+        1268,
+        784,
+        8,
+        120
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-9",
+      "rect": [
+        1184,
+        900,
+        88,
+        8
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-10",
+      "rect": [
+        816,
+        320,
+        8,
+        64
+      ],
+      "fence": true
+    },
+    {
+      "id": "courtyard-11",
+      "rect": [
+        816,
+        320,
+        64,
+        8
+      ],
+      "fence": true
     }
   ],
   "props": [
     {
-      "id": "bar-long",
-      "kind": "counter",
-      "rect": [
-        6.0,
-        10.5625,
-        9.0,
-        1
-      ],
-      "breakable": false
+      "id": "saloon-bar",
+      "kind": "bar",
+      "position": [
+        124,
+        352
+      ]
     },
     {
-      "id": "bar-return",
-      "kind": "counter",
-      "rect": [
-        14.0,
-        11.5625,
-        1,
-        3.375
-      ],
-      "breakable": false
+      "id": "saloon-stool-a",
+      "kind": "stool",
+      "position": [
+        172,
+        400
+      ]
     },
     {
-      "id": "bar-shelf",
-      "kind": "shelf",
-      "rect": [
-        5.4,
-        7.125,
-        0.6,
-        2.25
-      ],
-      "breakable": false
+      "id": "saloon-stool-b",
+      "kind": "stool",
+      "position": [
+        228,
+        400
+      ]
     },
     {
-      "id": "couch",
+      "id": "saloon-stool-c",
+      "kind": "stool",
+      "position": [
+        284,
+        400
+      ]
+    },
+    {
+      "id": "saloon-table-west",
+      "kind": "table",
+      "position": [
+        136,
+        494
+      ]
+    },
+    {
+      "id": "saloon-west-n",
+      "kind": "chair_n",
+      "position": [
+        148,
+        463
+      ]
+    },
+    {
+      "id": "saloon-west-w",
+      "kind": "chair_w",
+      "position": [
+        111,
+        502
+      ]
+    },
+    {
+      "id": "saloon-west-e",
+      "kind": "chair_e",
+      "position": [
+        188,
+        502
+      ]
+    },
+    {
+      "id": "saloon-table-north",
+      "kind": "table",
+      "position": [
+        428,
+        342
+      ]
+    },
+    {
+      "id": "saloon-north-n",
+      "kind": "chair_n",
+      "position": [
+        440,
+        311
+      ]
+    },
+    {
+      "id": "saloon-north-w",
+      "kind": "chair_w",
+      "position": [
+        403,
+        350
+      ]
+    },
+    {
+      "id": "saloon-north-e",
+      "kind": "chair_e",
+      "position": [
+        480,
+        350
+      ]
+    },
+    {
+      "id": "saloon-table-south",
+      "kind": "table",
+      "position": [
+        412,
+        534
+      ]
+    },
+    {
+      "id": "saloon-south-n",
+      "kind": "chair_n",
+      "position": [
+        424,
+        513
+      ]
+    },
+    {
+      "id": "saloon-south-w",
+      "kind": "chair_w",
+      "position": [
+        387,
+        542
+      ]
+    },
+    {
+      "id": "saloon-south-e",
+      "kind": "chair_e",
+      "position": [
+        464,
+        542
+      ]
+    },
+    {
+      "id": "saloon-couch",
       "kind": "couch",
-      "rect": [
-        5.875,
-        18.75,
-        4,
-        1.5
-      ],
-      "breakable": false
+      "position": [
+        116,
+        552
+      ]
     },
     {
-      "id": "poker-table",
-      "kind": "table",
-      "rect": [
-        8.0,
-        14.0,
-        2,
-        2
-      ],
-      "breakable": false
-    },
-    {
-      "id": "side-table",
-      "kind": "table",
-      "rect": [
-        17.375,
-        11.375,
-        2,
-        2
-      ],
-      "breakable": false
-    },
-    {
-      "id": "chair-1",
-      "kind": "chair",
-      "rect": [
-        6.25,
-        14.5,
-        1,
-        1
-      ],
-      "breakable": true
-    },
-    {
-      "id": "chair-2",
-      "kind": "chair",
-      "rect": [
-        10.375,
-        14.5,
-        1,
-        1
-      ],
-      "breakable": true
-    },
-    {
-      "id": "chair-3",
-      "kind": "chair",
-      "rect": [
-        8.5,
-        16.5625,
-        1,
-        1
-      ],
-      "breakable": true
-    },
-    {
-      "id": "chair-4",
-      "kind": "chair",
-      "rect": [
-        19.9375,
-        11.875,
-        1,
-        1
-      ],
-      "breakable": true
-    },
-    {
-      "id": "crate-1",
-      "kind": "crate",
-      "rect": [
-        24.875,
-        12.875,
-        1.25,
-        1.25
-      ],
-      "breakable": true
-    },
-    {
-      "id": "crate-2",
-      "kind": "crate",
-      "rect": [
-        30.125,
-        20.375,
-        1.25,
-        1.25
-      ],
-      "breakable": true
-    },
-    {
-      "id": "crate-3",
-      "kind": "crate",
-      "rect": [
-        19.625,
-        24.125,
-        1.25,
-        1.25
-      ],
-      "breakable": true
-    },
-    {
-      "id": "crate-4",
-      "kind": "crate",
-      "rect": [
-        39.875,
-        7.625,
-        1.25,
-        1.25
-      ],
-      "breakable": true
-    },
-    {
-      "id": "crate-5",
-      "kind": "crate",
-      "rect": [
-        8.375,
-        25.625,
-        1.25,
-        1.25
-      ],
-      "breakable": true
-    },
-    {
-      "id": "crate-6",
-      "kind": "crate",
-      "rect": [
-        9.875,
-        25.625,
-        1.25,
-        1.25
-      ],
-      "breakable": true
-    },
-    {
-      "id": "pot-1",
-      "kind": "pot",
-      "rect": [
-        21.0,
-        8.625,
-        0.75,
-        0.75
-      ],
-      "breakable": true
-    },
-    {
-      "id": "pot-2",
-      "kind": "pot",
-      "rect": [
-        37.125,
-        21.0,
-        0.75,
-        0.75
-      ],
-      "breakable": true
-    },
-    {
-      "id": "pot-3",
-      "kind": "pot",
-      "rect": [
-        15.375,
-        27.0,
-        0.75,
-        0.75
-      ],
-      "breakable": true
-    },
-    {
-      "id": "shop-shelf-north",
-      "kind": "shelf",
-      "rect": [
-        37.125,
-        14.325,
-        5.25,
-        0.6
-      ],
-      "breakable": false
-    },
-    {
-      "id": "shop-shelf-east",
-      "kind": "shelf",
-      "rect": [
-        43.575,
-        15.75,
-        0.6,
-        4.5
-      ],
-      "breakable": false
-    },
-    {
-      "id": "shop-table",
-      "kind": "table",
-      "rect": [
-        39.5,
-        17.0,
-        2,
-        2
-      ],
-      "breakable": false
-    },
-    {
-      "id": "shop-chair",
-      "kind": "chair",
-      "rect": [
-        42.0625,
-        19.5625,
-        1,
-        1
-      ],
-      "breakable": true
-    },
-    {
-      "id": "saloon-barrel",
+      "id": "saloon-barrel-back",
       "kind": "barrel",
-      "rect": [
-        20.375,
-        19.25,
-        1.25,
-        1.25
+      "position": [
+        94,
+        304
+      ]
+    },
+    {
+      "id": "saloon-barrel-front",
+      "kind": "barrel",
+      "position": [
+        488,
+        586
+      ]
+    },
+    {
+      "id": "saloon-pot-back",
+      "kind": "pot",
+      "position": [
+        490,
+        298
+      ]
+    },
+    {
+      "id": "saloon-shelf-a",
+      "kind": "shelf",
+      "position": [
+        206,
+        280
+      ]
+    },
+    {
+      "id": "saloon-shelf-b",
+      "kind": "shelf",
+      "position": [
+        390,
+        280
+      ]
+    },
+    {
+      "id": "home-west",
+      "kind": "house",
+      "position": [
+        136,
+        48
       ],
       "breakable": false
+    },
+    {
+      "id": "home-north",
+      "kind": "house_wood",
+      "position": [
+        424,
+        32
+      ],
+      "breakable": false,
+      "width": 160
+    },
+    {
+      "id": "home-east",
+      "kind": "house_small",
+      "position": [
+        832,
+        48
+      ],
+      "breakable": false
+    },
+    {
+      "id": "home-south",
+      "kind": "house",
+      "position": [
+        896,
+        752
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shop-counter",
+      "kind": "store_counter",
+      "position": [
+        1032,
+        448
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shop-back-west",
+      "kind": "goods",
+      "position": [
+        920,
+        400
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shop-back-east",
+      "kind": "goods",
+      "position": [
+        1032,
+        400
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shop-side",
+      "kind": "goods_v",
+      "position": [
+        1216,
+        392
+      ],
+      "breakable": false,
+      "footprints": [
+        [
+          2,
+          10,
+          20,
+          82
+        ]
+      ]
+    },
+    {
+      "id": "shop-produce-a",
+      "kind": "produce",
+      "position": [
+        1160,
+        616
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shop-produce-b",
+      "kind": "produce",
+      "position": [
+        1196,
+        616
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shop-barrel",
+      "kind": "barrel",
+      "position": [
+        888,
+        404
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shop-pot",
+      "kind": "pot",
+      "position": [
+        1204,
+        640
+      ],
+      "breakable": true
+    },
+    {
+      "id": "loading-crate-a",
+      "kind": "crate",
+      "position": [
+        1292,
+        528
+      ],
+      "breakable": true,
+      "width": 24
+    },
+    {
+      "id": "loading-crate-b",
+      "kind": "crate",
+      "position": [
+        1292,
+        560
+      ],
+      "breakable": true,
+      "width": 24
+    },
+    {
+      "id": "loading-barrel",
+      "kind": "barrel",
+      "position": [
+        1292,
+        624
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shed-crate-a",
+      "kind": "crate",
+      "position": [
+        128,
+        756
+      ],
+      "breakable": true,
+      "width": 24
+    },
+    {
+      "id": "shed-crate-b",
+      "kind": "crate",
+      "position": [
+        128,
+        790
+      ],
+      "breakable": true,
+      "width": 24
+    },
+    {
+      "id": "shed-barrel-a",
+      "kind": "barrel",
+      "position": [
+        160,
+        852
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shed-barrel-b",
+      "kind": "barrel",
+      "position": [
+        190,
+        852
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shed-tools",
+      "kind": "tools",
+      "position": [
+        312,
+        748
+      ],
+      "breakable": false
+    },
+    {
+      "id": "shed-pot",
+      "kind": "pot",
+      "position": [
+        368,
+        856
+      ],
+      "breakable": true
+    },
+    {
+      "id": "yard-trough",
+      "kind": "trough",
+      "position": [
+        1104,
+        152
+      ],
+      "breakable": false
+    },
+    {
+      "id": "yard-crate",
+      "kind": "crate",
+      "position": [
+        1256,
+        256
+      ],
+      "breakable": true,
+      "width": 24
     },
     {
       "id": "yard-barrel",
       "kind": "barrel",
-      "rect": [
-        41.375,
-        7.25,
-        1.25,
-        1.25
+      "position": [
+        1292,
+        200
       ],
       "breakable": false
     },
     {
-      "id": "shed-barrel",
-      "kind": "barrel",
-      "rect": [
-        12.875,
-        26.0,
-        1.25,
-        1.25
-      ],
-      "breakable": false
-    },
-    {
-      "id": "courtyard-cart",
+      "id": "rear-cart",
       "kind": "cart",
-      "rect": [
-        13.0938,
-        2.25,
-        4,
-        1.5
+      "position": [
+        432,
+        192
       ],
-      "breakable": false
+      "breakable": false,
+      "width": 72
     },
     {
-      "id": "poker-table-south",
-      "kind": "table",
-      "rect": [
-        12,
-        17.5,
-        2,
-        2
-      ],
-      "breakable": false
-    },
-    {
-      "id": "poker-chair-west",
-      "kind": "chair",
-      "rect": [
-        10.5,
-        18,
-        1,
-        1
+      "id": "courtyard-pot",
+      "kind": "pot",
+      "position": [
+        944,
+        888
       ],
       "breakable": true
     },
     {
-      "id": "poker-chair-east",
-      "kind": "chair",
-      "rect": [
-        14.5,
-        18,
-        1,
-        1
-      ],
-      "breakable": true
-    },
-    {
-      "id": "poker-chair-north",
-      "kind": "chair",
-      "rect": [
-        12.5,
-        15.75,
-        1,
-        1
-      ],
-      "breakable": true
-    },
-    {
-      "id": "street-crate-north",
+      "id": "street-crate",
       "kind": "crate",
-      "rect": [
-        24.5,
-        14,
-        1.25,
-        1.25
+      "position": [
+        784,
+        352
+      ],
+      "breakable": true,
+      "width": 24
+    },
+    {
+      "id": "saloon-entry-pot",
+      "kind": "pot",
+      "position": [
+        552,
+        604
       ],
       "breakable": true
     },
     {
-      "id": "street-crate-south",
-      "kind": "crate",
-      "rect": [
-        30,
-        24.5,
-        1.25,
-        1.25
+      "id": "shop-entry-pot",
+      "kind": "pot",
+      "position": [
+        840,
+        640
       ],
       "breakable": true
+    }
+  ],
+  "decor": [
+    {
+      "kind": "crate_broken",
+      "position": [
+        1292,
+        256
+      ],
+      "width": 24
+    },
+    {
+      "kind": "pot_broken",
+      "position": [
+        1200,
+        704
+      ],
+      "width": 18
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        40,
+        192
+      ],
+      "width": 20
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        40,
+        512
+      ],
+      "width": 20
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        56,
+        816
+      ],
+      "width": 20
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        120,
+        924
+      ],
+      "width": 20
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        408,
+        928
+      ],
+      "width": 20
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        1376,
+        768
+      ],
+      "width": 20
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        1384,
+        144
+      ],
+      "width": 20
+    },
+    {
+      "kind": "cactus",
+      "position": [
+        1264,
+        48
+      ],
+      "width": 20
+    },
+    {
+      "kind": "bush",
+      "position": [
+        112,
+        40
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        312,
+        96
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        592,
+        48
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        1000,
+        72
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        1000,
+        184
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        1360,
+        320
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        1360,
+        680
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        1080,
+        888
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        1152,
+        824
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        432,
+        704
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        72,
+        696
+      ]
+    },
+    {
+      "kind": "bush",
+      "position": [
+        136,
+        688
+      ]
+    },
+    {
+      "kind": "rocks",
+      "position": [
+        24,
+        224
+      ],
+      "width": 44
+    },
+    {
+      "kind": "rocks",
+      "position": [
+        360,
+        40
+      ],
+      "width": 44
+    },
+    {
+      "kind": "rocks",
+      "position": [
+        592,
+        104
+      ],
+      "width": 44
+    },
+    {
+      "kind": "rocks",
+      "position": [
+        1368,
+        680
+      ],
+      "width": 44
+    },
+    {
+      "kind": "rocks",
+      "position": [
+        1328,
+        904
+      ],
+      "width": 44
+    },
+    {
+      "kind": "rocks",
+      "position": [
+        432,
+        904
+      ],
+      "width": 44
+    }
+  ],
+  "rugs": [
+    {
+      "rect": [
+        212,
+        568,
+        56,
+        32
+      ]
     }
   ],
   "bottle": [
-    27.0,
-    18.0
+    704,
+    520
   ],
   "spawns": [
     [
-      27.0,
-      25.5
+      672,
+      232
     ],
     [
-      27.0,
-      10.5
+      736,
+      808
     ],
     [
-      34.5,
-      18.0
+      992,
+      488
     ],
     [
-      19.5,
-      18.0
+      416,
+      488
     ]
-  ],
-  "labels": [
-    {
-      "text": "Cour arrière",
-      "position": [
-        16.5,
-        3.75
-      ]
-    },
-    {
-      "text": "Rue principale",
-      "position": [
-        30.0,
-        15.0
-      ]
-    }
   ],
   "routes": [
     {
       "id": "saloon",
-      "name": "Poursuite dans le saloon",
+      "name": "Traversée du saloon",
       "points": [
         [
-          27.0,
-          18.0
+          704,
+          536
         ],
         [
-          18.0,
-          18.0
+          560,
+          520
         ],
         [
-          16.5,
-          15.75
+          480,
+          504
         ],
         [
-          16.5,
-          9.0
+          360,
+          504
         ],
         [
-          9.0,
-          9.0
+          360,
+          304
         ],
         [
-          9.0,
-          4.5
+          328,
+          304
+        ],
+        [
+          328,
+          240
+        ],
+        [
+          704,
+          240
+        ],
+        [
+          704,
+          536
         ]
-      ],
-      "intent": "Entrer par la rue, contourner le comptoir et ressortir dans la cour."
+      ]
     },
     {
-      "id": "intercept",
-      "name": "Interception par la ruelle",
+      "id": "west",
+      "name": "Contournement ouest",
       "points": [
         [
-          27.0,
-          18.0
+          704,
+          536
         ],
         [
-          27.0,
-          9.0
+          576,
+          688
         ],
         [
-          27.0,
-          4.5
+          48,
+          688
         ],
         [
-          9.0,
-          4.5
+          48,
+          240
+        ],
+        [
+          328,
+          240
+        ],
+        [
+          704,
+          240
+        ],
+        [
+          704,
+          536
         ]
-      ],
-      "intent": "Anticiper la sortie de cour ; le porteur peut revenir vers les deux accès de rue."
+      ]
+    },
+    {
+      "id": "east",
+      "name": "Contournement est",
+      "points": [
+        [
+          704,
+          536
+        ],
+        [
+          800,
+          688
+        ],
+        [
+          1376,
+          688
+        ],
+        [
+          1376,
+          344
+        ],
+        [
+          1008,
+          344
+        ],
+        [
+          840,
+          344
+        ],
+        [
+          840,
+          400
+        ],
+        [
+          816,
+          432
+        ],
+        [
+          704,
+          536
+        ]
+      ]
     },
     {
       "id": "shop",
       "name": "Traversée de l’épicerie",
       "points": [
         [
-          31.5,
-          18.0
+          704,
+          536
         ],
         [
-          37.5,
-          18.0
+          920,
+          536
         ],
         [
-          38.625,
-          19.875
+          1072,
+          536
         ],
         [
-          38.625,
-          21.375
+          1072,
+          704
         ],
         [
-          42.0,
-          21.375
+          800,
+          712
         ],
         [
-          42.0,
-          24.0
-        ],
-        [
-          33.0,
-          24.0
-        ],
-        [
-          31.5,
-          18.0
+          704,
+          536
         ]
-      ],
-      "intent": "Quitter un angle de tir par la sortie sud, sans se retrouver dans une pièce à entrée unique."
-    }
-  ],
-  "design_notes": [
-    "Trois bâtiments de tailles différentes ; saloon à trois accès, commerce et remise à deux accès, enclos à deux passages.",
-    "Quatre départs à 7,5 tuiles / 240 px de la bouteille, trajets libres à vérifier ; équilibre tactique à éprouver.",
-    "Murs, comptoir, tables et gros meubles permanents ; caisses, chaises et pots prévus cassables, sans implémentation de casse ici.",
-    "Terrain 32 px ; portes agrandies à 3 tuiles ; personnage et rayon de collision de 8 px inchangés.",
-    "Vue verticale, mobilier historique, sable peu contrasté et dallage bleu-gris, inspirés du concept 06.",
-    "Le marqueur de bouteille est un repère de plan, sans ramassage ni consommation. Une seule bouteille, pas de bouteilles de décor.",
-    "Aucune prétention d’équilibrage à trois/quatre ni de caméra adaptative de partie ; le mode de visite permet de vérifier le lieu.",
-    "V4 : dimensions +50 % sur chaque axe, surface ×2,25 ; meuble en sprites natifs plus lisibles, visite rapprochée par défaut."
-  ],
-  "handoff": {
-    "27": "Plan, passages, obstacles, départs et intentions de parcours dans ce fichier et le plan annoté.",
-    "28": "Scène d’arène et visite avec les commandes existantes ; tirs réels et interactions à compléter après #20.",
-    "29": "Brancher les résistances et états cassés, puis éprouver les poursuites à deux.",
-    "41": "Sol, murs, seuils et identités des lieux à harmoniser sur cette géométrie après examen.",
-    "42": "Chair/crate/pot ont des empreintes précises ici ; états cassés à produire sans déplacer leurs ancrages.",
-    "43": "Habillage initial réutilisant les archives ; intégration finale à faire sur le tracé éprouvé."
-  },
-  "references": [
-    "output/concept-art/2026-11-22/06-scene-habitee-identites.png",
-    "output/arena/2026-11-23/arroyo-seco-scene-v2.png"
-  ],
-  "spawn_distance_px": 240,
-  "decor": [
+      ]
+    },
     {
-      "kind": "rug",
-      "rect": [
-        5.75,
-        17.25,
-        4.5,
-        1.25
+      "id": "shed",
+      "name": "Traversée de la remise",
+      "points": [
+        [
+          576,
+          688
+        ],
+        [
+          256,
+          688
+        ],
+        [
+          256,
+          816
+        ],
+        [
+          432,
+          816
+        ],
+        [
+          576,
+          688
+        ]
+      ]
+    },
+    {
+      "id": "yard",
+      "name": "Traversée de l’enclos",
+      "points": [
+        [
+          1008,
+          344
+        ],
+        [
+          1008,
+          224
+        ],
+        [
+          1184,
+          224
+        ],
+        [
+          1184,
+          344
+        ],
+        [
+          1008,
+          344
+        ]
       ]
     }
+  ],
+  "status": "Direction de la zone étalon validée ; carte complète à essayer.",
+  "notes": [
+    "Le saloon reprend sa géométrie et son mobilier validés, sans agrandissement.",
+    "Coordonnées en unités monde ; les routes représentent les pieds, les départs le pivot existant.",
+    "Ouvertures multiples et boucles libres avec le mobilier intact.",
+    "Casse visuelle seulement ; dégâts/destruction des objets dans29/43."
   ]
 }

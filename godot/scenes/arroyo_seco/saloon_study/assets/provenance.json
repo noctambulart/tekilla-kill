@@ -1,0 +1,413 @@
+{
+  "issue": 60,
+  "tool": "image_gen.imagegen",
+  "normalization": "Binary alpha; occupied bounds; uniform fit; nearest-neighbor. No painting.",
+  "sources": {
+    "props-raw.png": "5a5651e422728228f528063c76a59ae641f74c8908d6eb4f99f6ddde40d847c1",
+    "floors-raw.png": "4f0f75048d1c66f5004d2e4050b905c25ec8270cc5f1cdd2993ef815e8330ed4",
+    "walls-raw.png": "aeed649953c88657e82ccf60154d3d2bec32b3005d12fc8f9b2767ed60ffa71c",
+    "bar-low-raw.png": "09df0d313a1ff1852db57a7b07a3b906d5875a2c865c00cbce2ac3ccaae04e37"
+  },
+  "assets": {
+    "bar": {
+      "source_bounds": [
+        374,
+        238,
+        1824,
+        490
+      ],
+      "native_size": [
+        624,
+        108
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/bar-low-raw.png",
+      "world_size": [
+        208.0,
+        36.0
+      ],
+      "uniform_scale": 0.4303448275862069,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "table": {
+      "source_bounds": [
+        488,
+        140,
+        649,
+        308
+      ],
+      "native_size": [
+        121,
+        126
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        40.333333333333336,
+        42.0
+      ],
+      "uniform_scale": 0.75,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "stool": {
+      "source_bounds": [
+        853,
+        156,
+        959,
+        282
+      ],
+      "native_size": [
+        48,
+        57
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        16.0,
+        19.0
+      ],
+      "uniform_scale": 0.4528301886792453,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "barrel": {
+      "source_bounds": [
+        1192,
+        140,
+        1326,
+        308
+      ],
+      "native_size": [
+        67,
+        84
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        22.333333333333332,
+        28.0
+      ],
+      "uniform_scale": 0.5,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "chair_n": {
+      "source_bounds": [
+        133,
+        437,
+        252,
+        637
+      ],
+      "native_size": [
+        45,
+        75
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        15.0,
+        25.0
+      ],
+      "uniform_scale": 0.375,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "chair_s": {
+      "source_bounds": [
+        481,
+        458,
+        612,
+        628
+      ],
+      "native_size": [
+        54,
+        70
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        18.0,
+        23.333333333333332
+      ],
+      "uniform_scale": 0.4122137404580153,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "chair_w": {
+      "source_bounds": [
+        832,
+        439,
+        970,
+        635
+      ],
+      "native_size": [
+        53,
+        75
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        17.666666666666668,
+        25.0
+      ],
+      "uniform_scale": 0.3826530612244898,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "chair_e": {
+      "source_bounds": [
+        1198,
+        440,
+        1336,
+        635
+      ],
+      "native_size": [
+        53,
+        75
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        17.666666666666668,
+        25.0
+      ],
+      "uniform_scale": 0.38461538461538464,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "couch": {
+      "source_bounds": [
+        55,
+        836,
+        327,
+        992
+      ],
+      "native_size": [
+        230,
+        132
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        76.66666666666667,
+        44.0
+      ],
+      "uniform_scale": 0.8461538461538461,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "pot": {
+      "source_bounds": [
+        479,
+        840,
+        603,
+        975
+      ],
+      "native_size": [
+        48,
+        52
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        16.0,
+        17.333333333333332
+      ],
+      "uniform_scale": 0.3870967741935484,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "house": {
+      "source_bounds": [
+        748,
+        741,
+        1061,
+        1040
+      ],
+      "native_size": [
+        480,
+        459
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        160.0,
+        153.0
+      ],
+      "uniform_scale": 1.5335463258785942,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "shelf": {
+      "source_bounds": [
+        1171,
+        858,
+        1369,
+        955
+      ],
+      "native_size": [
+        120,
+        59
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/props-raw.png",
+      "world_size": [
+        40.0,
+        19.666666666666668
+      ],
+      "uniform_scale": 0.6060606060606061,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "wall_h": {
+      "source_bounds": [
+        39,
+        193,
+        496,
+        302
+      ],
+      "native_size": [
+        288,
+        69
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        96.0,
+        23.0
+      ],
+      "uniform_scale": 0.6301969365426696,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "wall_v": {
+      "source_bounds": [
+        628,
+        54,
+        705,
+        396
+      ],
+      "native_size": [
+        54,
+        240
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        18.0,
+        80.0
+      ],
+      "uniform_scale": 0.7012987012987013,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "post": {
+      "source_bounds": [
+        949,
+        146,
+        1060,
+        328
+      ],
+      "native_size": [
+        51,
+        84
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        17.0,
+        28.0
+      ],
+      "uniform_scale": 0.46153846153846156,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "front": {
+      "source_bounds": [
+        1238,
+        161,
+        1688,
+        321
+      ],
+      "native_size": [
+        236,
+        84
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        78.66666666666667,
+        28.0
+      ],
+      "uniform_scale": 0.525,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "fence_h": {
+      "source_bounds": [
+        53,
+        598,
+        476,
+        733
+      ],
+      "native_size": [
+        226,
+        72
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        75.33333333333333,
+        24.0
+      ],
+      "uniform_scale": 0.5333333333333333,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "fence_v": {
+      "source_bounds": [
+        626,
+        468,
+        701,
+        834
+      ],
+      "native_size": [
+        42,
+        205
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        14.0,
+        68.33333333333333
+      ],
+      "uniform_scale": 0.56,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "pillar": {
+      "source_bounds": [
+        941,
+        552,
+        1067,
+        758
+      ],
+      "native_size": [
+        51,
+        84
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        17.0,
+        28.0
+      ],
+      "uniform_scale": 0.4077669902912621,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    },
+    "plaster": {
+      "source_bounds": [
+        1238,
+        586,
+        1699,
+        731
+      ],
+      "native_size": [
+        267,
+        84
+      ],
+      "source": "output/arena/2026-11-25-saloon-study/walls-raw.png",
+      "world_size": [
+        89.0,
+        28.0
+      ],
+      "uniform_scale": 0.5793103448275863,
+      "anchor": "bottom-center",
+      "orientation": "drawn, never rotated"
+    }
+  }
+}

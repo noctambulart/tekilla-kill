@@ -1,0 +1,10 @@
+{
+  "match": "MATCH CHECK: PASS (69 checks)",
+  "bottle_drops": "BOTTLE DROPS: PASS (330 checks)",
+  "v02": "V02 CHECK: PASS (51 checks)",
+  "shooting": "SHOOTING CHECK: PASS (47 checks)",
+  "reload": "RELOAD CHECK: PASS (53 checks)",
+  "movement": "MOVEMENT CHECK: PASS (53 checks)",
+  "holder_stun": "HOLDER STUN: PASS (47 checks)",
+  "holder_stun-rendered": "HOLDER STUN: PASS (49 checks)"
+}

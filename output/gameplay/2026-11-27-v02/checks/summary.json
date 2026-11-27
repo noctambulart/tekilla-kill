@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-27",
+  "engine": "Godot 4.7.2 standard",
+  "suites": 11,
+  "failed_suites": 0,
+  "public_checks_headless": 51,
+  "public_checks_rendered": 69,
+  "full_round_frames": 2481,
+  "full_round_seconds": 41.35,
+  "original_amount": 2400,
+  "final_scores": {
+    "Poncho": 0,
+    "Garcia": 2400
+  },
+  "navigation_frames": {
+    "saloon": 133,
+    "epicerie": 103,
+    "remise": 79,
+    "enclos": 73,
+    "couvert": 67
+  },
+  "preview": {
+    "file": "preview-v02.mp4",
+    "seconds": 9.4,
+    "source_resolution": [
+      1920,
+      1080
+    ],
+    "delivery_resolution": [
+      1280,
+      720
+    ],
+    "codec": "H264/AAC",
+    "source_pcm_peak": 16564,
+    "source_clipped_samples": 0,
+    "cue_counts": {
+      "take": 2,
+      "drop": 1,
+      "empty": 1
+    },
+    "fixture": true,
+    "audio_samples": 902400,
+    "mp4_bytes": 1315316
+  },
+  "validation": "Review globale du producteur attendue ; aucune validation créative déduite des tests."
+}

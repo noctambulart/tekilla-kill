@@ -1,0 +1,198 @@
+{
+	"checks": 47,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": false,
+	"results": [
+		{
+			"description": "Réglages publics : 150 unités / 0,22 s et étourdissement 0,65 s",
+			"passed": true
+		},
+		{
+			"description": "J1 porte avant le choc",
+			"passed": true
+		},
+		{
+			"description": "J1 est en dash avant le choc",
+			"passed": true
+		},
+		{
+			"description": "Le choc interrompt le dash de J1, encore actif et vulnérable",
+			"passed": true
+		},
+		{
+			"description": "J1 peut viser et tirer pendant l’étourdissement",
+			"passed": true
+		},
+		{
+			"description": "J1 peut commencer une recharge, sans nouveau dash",
+			"passed": true
+		},
+		{
+			"description": "J1 reste immobile malgré le déplacement maintenu ; sa cartouche arrive",
+			"passed": true
+		},
+		{
+			"description": "J1 reste blessable pendant l’étourdissement",
+			"passed": true
+		},
+		{
+			"description": "J1 reprend le déplacement sans dash mis en attente ni prolongation au second dégât",
+			"passed": true
+		},
+		{
+			"description": "J1 porte avant le choc",
+			"passed": true
+		},
+		{
+			"description": "J1 conserve la recharge déjà engagée et son horloge au choc",
+			"passed": true
+		},
+		{
+			"description": "La recharge engagée de J1 progresse pendant l’étourdissement",
+			"passed": true
+		},
+		{
+			"description": "Un coup fatal pendant l’étourdissement de J1 libère le mouvement du fantôme",
+			"passed": true
+		},
+		{
+			"description": "Rejouer efface l’étourdissement de J1",
+			"passed": true
+		},
+		{
+			"description": "J1 porte avant le choc",
+			"passed": true
+		},
+		{
+			"description": "Zéro dégât ne déclenche rien",
+			"passed": true
+		},
+		{
+			"description": "Un blessé sans bouteille n’est pas étourdi",
+			"passed": true
+		},
+		{
+			"description": "J1 ne peut pas reprendre 0,01 s avant la fin, même bouteille à ses pieds",
+			"passed": true
+		},
+		{
+			"description": "J1 peut reprendre dès la fin de l’étourdissement, sans exclusion d’une seconde",
+			"passed": true
+		},
+		{
+			"description": "Le coup fatal de J1 donne priorité au mode fantôme",
+			"passed": true
+		},
+		{
+			"description": "Le fantôme reste lentement déplaçable sans ramassage",
+			"passed": true
+		},
+		{
+			"description": "La remise à zéro restaure l’éligibilité",
+			"passed": true
+		},
+		{
+			"description": "J2 porte avant le choc",
+			"passed": true
+		},
+		{
+			"description": "J2 est en dash avant le choc",
+			"passed": true
+		},
+		{
+			"description": "Le choc interrompt le dash de J2, encore actif et vulnérable",
+			"passed": true
+		},
+		{
+			"description": "J2 peut viser et tirer pendant l’étourdissement",
+			"passed": true
+		},
+		{
+			"description": "J2 peut commencer une recharge, sans nouveau dash",
+			"passed": true
+		},
+		{
+			"description": "J2 reste immobile malgré le déplacement maintenu ; sa cartouche arrive",
+			"passed": true
+		},
+		{
+			"description": "J2 reste blessable pendant l’étourdissement",
+			"passed": true
+		},
+		{
+			"description": "J2 reprend le déplacement sans dash mis en attente ni prolongation au second dégât",
+			"passed": true
+		},
+		{
+			"description": "J2 porte avant le choc",
+			"passed": true
+		},
+		{
+			"description": "J2 conserve la recharge déjà engagée et son horloge au choc",
+			"passed": true
+		},
+		{
+			"description": "La recharge engagée de J2 progresse pendant l’étourdissement",
+			"passed": true
+		},
+		{
+			"description": "Un coup fatal pendant l’étourdissement de J2 libère le mouvement du fantôme",
+			"passed": true
+		},
+		{
+			"description": "Rejouer efface l’étourdissement de J2",
+			"passed": true
+		},
+		{
+			"description": "J2 porte avant le choc",
+			"passed": true
+		},
+		{
+			"description": "Zéro dégât ne déclenche rien",
+			"passed": true
+		},
+		{
+			"description": "Un blessé sans bouteille n’est pas étourdi",
+			"passed": true
+		},
+		{
+			"description": "J2 ne peut pas reprendre 0,01 s avant la fin, même bouteille à ses pieds",
+			"passed": true
+		},
+		{
+			"description": "J2 peut reprendre dès la fin de l’étourdissement, sans exclusion d’une seconde",
+			"passed": true
+		},
+		{
+			"description": "Le coup fatal de J2 donne priorité au mode fantôme",
+			"passed": true
+		},
+		{
+			"description": "Le fantôme reste lentement déplaçable sans ramassage",
+			"passed": true
+		},
+		{
+			"description": "La remise à zéro restaure l’éligibilité",
+			"passed": true
+		},
+		{
+			"description": "Garcia bot ramasse dans la composition publique",
+			"passed": true
+		},
+		{
+			"description": "La pause conserve exactement le temps d’étourdissement du bot",
+			"passed": true
+		},
+		{
+			"description": "Garcia bot reste immobile malgré son intention de poursuivre la bouteille",
+			"passed": true
+		},
+		{
+			"description": "Garcia bot reprend sa poursuite après l’étourdissement",
+			"passed": true
+		}
+	],
+	"scene": "res://scenes/match/match.tscn",
+	"status": "passed"
+}

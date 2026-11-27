@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: identity-preserve, production sprite animation.\nCreate one transparent 6-column x 2-row sprite animation sheet of PONCHO for Tequila Kill. Reference 1 is the APPROVED village concept, use Poncho's draping cloth and softly shaded pixel-art style. Reference 2 is his CURRENT IN-GAME IDLE seed, preserve its very broad straw-gold oval sombrero, raised rounded olive crown, dark underside, overall silhouette family and fixed overhead facing. Replace the little pointed hovering triangular hem with weighted vertically hanging fabric that covers the feet and reaches the ground, matching the concept.\nOne same character in all TWELVE equally sized cells, exact six columns by two rows. Entire background genuine transparent alpha. Plenty of transparent margin around each pose. Same size, palette, perspective, hat proportions and ground baseline in every cell. Clear hand-placed pixel clusters and gently shaded gold/brown volumes, no fine straw hatching or busy embroidery. No scenery, labels, frames, icons, text, shadows or green bottle.\nBODY ONLY: do NOT draw hands, weapon, arms, muzzle flash, dust or cast shadow; the existing engine has a separate aiming weapon layer and contact shadow. Do not rotate the character or hat. Fixed Zelda-like top-down front/overhead view: see the broad hat's top and a long weighty warm-brown cloth hanging vertically below it. No exposed boots/trousers. Cloth ends in a broad slightly curved/stepped short ochre fringe resting at the common bottom baseline, not a sharp dangling V or flying cape.\nROW 1 left to right: SIX subtle WALK cycle poses. Small alternating changes in cloth folds and fringe under the same hat, very slight left/right body sway. The hat remains the same size; no large body bounce, no lifting all fringe off the floor. This is a walking loop, not six copies.\nROW 2 left to right: one neutral IDLE pose, FOUR grounded DASH poses (anticipation, impulse, travel, recovery) with gentle compressed cloth folds and a modest lean, then a second matching idle pose. All keep the same head orientation and bodily proportions. The dash doesn't make him fly or uncover his feet.\nArt dimensions conceptually a body 32 pixels wide and 36 pixels tall in a 48x48 cell, consistently enlarged for generation. Keep the hat centered left/right, with the bottom of the cloth below the hat's center; the aiming pivot is around the right rim of the hat. Do not introduce a face or new costume. A clean reusable game animation atlas, not a concept art poster.",
+  "references": [
+    "output/concept-art/2026-11-25/09-village-passages-fondu.png",
+    "godot/scenes/character/assets/refined/poncho/idle.png"
+  ],
+  "grid": [
+    6,
+    2
+  ],
+  "issue": 60
+}

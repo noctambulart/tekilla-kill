@@ -5,6 +5,8 @@ const ASSETS := "res://scenes/character/assets/"
 const CELL := Vector2(48, 48)
 const ANCHOR := Vector2(24, 26)
 const COUNTS := {"idle": 1, "walk": 6, "dash": 4}
+const PONCHO_HEM_START := 33.0
+const PONCHO_HEM_STRETCH := 1.6
 
 @export_enum("Poncho", "Garcia") var character_style := 0:
 	set(value):
@@ -15,6 +17,18 @@ const COUNTS := {"idle": 1, "walk": 6, "dash": 4}
 @export var refined_art := true:
 	set(value):
 		refined_art = value
+		if is_node_ready():
+			_load_textures()
+
+@export var village_art := true:
+	set(value):
+		village_art = value
+		if is_node_ready():
+			_load_textures()
+
+@export var warm_art := false:
+	set(value):
+		warm_art = value
 		if is_node_ready():
 			_load_textures()
 
@@ -33,11 +47,15 @@ func _ready() -> void:
 	_load_textures()
 	if actor.has_node("Revolver"):
 		actor.get_node("Revolver").fired.connect(func(): _shot_time = 0.0)
+		actor.get_node("Revolver").melee_struck.connect(func(_target): _shot_time = 0.0)
 
 
 func _load_textures() -> void:
 	var style := "poncho" if character_style == 0 else "garcia"
-	var base := ASSETS + ("refined/" if refined_art else "")
+	var folder := "village/" if village_art else "refined/"
+	var base := ASSETS + (folder if refined_art else "")
+	if warm_art:
+		base = ASSETS + "saloon_warm/"
 	for state in COUNTS:
 		_textures[state] = load(base + style + "/" + state + ".png")
 		_textures["hat_" + state] = load(base + style + "/hat_" + state + ".png")
@@ -68,20 +86,33 @@ func _process(delta: float) -> void:
 	queue_redraw()
 
 
-func _draw_frame(texture: Texture2D, frame: int) -> void:
+func _draw_frame(texture: Texture2D, frame: int, lengthen_hem := false) -> void:
 	# Texture density can change without changing the actor's world footprint.
 	var source_edge := float(texture.get_height())
-	draw_texture_rect_region(texture, Rect2(-ANCHOR, CELL),
-		Rect2(Vector2(frame * source_edge, 0), Vector2.ONE * source_edge))
+	var source := Rect2(Vector2(frame * source_edge, 0), Vector2.ONE * source_edge)
+	if not lengthen_hem or warm_art or (village_art and refined_art):
+		draw_texture_rect_region(texture, Rect2(-ANCHOR, CELL), source)
+		return
+	# Stretch only the low fabric and its fringe. The hat and weapon keep their scale.
+	var fold_y := PONCHO_HEM_START * source_edge / CELL.y
+	draw_texture_rect_region(texture, Rect2(-ANCHOR, Vector2(CELL.x, PONCHO_HEM_START)),
+		Rect2(source.position, Vector2(source_edge, fold_y)))
+	draw_texture_rect_region(texture,
+		Rect2(Vector2(0, PONCHO_HEM_START) - ANCHOR,
+			Vector2(CELL.x, (CELL.y - PONCHO_HEM_START) * PONCHO_HEM_STRETCH)),
+		Rect2(source.position + Vector2(0, fold_y), Vector2(source_edge, source_edge - fold_y)))
 
 
 func _draw() -> void:
 	if _textures.is_empty():
 		return
-	draw_set_transform(Vector2(-2, 14), 0, Vector2(1, 0.35))
-	draw_circle(Vector2.ZERO, 10, Color(0.19, 0.13, 0.08, 0.25))
+	var poncho := character_style == 0
+	var grounded := warm_art or (village_art and refined_art)
+	var ground := Vector2(0, 16) if grounded else (Vector2(0, 17) if poncho else Vector2(-2, 14))
+	draw_set_transform(ground, 0, Vector2(1, 0.23 if grounded else 0.35))
+	draw_circle(Vector2.ZERO, 8 if grounded else 10, Color(0.19, 0.13, 0.08, 0.32 if poncho else 0.25))
 	draw_set_transform(Vector2.ZERO)
-	_draw_frame(_textures[animation_state], animation_frame)
+	_draw_frame(_textures[animation_state], animation_frame, poncho)
 	draw_set_transform(Vector2.ZERO, weapon_angle)
 	if _shot_time < 4.0 / 18.0:
 		_draw_frame(_textures.fire, mini(int(_shot_time * 18.0), 3))
@@ -91,4 +122,4 @@ func _draw() -> void:
 		_draw_frame(_textures.arm_idle, 0)
 	draw_set_transform(Vector2.ZERO)
 	# Restore exact body pixels over the hand, not a differently colored patch.
-	_draw_frame(_textures["hat_" + animation_state], animation_frame)
+	_draw_frame(_textures["hat_" + animation_state], animation_frame, poncho)

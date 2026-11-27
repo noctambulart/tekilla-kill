@@ -1,0 +1,98 @@
+<div id="arroyo-walk-review">
+  <style>
+    #arroyo-walk-review {display:grid;gap:calc(var(--font-size-base) * 0.75)}
+    #arroyo-walk-review .map-shell {position:relative;width:100%}
+    #arroyo-walk-review .annotation-svg {display:block;width:100%;height:auto}
+    #arroyo-walk-review .static-marker {display:none}
+    #arroyo-walk-review .map-marker {position:absolute;transform:translate(-50%,-50%);pointer-events:none}
+    #arroyo-walk-review .legend {display:flex;flex-wrap:wrap;gap:calc(var(--font-size-base) * 0.8);align-items:center}
+    #arroyo-walk-review .legend-item {display:inline-flex;align-items:center;gap:calc(var(--font-size-base) * 0.35)}
+    #arroyo-walk-review .legend-swatch {display:inline-block;width:calc(var(--font-size-base) * 0.8);height:calc(var(--font-size-base) * 0.8)}
+    #arroyo-walk-review .walk-swatch {background:var(--green);opacity:0.6}
+    #arroyo-walk-review .review-swatch {background:var(--orange);opacity:0.7}
+    #arroyo-walk-review .controls {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:calc(var(--font-size-base) * 1);align-items:center}
+    #arroyo-walk-review .range-field {min-width:0}
+    @media(max-width:480px) {#arroyo-walk-review .controls {grid-template-columns:1fr}}
+  </style>
+  <h3>Zones de marche proposées</h3>
+  <div class="legend">
+    <span class="legend-item"><span class="legend-swatch walk-swatch" aria-hidden="true"></span>Sol praticable proposé</span>
+    <span class="legend-item"><span class="legend-swatch review-swatch" aria-hidden="true"></span>Accès à ouvrir ou élargir</span>
+  </div>
+  <div class="map-shell">
+    <!--MAP_SVG-->
+    <span class="map-marker" style="left:38.99%;top:55.24%"><span class="viz-badge">1</span></span>
+    <span class="map-marker" style="left:67.38%;top:56.75%"><span class="viz-badge">2</span></span>
+    <span class="map-marker" style="left:31.80%;top:87.90%"><span class="viz-badge">3</span></span>
+    <span class="map-marker" style="left:75.27%;top:22.58%"><span class="viz-badge">4</span></span>
+  </div>
+  <div class="controls">
+    <div class="range-field">
+      <label class="form-label" for="arroyo-walk-opacity">Opacité des zones : <output id="arroyo-opacity-value" class="tabular-nums">32 %</output></label>
+      <input class="form-range" id="arroyo-walk-opacity" type="range" min="0" max="60" step="1" value="32">
+    </div>
+    <label class="form-check"><input class="form-check-input" id="arroyo-show-review" type="checkbox" checked><span class="form-check-label">Afficher les accès à revoir</span></label>
+  </div>
+  <div class="viz-row" role="group" aria-label="Passages à examiner">
+    <button type="button" class="btn" data-review-point="1" aria-pressed="true">1 · Saloon</button>
+    <button type="button" class="btn" data-review-point="2" aria-pressed="false">2 · Épicerie</button>
+    <button type="button" class="btn" data-review-point="3" aria-pressed="false">3 · Remise</button>
+    <button type="button" class="btn" data-review-point="4" aria-pressed="false">4 · Enclos</button>
+  </div>
+  <p id="arroyo-passage-detail" aria-live="polite">Saloon : élargir les seuils côté place et en bas ; pouvoir contester le couvert depuis deux approches.</p>
+  <script type="application/json" id="arroyo-passage-data"><!--REVIEW_DATA--></script>
+  <script>
+    (() => {
+      const root = document.getElementById('arroyo-walk-review');
+      const alpha = root.querySelector('#arroyo-walk-opacity');
+      const value = root.querySelector('#arroyo-opacity-value');
+      const show = root.querySelector('#arroyo-show-review');
+      const walkLayer = root.querySelector('#walk-layer-arroyo');
+      const reviewLayer = root.querySelector('#review-layer-arroyo');
+      const detail = root.querySelector('#arroyo-passage-detail');
+      const buttons = Array.from(root.querySelectorAll('[data-review-point]'));
+      const bands = Array.from(root.querySelectorAll('.review-band'));
+      const points = JSON.parse(root.querySelector('#arroyo-passage-data').textContent);
+      const descriptions = {
+        1:'Saloon : élargir les seuils côté place et en bas ; pouvoir contester le couvert depuis deux approches.',
+        2:'Épicerie : dégager les deux accès et leurs approches pour éviter le verrouillage d’un seul seuil.',
+        3:'Remise : ajouter une sortie latérale pour éviter le refuge à accès unique et le piège sans échappatoire.',
+        4:'Enclos : rendre deux accès explicites et vérifier que le parcours arrière reste continu.'
+      };
+      let selected = 1;
+      const apply = () => {
+        walkLayer.setAttribute('opacity',String(Number(alpha.value)/100));
+        value.textContent = alpha.value+' %';
+        reviewLayer.style.display = show.checked ? '' : 'none';
+        root.querySelectorAll('.map-marker').forEach(marker => {marker.style.display=show.checked?'':'none';});
+        buttons.forEach(button => button.setAttribute('aria-pressed',String(Number(button.dataset.reviewPoint)===selected)));
+        bands.forEach(band => band.setAttribute('opacity',Number(band.dataset.point)===selected?'1':'0.52'));
+        detail.textContent = descriptions[selected];
+      };
+      const save = () => {
+        if (window.openai && window.openai.setWidgetState) {
+          window.openai.setWidgetState({
+            modelContent:{passage:selected,lieu:points.find(point=>point.id===selected).title},
+            privateContent:{opacity:Number(alpha.value),showReview:show.checked}
+          }).catch(()=>{});
+        }
+      };
+      const restore = state => {
+        const privateState = state && state.privateContent;
+        const modelState = state && state.modelContent;
+        if(privateState && Number.isFinite(privateState.opacity)) alpha.value=String(Math.max(0,Math.min(60,privateState.opacity)));
+        if(privateState && typeof privateState.showReview==='boolean') show.checked=privateState.showReview;
+        if(modelState && points.some(point=>point.id===modelState.passage)) selected=modelState.passage;
+        apply();
+      };
+      alpha.addEventListener('input',apply);
+      alpha.addEventListener('change',save);
+      show.addEventListener('change',()=>{apply();save();});
+      buttons.forEach(button=>button.addEventListener('click',()=>{selected=Number(button.dataset.reviewPoint);apply();save();}));
+      window.addEventListener('openai:set_globals',event=>{
+        if(event.detail && event.detail.globals && event.detail.globals.widgetState) restore(event.detail.globals.widgetState);
+      });
+      restore(window.openai && window.openai.widgetState);
+    })();
+  </script>
+</div>

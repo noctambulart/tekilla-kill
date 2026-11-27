@@ -17,21 +17,29 @@ var _reload_press := false
 func _ready() -> void:
 	_mouse_position = get_viewport().get_mouse_position()
 	if source == Source.KEYBOARD_MOUSE:
-		var keys := [KEY_A, KEY_D, KEY_W, KEY_S]
-		for i in range(4):
-			var event := InputEventKey.new()
-			# Physical WASD becomes ZQSD on an AZERTY layout.
-			event.physical_keycode = keys[i]
-			_add_action("move_" + str(i), event)
-		var dash_key := InputEventKey.new()
-		dash_key.physical_keycode = KEY_SPACE
-		_add_action("dash", dash_key)
-		var fire_button := InputEventMouseButton.new()
-		fire_button.button_index = MOUSE_BUTTON_LEFT
-		_add_action("fire", fire_button)
-		var reload_key := InputEventKey.new()
-		reload_key.physical_keycode = KEY_R
-		_add_action("reload", reload_key)
+		use_keyboard_mouse()
+
+
+func use_keyboard_mouse() -> void:
+	_remove_actions()
+	source = Source.KEYBOARD_MOUSE
+	joypad_device = -1
+	_mouse_position = get_viewport().get_mouse_position()
+	var keys := [KEY_A, KEY_D, KEY_W, KEY_S]
+	for i in range(4):
+		var event := InputEventKey.new()
+		# Physical WASD becomes ZQSD on an AZERTY layout.
+		event.physical_keycode = keys[i]
+		_add_action("move_" + str(i), event)
+	var dash_key := InputEventKey.new()
+	dash_key.physical_keycode = KEY_SPACE
+	_add_action("dash", dash_key)
+	var fire_button := InputEventMouseButton.new()
+	fire_button.button_index = MOUSE_BUTTON_LEFT
+	_add_action("fire", fire_button)
+	var reload_key := InputEventKey.new()
+	reload_key.physical_keycode = KEY_R
+	_add_action("reload", reload_key)
 
 
 func assign_joypad(device: int) -> void:

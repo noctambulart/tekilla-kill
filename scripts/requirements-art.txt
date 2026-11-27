@@ -1,0 +1,2 @@
+# Exports graphiques Python ; Godot n'en a pas besoin pour lancer le jeu.
+Pillow==13.0.0

@@ -1,0 +1,308 @@
+<div id="tk64-v9">
+  <style>
+    #tk64-v9 .tk-tools{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin-bottom:12px}
+    #tk64-v9 .tk-tools label{flex:1 1 220px}
+    #tk64-v9 .tk-tools button{align-self:end}
+    #tk64-v9 .tk-caption{margin-bottom:12px}
+    #tk64-v9 .tk-game{position:relative;aspect-ratio:16/9;background:#ca8e4e;color:#fff0cb;font-family:system-ui,-apple-system,sans-serif;overflow:hidden;container-type:inline-size}
+    #tk64-v9 canvas{display:block;width:100%;height:100%}
+    #tk64-v9 .tk-ending{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(34,24,19,.87);text-align:center}
+    #tk64-v9 .tk-ending[hidden]{display:none}
+    #tk64-v9 .tk-ending-inner{width:80%;max-width:620px;display:flex;flex-direction:column;gap:clamp(12px,2.5cqw,28px)}
+    #tk64-v9 .tk-ending h2{color:#fff0cb;font-size:clamp(17px,3.3cqw,36px);font-weight:600;line-height:1.25;margin:0}
+    #tk64-v9 .tk-ending .tk-last-drop{font-size:clamp(11px,1.7cqw,19px);color:#e4cfa9}
+    #tk64-v9 .tk-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+    #tk64-v9 .tk-actions button{appearance:none;font:inherit;font-size:clamp(11px,1.8cqw,20px);padding:10px 16px;border:1px solid #bca079;border-radius:5px;background:#74523a;color:#fff0cb}
+    #tk64-v9 .tk-actions button:first-child{background:#e7c58a;color:#34251b;border-color:#e7c58a}
+    #tk64-v9 .tk-actions button:focus-visible{outline:3px solid #fff0cb;outline-offset:3px}
+    #tk64-v9 .tk-levels{margin-top:18px}
+    #tk64-v9 .tk-levels h3{margin-bottom:10px}
+    #tk64-v9 .tk-level-view{background:#eeb56a;color:#30221b;font-family:system-ui,-apple-system,sans-serif;overflow:hidden}
+    #tk64-v9 .tk-level-view canvas{width:100%;height:auto;aspect-ratio:6/5}
+    #tk64-v9 .tk-level-name{display:block;text-align:center;margin-bottom:6px}
+  </style>
+  <div class="tk-tools">
+    <label class="form-label" for="tk64-v9-state">Situation
+      <select class="form-select" id="tk64-v9-state">
+        <option value="ground">Départ · bouteille au sol</option>
+        <option value="poncho">Poncho porte la bouteille</option>
+        <option value="garcia" selected>Garcia prend la bouteille</option>
+        <option value="ghost">Poncho devient fantôme</option>
+        <option value="return">Poncho revient au combat</option>
+        <option value="low">La bouteille est presque vide</option>
+        <option value="result">Victoire de Poncho</option>
+        <option value="tie">Victoire partagée</option>
+        <option value="title">Retour au titre</option>
+      </select>
+    </label>
+    <label class="form-label" for="tk64-v9-camera">Cadrage
+      <select class="form-select" id="tk64-v9-camera"><option value="close">Rapproché</option><option value="far">Éloigné</option></select>
+    </label>
+    <button type="button" class="btn" id="tk64-v9-motion" aria-pressed="false">Animer les effets</button>
+  </div>
+  <div class="text-small text-muted tk-caption" id="tk64-v9-summary" aria-live="polite">Direction proposée · états simulés sur la carte v0.1</div>
+  <div class="tk-game" aria-label="Bouteille graphique, ivresse et marquage du porteur">
+    <canvas width="1920" height="1080" role="img" aria-label="Garcia porte la bouteille ; Poncho a davantage bu. Aucun score chiffré n’est affiché.">Maquette de la bouteille et des effets de personnage.</canvas>
+    <div class="tk-ending" hidden>
+      <div class="tk-ending-inner">
+        <div class="tk-last-drop">Bouteille vide · fin de partie</div>
+        <h2>Poncho remporte la partie</h2>
+        <div class="tk-actions"><button type="button" class="cursor-interaction" data-action="replay">Rejouer</button><button type="button" class="cursor-interaction" data-action="title">Retour au titre</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="tk-levels" aria-label="Comparaison agrandie de l’ivresse">
+    <h3>Étoiles en cloche · vue agrandie</h3>
+    <div class="viz-grid">
+      <section aria-label="Sobre"><span class="tk-level-name">Sobre</span><div class="tk-level-view"><canvas width="360" height="300" data-drunk-preview="0" role="img" aria-label="Poncho sobre, sans paillettes d’ivresse"></canvas></div></section>
+      <section aria-label="Quelques gorgées"><span class="tk-level-name">Quelques gorgées</span><div class="tk-level-view"><canvas width="360" height="300" data-drunk-preview="1" role="img" aria-label="Poncho après quelques gorgées, quelques scintillements fins"></canvas></div></section>
+      <section aria-label="Bien ivre"><span class="tk-level-name">Bien ivre</span><div class="tk-level-view"><canvas width="360" height="300" data-drunk-preview="2" role="img" aria-label="Poncho bien ivre, davantage de scintillements autour du corps"></canvas></div></section>
+    </div>
+  </div>
+  <script>
+    (()=>{
+      const root=document.getElementById('tk64-v9');
+      const stateControl=root.querySelector('#tk64-v9-state');
+      const cameraControl=root.querySelector('#tk64-v9-camera');
+      const motionControl=root.querySelector('#tk64-v9-motion');
+      const summary=root.querySelector('#tk64-v9-summary');
+      const stage=root.querySelector('.tk-game');
+      const canvas=stage.querySelector('canvas');
+      const ctx=canvas.getContext('2d');
+      const ending=stage.querySelector('.tk-ending');
+      const scenarios={
+        ground:{scores:[0,0],left:100,holder:0,label:'Départ · bouteille pleine au sol'},
+        poncho:{scores:[36,8],left:56,holder:1,label:'Poncho a davantage bu et porte la bouteille'},
+        garcia:{scores:[36,8],left:56,holder:2,label:'Garcia est la cible ; Poncho reste plus ivre'},
+        ghost:{scores:[36,8],left:56,holder:2,ghost:1,label:'Poncho fantôme : ses paillettes sont masquées'},
+        return:{scores:[36,8],left:56,holder:2,label:'Poncho retrouve son ivresse visuelle ; Garcia reste la cible'},
+        low:{scores:[72,20],left:8,holder:1,label:'Bouteille presque vide · Poncho porteur'},
+        result:{scores:[72,28],left:0,holder:0,label:'Poncho remporte la partie'},
+        tie:{scores:[50,50],left:0,holder:0,label:'Victoire partagée'},
+        title:{scores:[0,0],left:100,holder:0,label:'Retour au titre'}
+      };
+      const savedPayload=window.openai?.widgetState?.modelContent||{};
+      const saved=savedPayload.version==='v9'?savedPayload:{};
+      const state={scene:scenarios[saved.scene]?saved.scene:'garcia',camera:saved.camera==='far'?'far':'close',playing:false,time:.55};
+      const design={bottleSize:132,targetStrength:1,bobSpeed:3.8,starHeight:1,starSpread:1,starSize:1};
+      const images={};
+      const sources={close:'__TK_CLOSE__',far:'__TK_FAR__',title:'__TK_TITLE__',bottle:'__TK_BOTTLE__',poncho:'__TK_PONCHO__',hat:'__TK_HAT__',arm:'__TK_ARM__'};
+      const levelCanvases=Array.from(root.querySelectorAll('[data-drunk-preview]'));
+      let bottleCache=null;
+      let frame=0,lastTime=0,dead=false;
+      const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)');
+      const ink='#30221b';
+
+      function text(value,x,y,size,color=ink){ctx.fillStyle=color;ctx.font=`500 ${size}px system-ui,-apple-system,sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(value,x,y);}
+      function sample(image,sx,sy,sw,sh,dx,dy,dw,dh){const rx=image.naturalWidth/1920,ry=image.naturalHeight/1080;ctx.drawImage(image,sx*rx,sy*ry,sw*rx,sh*ry,dx,dy,dw,dh);}
+      function eraseFarTargetLabel(){
+        const x=1640,y=503,w=56,h=18;
+        const pixels=ctx.getImageData(x,y,w,h),above=ctx.getImageData(x,499,w,1),below=ctx.getImageData(x,523,w,1);
+        for(let j=0;j<h;j++)for(let i=0;i<w;i++){
+          const k=(j*w+i)*4,ratio=(j+4)/24;
+          const bg=[0,1,2].map(c=>above.data[i*4+c]*(1-ratio)+below.data[i*4+c]*ratio);
+          const darkness=.3*(bg[0]-pixels.data[k])+.59*(bg[1]-pixels.data[k+1])+.11*(bg[2]-pixels.data[k+2]);
+          if(darkness>4)for(let c=0;c<3;c++)pixels.data[k+c]=bg[c];
+        }
+        ctx.putImageData(pixels,x,y);
+      }
+      function ghostSprite(p,unit,near){
+        const x=Math.round(p.x-20*unit),y=Math.round(p.y-20*unit),w=Math.round(40*unit),h=Math.round(37*unit);
+        const pixels=ctx.getImageData(x,y,w,h),floor=ctx.getImageData(Math.round(p.x+30*unit),y,1,h);
+        for(let j=0;j<h;j++)for(let i=0;i<w;i++){
+          const k=(j*w+i)*4,r=pixels.data[k],g=pixels.data[k+1],b=pixels.data[k+2];
+          if(near?(r<225||g>210):(r>b*1.05)){
+            const grey=.3*r+.59*g+.11*b;
+            [.72,.82,.95].forEach((t,c)=>{pixels.data[k+c]=floor.data[j*4+c]*.62+grey*t*.38;});
+          }
+        }
+        ctx.putImageData(pixels,x,y);
+      }
+      function prepareBottle(){
+        if(bottleCache)return bottleCache;
+        const image=images.bottle;if(!image?.complete||!image.naturalWidth)return null;
+        const scratch=document.createElement('canvas');scratch.width=image.naturalWidth;scratch.height=image.naturalHeight;
+        const s=scratch.getContext('2d');s.drawImage(image,0,0);
+        const data=s.getImageData(0,0,scratch.width,scratch.height).data;
+        let minX=scratch.width,minY=scratch.height,maxX=0,maxY=0;
+        for(let y=0;y<scratch.height;y++)for(let x=0;x<scratch.width;x++)if(data[(y*scratch.width+x)*4+3]>20){minX=Math.min(minX,x);minY=Math.min(minY,y);maxX=Math.max(maxX,x);maxY=Math.max(maxY,y);}
+        const w=maxX-minX+1,h=maxY-minY+1;
+        const full=document.createElement('canvas'),empty=document.createElement('canvas');full.width=empty.width=w;full.height=empty.height=h;
+        full.getContext('2d').drawImage(image,minX,minY,w,h,0,0,w,h);
+        const e=empty.getContext('2d');e.drawImage(full,0,0);
+        const glass=e.getImageData(0,0,w,h);
+        for(let y=0;y<h;y++)for(let x=0;x<w;x++){
+          const k=(y*w+x)*4,r=glass.data[k],g=glass.data[k+1],b=glass.data[k+2];
+          const decor=y<h*.15||(r>155&&b<105&&(g<100||r>g*.86));
+          if(!decor&&glass.data[k+3]){
+            [210,226,165].forEach((v,c)=>{glass.data[k+c]=glass.data[k+c]*.23+v*.77;});
+            glass.data[k+3]*=.68;
+          }
+        }
+        e.putImageData(glass,0,0);bottleCache={full,empty,w,h};stage.dataset.bottleStyle='tequila-original';return bottleCache;
+      }
+      function bottle(x,y,height,fill,target=ctx){
+        const cache=prepareBottle();if(!cache)return;
+        const w=height*cache.w/cache.h,top=y-height/2,left=x-w/2;
+        target.save();target.imageSmoothingEnabled=false;
+        target.drawImage(cache.empty,left,top,w,height);
+        if(fill>0){
+          const surface=top+height*(1-Math.max(0,Math.min(1,fill)));
+          target.beginPath();target.rect(left,surface,w,top+height-surface);target.clip();target.drawImage(cache.full,left,top,w,height);
+        }
+        target.restore();
+      }
+      function sparkle(x,y,r,alpha,large,target=ctx){
+        target.save();target.globalAlpha=alpha;
+        if(large){target.shadowColor='#ffd96f';target.shadowBlur=12;target.fillStyle='#fff3b0';target.beginPath();target.moveTo(x,y-r);target.lineTo(x+r*.22,y-r*.22);target.lineTo(x+r,y);target.lineTo(x+r*.22,y+r*.22);target.lineTo(x,y+r);target.lineTo(x-r*.22,y+r*.22);target.lineTo(x-r,y);target.lineTo(x-r*.22,y-r*.22);target.closePath();target.fill();}
+        else{target.fillStyle='#fff3cb';target.fillRect(x-r*.18,y-r,r*.36,r*2);target.fillRect(x-r,y-r*.18,r*2,r*.36);}
+        target.restore();
+      }
+      function markedBottle(x,y,height,fill){
+        ctx.save();ctx.shadowColor='rgba(255,220,120,.6)';ctx.shadowBlur=16;bottle(x,y,height,fill);ctx.restore();
+      }
+      let frameCache=null;
+      function framedReserve(fill){
+        if(!frameCache){
+          // A small painted wooden frame, drawn at a pixel scale close to the game art.
+          const board=document.createElement('canvas');board.width=84;board.height=112;
+          const c=board.getContext('2d');
+          const oval=(rx,ry,color,x=42,y=55)=>{c.fillStyle=color;c.beginPath();c.ellipse(x,y,rx,ry,0,0,Math.PI*2);c.fill();};
+          oval(27,39,'rgba(54,29,16,.25)',43,57);
+          oval(27,39,'#492b1c');oval(26,38,'#c69450');oval(25,37,'#92582e');
+          oval(24,36,'#614024');oval(23,35,'#d9b071');
+          const backing=c.createLinearGradient(14,18,68,90);backing.addColorStop(0,'#aa7c48');backing.addColorStop(.38,'#e3bf85');backing.addColorStop(1,'#bc915a');
+          oval(22,34,backing);
+          c.lineWidth=1;
+          for(let i=0;i<12;i++){
+            const angle=i*Math.PI/6;
+            c.strokeStyle=i<6?'#714022':'#e2b46d';c.beginPath();
+            c.ellipse(42,55,25,37,0,angle+.025,angle+.22);c.stroke();
+          }
+          frameCache=board;
+        }
+        const x=960,scale=88/55,y=84+39*scale;
+        ctx.save();ctx.imageSmoothingEnabled=false;
+        ctx.drawImage(frameCache,x-42*scale,y-55*scale,84*scale,112*scale);
+        bottle(x,y,design.bottleSize,fill);ctx.restore();
+      }
+      function starFlight(index,count,time){
+        const lifetime=1.35,phase=time+index*lifetime/count,cycle=Math.floor(phase/lifetime),age=phase-cycle*lifetime;
+        // Keep each birth stable during its flight, then vary the origin on respawn.
+        const points=[[-9,-12],[8,2],[-11,8],[3,-15],[10,-8],[-5,0],[1,10],[-8,-6],[7,-13],[-10,3],[5,6],[0,-9]];
+        const point=points[((index*5+cycle*7)%points.length+points.length)%points.length];
+        const seed=(channel)=>{const value=Math.sin((index+1)*127.1+(cycle+19)*311.7+channel*74.7)*43758.5453;return value-Math.floor(value);};
+        const originX=point[0]+(seed(0)-.5)*2,originY=point[1]+(seed(1)-.5)*2;
+        const side=Math.abs(originX)>2?Math.sign(originX):seed(2)<.5?-1:1;
+        const launch=52+Math.min(0,originY)*.7+seed(3)*8,spread=17+seed(4)*12;
+        return {age,lifetime,originX,originY,x:originX+side*spread*age*design.starSpread,y:originY+(-launch*age+55*age*age)*design.starHeight};
+      }
+      function fallingStar(x,y,r,rotation,alpha,target){
+        target.save();target.translate(x,y);target.rotate(rotation);target.globalAlpha=alpha;
+        target.fillStyle='#fff0ac';target.strokeStyle='#b17a35';target.lineWidth=Math.max(.7,r*.12);
+        target.beginPath();
+        for(let point=0;point<10;point++){
+          const a=-Math.PI/2+point*Math.PI/5,edge=point%2===0?r:r*.43;
+          const sx=Math.cos(a)*edge,sy=Math.sin(a)*edge;
+          if(point===0)target.moveTo(sx,sy);else target.lineTo(sx,sy);
+        }
+        target.closePath();target.fill();target.stroke();target.restore();
+      }
+      function drunkenness(p,unit,quantity,time,target=ctx){
+        const level=quantity===0?0:quantity<30?1:2;
+        const count=level===0?0:level===1?4:12;
+        for(let i=0;i<count;i++){
+          const particle=starFlight(i,count,time);
+          const appear=Math.min(1,particle.age/.09),fade=Math.max(0,Math.min(1,(particle.lifetime-particle.age)/.32,(23-particle.y)/9));
+          fallingStar(p.x+particle.x*unit,p.y+particle.y*unit,(1.35+(i%3)*.15)*unit*design.starSize,(i%2===0?-1:1)*particle.age*1.6,.92*appear*fade,target);
+        }
+        return level;
+      }
+      function possession(p,unit,fill,time){
+        const bob=Math.sin(time*design.bobSpeed)*Math.max(5,unit*3);
+        const h=Math.max(58,27*unit);
+        const by=p.y-(unit>2?80:42)-12-h/2+bob;
+        markedBottle(p.x,by,h,fill);
+        [[-33,-14],[33,-9],[-25,22],[27,25]].forEach(([dx,dy],i)=>{
+          const a=.2+.8*Math.pow(Math.max(0,Math.sin(time*2.2+i*1.55)),2);
+          sparkle(p.x+dx*design.targetStrength,by+dy*design.targetStrength,Math.max(8,unit*3.7)*design.targetStrength,a,true);
+        });
+        return by;
+      }
+      function drawLevelComparison(){
+        if(![images.poncho,images.hat,images.arm].every(image=>image?.complete&&image.naturalWidth))return;
+        levelCanvases.forEach(board=>{
+          const c=board.getContext('2d'),p={x:180,y:139},unit=4.6,edge=48*unit;
+          c.clearRect(0,0,360,300);c.fillStyle='#eeb56a';c.fillRect(0,0,360,300);
+          c.save();c.translate(p.x,p.y);c.fillStyle='rgba(63,38,21,.22)';c.beginPath();c.ellipse(0,16*unit,8*unit,2*unit,0,0,Math.PI*2);c.fill();
+          c.imageSmoothingEnabled=false;c.drawImage(images.poncho,-24*unit,-26*unit,edge,edge);
+          c.save();c.rotate(.45);c.drawImage(images.arm,-24*unit,-26*unit,edge,edge);c.restore();
+          c.drawImage(images.hat,-24*unit,-26*unit,edge,edge);c.restore();
+          const level=Number(board.dataset.drunkPreview),quantity=[0,12,60][level];
+          board.dataset.renderedLevel=String(drunkenness(p,unit,quantity,state.time,c));
+        });
+      }
+      function render(){
+        const scene=scenarios[state.scene],finished=['result','tie'].includes(state.scene);
+        stateControl.value=state.scene;cameraControl.value=state.camera;
+        motionControl.textContent=state.playing?'Arrêter les effets':'Animer les effets';motionControl.setAttribute('aria-pressed',String(state.playing));
+        ending.hidden=!finished;ending.querySelector('h2').textContent=state.scene==='tie'?'Victoire partagée':'Poncho remporte la partie';
+        const description=`Maquette · ${scene.label} · proposition à discuter`;
+        if(summary.textContent!==description)summary.textContent=description;
+        drawLevelComparison();
+        const base=images[state.scene==='title'?'title':state.camera];
+        if(!base?.complete||!base.naturalWidth)return;
+        ctx.clearRect(0,0,1920,1080);ctx.drawImage(base,0,0,1920,1080);
+        canvas.setAttribute('aria-label',`Maquette. ${scene.label}. ${state.camera==='far'?'Cadrage éloigné.':'Cadrage rapproché.'} Réserve indiquée par le liquide dans la bouteille. Aucun score chiffré affiché.`);
+        if(state.scene==='title'){stage.dataset.holder='0';stage.dataset.drunk1='0';stage.dataset.drunk2='0';return;}
+        const near=state.camera==='close',unit=near?2.55:1.35;
+        const points=near?[{x:890,y:548},{x:1029,y:548}]:[{x:252,y:548},{x:1668,y:548}];
+        if(near){sample(base,990,425,84,32,990,464,84,32);text('J2',1029,481,26);}
+        else{eraseFarTargetLabel();text('J2',1668,513,14);}
+        for(let i=0;i<6;i++){ctx.fillStyle='#ffe8a1';ctx.fillRect(points[1].x+(-12+i*4)*unit,points[1].y+29*unit,3*unit,4*unit);}
+        if(scene.ghost){
+          const p=points[scene.ghost-1];ghostSprite(p,unit,near);
+          ctx.fillStyle=ink;ctx.fillRect(p.x-13*unit,p.y+22*unit,26*unit,4*unit);
+          ctx.fillStyle='#9fca74';ctx.fillRect(p.x-12*unit,p.y+23*unit,24*unit*.38,2*unit);
+        }
+        const levels=points.map((p,i)=>scene.ghost===i+1?0:drunkenness(p,unit,scene.scores[i],state.time));
+        stage.dataset.drunk1=String(levels[0]);stage.dataset.drunk2=String(levels[1]);stage.dataset.holder=String(scene.holder);
+        if(scene.holder&&!finished){stage.dataset.bottleY=String(possession(points[scene.holder-1],unit,scene.left/100,state.time));}
+        else if(!finished){
+          const h=near?82:66;
+          ctx.save();ctx.shadowColor='#fff0bd';ctx.shadowBlur=14;bottle(960,735,h,scene.left/100);ctx.restore();
+          sparkle(960-h*.4,735-h*.15,6,.8,true);sparkle(960+h*.4,735+h*.1,5,.65,true);
+        }
+        // Réserve commune : le liquide est le seul indicateur de quantité.
+        framedReserve(scene.left/100);
+      }
+      function persist(){window.openai?.setWidgetState?.({modelContent:{version:'v9',scene:state.scene,camera:state.camera},privateContent:null})?.catch(()=>{});}
+      function stop(){state.playing=false;if(frame)cancelAnimationFrame(frame);frame=0;lastTime=0;render();}
+      function tick(now){
+        if(!state.playing||dead||!root.isConnected)return;
+        if(lastTime)state.time+=Math.min((now-lastTime)/1000,.05);
+        lastTime=now;render();frame=requestAnimationFrame(tick);
+      }
+      stateControl.addEventListener('change',()=>{state.scene=stateControl.value;state.time=.55;stop();persist();});
+      cameraControl.addEventListener('change',()=>{state.camera=cameraControl.value;render();persist();});
+      motionControl.addEventListener('click',()=>{if(state.playing){stop();}else{state.playing=true;lastTime=0;render();frame=requestAnimationFrame(tick);}});
+      root.querySelectorAll('[data-action]').forEach(button=>button.addEventListener('click',()=>{state.scene=button.dataset.action==='replay'?'ground':'title';stop();persist();}));
+      window.addEventListener('openai:set_globals',event=>{const value=event.detail?.globals?.widgetState?.modelContent;if(value?.version==='v9'&&scenarios[value.scene]){state.scene=value.scene;state.camera=value.camera==='far'?'far':'close';stop();}});
+      window.addEventListener('pagehide',()=>{dead=true;if(frame)cancelAnimationFrame(frame);});
+      document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+      if(reduced?.matches)state.playing=false;
+      for(const [key,src]of Object.entries(sources)){const image=new Image();images[key]=image;image.onload=render;image.src=src;}
+      const observer=new ResizeObserver(render);observer.observe(stage);render();
+      if(globalThis.Tweak){
+        const tweak=new Tweak({container:stage,onChange:render});
+        tweak.addSlider(design,'bottleSize',{label:'Taille de la bouteille dans le cadre',min:112,max:140,step:4,unit:'px',reference:'bottleSize'});
+        tweak.addSlider(design,'targetStrength',{label:'Présence du marquage du porteur',min:.8,max:1.3,step:.05,reference:'targetStrength'});
+        tweak.addSlider(design,'bobSpeed',{label:'Rythme de la bouteille',min:2.8,max:5,step:.2,reference:'bobSpeed'});
+        const stars=new Tweak({container:root.querySelector('.tk-levels'),onChange:render});
+        stars.addSlider(design,'starHeight',{label:'Hauteur de la cloche',min:.65,max:1.4,step:.05,reference:'starHeight'});
+        stars.addSlider(design,'starSpread',{label:'Écartement des étoiles',min:.65,max:1.3,step:.05,reference:'starSpread'});
+        stars.addSlider(design,'starSize',{label:'Taille des petites étoiles',min:.75,max:1.4,step:.05,reference:'starSize'});
+      }
+    })();
+  </script>
+</div>

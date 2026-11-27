@@ -5,9 +5,6 @@
 Read GLOSSARY.md at the repository root and relevant decisions
 in docs/adr/.
 
-If GLOSSARY-MAP.md exists, follow its links to relevant glossaries
-and context-specific decisions.
-
 If these documents are absent, proceed silently.
 Create them through domain-modeling when terms or decisions
 are resolved.

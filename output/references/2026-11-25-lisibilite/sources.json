@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-25",
+  "purpose": "Étude de lisibilité des passages et interactions. Images originales non générées, non intégrées au jeu.",
+  "references": [
+    {
+      "game": "Samurai GUNN",
+      "file": "samurai-gunn-01.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239090/ss_156bc6818c2bc8750ca19b6e90e21c2926b69ec9.1920x1080.jpg?t=1770445207",
+      "source": "https://store.steampowered.com/app/239090/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 78711,
+      "sha256": "dd818e7bcdf71e539e8ee6d111370a8e26b95919dc26da4c15b78816a0f5e5d6"
+    },
+    {
+      "game": "Samurai GUNN",
+      "file": "samurai-gunn-02.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239090/ss_0274133676aa327ef64d8b92dff56f3492a9f0c0.1920x1080.jpg?t=1770445207",
+      "source": "https://store.steampowered.com/app/239090/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 116038,
+      "sha256": "b41a86b0e2806db3c71a67368d28412014b79dbb8263973d649f3c30acc226d9"
+    },
+    {
+      "game": "Samurai GUNN",
+      "file": "samurai-gunn-03.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239090/ss_f878f3c29a1aca2d4054e67f1da4ffb4e320f5c4.1920x1080.jpg?t=1770445207",
+      "source": "https://store.steampowered.com/app/239090/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 84644,
+      "sha256": "e8b85234330ccd5893b9a3228de2e656c886c109e8cee40acf6bf9a5df7f5318"
+    },
+    {
+      "game": "Samurai GUNN",
+      "file": "samurai-gunn-04.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239090/ss_4bac719fd0570fb50b99e204e2753e32c5017b4c.1920x1080.jpg?t=1770445207",
+      "source": "https://store.steampowered.com/app/239090/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 49065,
+      "sha256": "335e6f323ae6d0612bb7e77ac5eb9f49350c1af03e6984dd87f9b670a0121c11"
+    },
+    {
+      "game": "Samurai GUNN",
+      "file": "samurai-gunn-05.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239090/ss_e240e8cdf4e69e79aab44299536ec2c2a77d1f40.1920x1080.jpg?t=1770445207",
+      "source": "https://store.steampowered.com/app/239090/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 44248,
+      "sha256": "1078b623a0dedc7ff6e958d2a8bdc30c08026f86b3c651b85156a9573034aed9"
+    },
+    {
+      "game": "TowerFall Ascension",
+      "file": "towerfall-01.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/ss_5f5782e7f91f99dbeb7f9a561771378f850ae872.1920x1080.jpg?t=1715114308",
+      "source": "https://store.steampowered.com/app/251470/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 381050,
+      "sha256": "75ba1a95da3f65188bc0950b15b1a239af3ff4a3fe658b73c3907f8a1df030ae"
+    },
+    {
+      "game": "TowerFall Ascension",
+      "file": "towerfall-02.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/ss_aa0f804052ab6b93994c5893837445c789bf35ea.1920x1080.jpg?t=1715114308",
+      "source": "https://store.steampowered.com/app/251470/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 482416,
+      "sha256": "ad7c472e5dc8c2bac5268190a31e7c32d82422be22360bce762f3dbdaaca06ef"
+    },
+    {
+      "game": "TowerFall Ascension",
+      "file": "towerfall-03.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/ss_01a805ebff71a1b5fb392f7c09ee0b8f73707ed7.1920x1080.jpg?t=1715114308",
+      "source": "https://store.steampowered.com/app/251470/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 509507,
+      "sha256": "38222bca4c9f6e6da9dbd260b579ed218136a83f3d7a3e9301ee12f812553bec"
+    },
+    {
+      "game": "TowerFall Ascension",
+      "file": "towerfall-04.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/ss_eebc6b6dbf2ceec96946b4e67e3ddd31fd8a50b0.1920x1080.jpg?t=1715114308",
+      "source": "https://store.steampowered.com/app/251470/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 452678,
+      "sha256": "0ba46d1be324c02b3a851d76ecec4c72f1267451ca0a592b22a6dc46fd26e69b"
+    },
+    {
+      "game": "TowerFall Ascension",
+      "file": "towerfall-05.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/ss_e01d3cb9357cf583f4e9be1d7d22c48d2e24f600.1920x1080.jpg?t=1715114308",
+      "source": "https://store.steampowered.com/app/251470/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 238687,
+      "sha256": "24f2040ead1ee7c782fc50c4a51e1ee5a1ca0fb4d512a3930531653017d65de0"
+    },
+    {
+      "game": "TowerFall Ascension",
+      "file": "towerfall-06.jpg",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/251470/ss_8a230efea8416904a3d7e6a3aa145e9fa40a356b.1920x1080.jpg?t=1715114308",
+      "source": "https://store.steampowered.com/app/251470/",
+      "provenance": "Capture publiée sur la boutique officielle Steam",
+      "rights": "Captures du jeu : droits de leurs ayants droit. Références d’étude, pas assets de Tequila Kill.",
+      "bytes": 505205,
+      "sha256": "b35fa8f1efc1dc061bdd45fea7892eea945ce2e14729b4730c5b90dedcdfc1d8"
+    },
+    {
+      "game": "The Legend of Zelda: A Link to the Past",
+      "file": "zelda-manuel-nintendo.pdf",
+      "url": "https://www.nintendo.co.jp/clvs/manuals/common/pdf/CLV-P-SAAEE.pdf",
+      "source": "https://www.nintendo.co.jp/clvs/manuals/common/pdf/CLV-P-SAAEE.pdf",
+      "provenance": "Manuel officiel Nintendo, source primaire",
+      "rights": "© Nintendo ; source d’étude, pas asset de Tequila Kill.",
+      "bytes": 16949036,
+      "sha256": "7eb2dc8d95cc7060c77ba8decb902e7bbd8bfd0c8ffad93f0890443d4d1c1a42"
+    },
+    {
+      "game": "The Legend of Zelda: A Link to the Past",
+      "file": "zelda-porte-pots.png",
+      "url": "https://zeldauniverse.net/wp-content/uploads/2016/05/lttp1-4a.png",
+      "source": "https://zeldauniverse.net/guides/a-link-to-the-past/walkthrough/chapter-1-hyrule-castle/",
+      "provenance": "Capture de jeu publiée dans le guide Zelda Universe ; source secondaire de diffusion",
+      "rights": "Jeu © Nintendo ; référence d’étude.",
+      "bytes": 17188,
+      "sha256": "2463140a4e04b2d97fbc96d1bd5e0e75e1692411791a1c0f718b5ce8519c9433"
+    },
+    {
+      "game": "The Legend of Zelda: A Link to the Past",
+      "file": "zelda-mur-fragile-avant-apres.png",
+      "url": "https://www.nintendo.co.jp/clvs/manuals/common/pdf/CLV-P-SAAEE.pdf#page=36",
+      "source": "https://www.nintendo.co.jp/clvs/manuals/common/pdf/CLV-P-SAAEE.pdf",
+      "provenance": "Extrait des deux captures avant/après du manuel Nintendo, page imprimée35 / pagePDF36. Rendu de page à1600px, recadrage805×288 à142,1235. Aucun redessin.",
+      "rights": "© Nintendo, référence d’étude.",
+      "bytes": 382229,
+      "sha256": "ddaf791776746a80835eb397bd29e76f819ef5cc6fc6a49d5042ba9244ef8c65"
+    }
+  ],
+  "selected": [
+    "zelda-porte-pots.png",
+    "zelda-mur-fragile-avant-apres.png",
+    "towerfall-04.jpg",
+    "samurai-gunn-02.jpg"
+  ],
+  "visual_observations": {
+    "zelda-porte-pots.png": "Pots bruns isolés sur sol bleu-vert ; géométrie de paroi distincte du sol. La grille est fermée : cette image ne démontre pas une entrée libre.",
+    "zelda-mur-fragile-avant-apres.png": "Les deux captures du manuel distinguent mur fissuré et trou après destruction. Indice avant interaction et changement de géométrie après.",
+    "towerfall-04.jpg": "Bordures des plateformes bleu clair détachées du fond sombre ; coffres dorés isolés ; effets lumineux localisés. Vue de côté, pas un modèle de porte top-down.",
+    "samurai-gunn-02.jpg": "Masses et arêtes de terrain dorées devant un arrière-plan brun plus discret ; personnage bleu et arc de sabre blanc qui se détachent. La capture ne prouve pas que les structures soient cassables."
+  }
+}

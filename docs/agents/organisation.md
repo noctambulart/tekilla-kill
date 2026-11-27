@@ -33,7 +33,28 @@ L'organisation des conversations est hybride :
 
 La Production prépare les missions et recommande où les réaliser. Le producteur choisit celles à lancer et maîtrise le nombre de travaux simultanés.
 
+Les [jalons de version GitHub](https://github.com/noctambulart/tequila-kill/milestones) regroupent les missions qui livrent un résultat à essayer ensemble. Un seul jalon est actif à la fois, dans l’ordre des versions. Une mission peut démarrer si elle appartient au jalon actif et que ses dépendances sont clôturées.
+
+Le producteur peut donner des retours à deux niveaux :
+
+1. **Sur une issue.** Dès qu’un résultat est disponible, l’agent le vérifie et le présente au producteur. Les retours et les nouvelles versions du livrable sont suivis dans cette issue jusqu’à sa validation.
+2. **Sur le jalon.** Le producteur essaie l’ensemble assemblé. Il peut demander une nouvelle itération même si les issues ont déjà été validées individuellement. Les retours d’ensemble sont consignés dans le ticket d’essai indiqué dans le jalon GitHub. La Production les transforme en réouvertures ou en tickets de correction rattachés au même jalon, selon le travail à faire.
+
+La Production vérifie la version corrigée, consigne l’accord explicite du producteur sur l’ensemble, puis conserve la livraison par commit et tag selon la procédure ci-dessous avant de clôturer le jalon. Le jalon suivant devient alors actif.
+
 Une fois la mission lancée, l'agent prend les décisions d'exécution dans le cadre de l'Issue et avance jusqu'à un résultat vérifié. Il rend compte des choix importants. Un changement de règle, de direction artistique ou de périmètre revient à la Production pour arbitrage par le producteur.
+
+### Commit et tag de chaque version
+
+À chaque version validée, conserver l'ensemble de la livraison dans Git et sur GitHub avant la clôture du jalon et le démarrage de la version suivante :
+
+1. Réunir tous les changements de la version : code, scènes, assets, sources nécessaires à leur reprise, documentation et preuves utiles. Vérifier aussi les fichiers non suivis et les ressources nécessaires au lancement ; les caches et fichiers temporaires restent exclus.
+2. Effectuer les vérifications de livraison et recueillir l'accord explicite du producteur sur l'ensemble corrigé. Commiter tous les changements de cette livraison ; plusieurs commits intermédiaires peuvent précéder le commit final.
+3. Vérifier que le commit final contient bien l'état essayé et validé, puis pousser les commits sur GitHub. Tout changement du livrable après cet accord doit être vérifié et validé avant de fixer la version.
+4. Créer un tag annoté portant le nom de la version (`v0.3`, `v0.4`, etc.) sur ce commit et pousser ce tag sur GitHub. Le tag désigne la livraison validée et ne doit pas inclure des travaux de la version suivante. Conserver les tags existants ; une nouvelle livraison corrigée reçoit une nouvelle version.
+5. Consigner dans le ticket d'essai le SHA du commit, le lien du tag GitHub, les vérifications et l'accord du producteur. Clôturer ensuite le jalon.
+
+La clôture exige des commits et un tag effectivement présents sur GitHub ; une intention de commit ou un tag resté local ne suffit pas. La validation d'un cadrage ou de concepts ne constitue pas la livraison d'une version jouable.
 
 ## Sous-agents et skills
 

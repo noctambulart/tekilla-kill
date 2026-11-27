@@ -1,0 +1,6 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit.\nEdit target: the saloon mockup attached.\nMake ONE targeted correction ONLY TO THE FLOOR. Preserve Poncho, hat, olive crown, long triangular fabric covering feet, weapon, composition, furnishings, walls, palette, scale, and all hard pixel-cluster edges exactly as they are.\nThe floor is too visually dominant: the thick dark blue grid competes with the character. Replace the thick dark grout with very fine low-contrast blue-gray seams. Large quiet flat blue-gray tile faces, seams only ONE NATIVE PIXEL THIN (about 4 output pixels) and only slightly darker than the tile faces. Use exactly two flat blue-gray colors for the entire floor and seams; no gradients or texture. Tile boundaries should almost disappear when looking at the character. Keep all existing dark flat object contact shadows, and keep clear character and object outlines. The scene should have the quiet ground and clear visual hierarchy of a well-designed SNES top-down room. No change to anything except floor. No added text or UI, no blur, no antialiasing.",
+  "reference": "02-saloon-poncho.png",
+  "intent": "art-direction mockup; no game integration"
+}

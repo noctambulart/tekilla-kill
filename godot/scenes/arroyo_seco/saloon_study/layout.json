@@ -1,0 +1,43 @@
+{
+  "version": "saloon-study-1",
+  "tile_px": 1,
+  "size": [832, 704],
+  "room": [64, 240, 448, 352],
+  "doors": {"north": [264, 360], "east": [408, 536], "south": [264, 408]},
+  "bottle": [594, 464],
+  "spawns": [[300, 464], [594, 464], [594, 464], [300, 464]],
+  "props": [
+    {"id": "bar", "kind": "bar", "position": [108, 320]},
+    {"id": "stool-a", "kind": "stool", "position": [156, 368]},
+    {"id": "stool-b", "kind": "stool", "position": [212, 368]},
+    {"id": "stool-c", "kind": "stool", "position": [268, 368]},
+    {"id": "table-west", "kind": "table", "position": [120, 462]},
+    {"id": "west-n", "kind": "chair_n", "position": [132, 431]},
+    {"id": "west-w", "kind": "chair_w", "position": [95, 470]},
+    {"id": "west-e", "kind": "chair_e", "position": [172, 470]},
+    {"id": "table-north", "kind": "table", "position": [412, 310]},
+    {"id": "north-n", "kind": "chair_n", "position": [424, 279]},
+    {"id": "north-w", "kind": "chair_w", "position": [387, 318]},
+    {"id": "north-e", "kind": "chair_e", "position": [464, 318]},
+    {"id": "table-south", "kind": "table", "position": [396, 502]},
+    {"id": "south-n", "kind": "chair_n", "position": [408, 481]},
+    {"id": "south-w", "kind": "chair_w", "position": [371, 510]},
+    {"id": "south-e", "kind": "chair_e", "position": [448, 510]},
+    {"id": "couch", "kind": "couch", "position": [100, 520]},
+    {"id": "barrel-back", "kind": "barrel", "position": [78, 272]},
+    {"id": "barrel-front", "kind": "barrel", "position": [472, 554]},
+    {"id": "pot-back", "kind": "pot", "position": [474, 266]},
+    {"id": "shelf-a", "kind": "shelf", "position": [190, 248]},
+    {"id": "shelf-b", "kind": "shelf", "position": [374, 248]},
+    {"id": "house", "kind": "house", "position": [136, 32]},
+    {"id": "street-pot", "kind": "pot", "position": [544, 552]},
+    {"id": "cart", "kind": "cart", "position": [374, 152], "width": 72}
+  ],
+  "fences": [[88, 84, 8, 104], [88, 184, 24, 8], [360, 56, 8, 64], [360, 116, 56, 8]],
+  "rug": [196, 536, 56, 32],
+  "decor": [
+    {"kind": "cactus", "position": [39, 178], "width": 20},
+    {"kind": "cactus", "position": [716, 194], "width": 20},
+    {"kind": "rocks", "position": [624, 82], "width": 44}
+  ]
+}

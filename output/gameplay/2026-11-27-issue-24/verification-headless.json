@@ -1,0 +1,1326 @@
+{
+	"checks": 329,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": false,
+	"results": [
+		{
+			"description": "Prise par J1 avant tir, fatal=false",
+			"passed": true
+		},
+		{
+			"description": "Un projectile cause exactement une perte de J1, fatal=false",
+			"passed": true
+		},
+		{
+			"description": "Événement de perte : ancien porteur et tireur corrects, état déjà libéré",
+			"passed": true
+		},
+		{
+			"description": "Le tir applique ses dégâts et le cas fatal passe en fantôme",
+			"passed": true
+		},
+		{
+			"description": "Projection courte vers la position du tireur à l’impact, sans poursuite ultérieure",
+			"passed": true
+		},
+		{
+			"description": "Aucune consommation au sol, scores conservés après le tir",
+			"passed": true
+		},
+		{
+			"description": "Un dégât supplémentaire sans possession ne répète pas la perte",
+			"passed": true
+		},
+		{
+			"description": "Le tireur récupère : une prise distincte de la perte, projection interrompue",
+			"passed": true
+		},
+		{
+			"description": "Seul le nouveau porteur boit après récupération",
+			"passed": true
+		},
+		{
+			"description": "Prise par J1 avant tir, fatal=true",
+			"passed": true
+		},
+		{
+			"description": "Un projectile cause exactement une perte de J1, fatal=true",
+			"passed": true
+		},
+		{
+			"description": "Événement de perte : ancien porteur et tireur corrects, état déjà libéré",
+			"passed": true
+		},
+		{
+			"description": "Le tir applique ses dégâts et le cas fatal passe en fantôme",
+			"passed": true
+		},
+		{
+			"description": "Projection courte vers la position du tireur à l’impact, sans poursuite ultérieure",
+			"passed": true
+		},
+		{
+			"description": "Aucune consommation au sol, scores conservés après le tir",
+			"passed": true
+		},
+		{
+			"description": "Un dégât supplémentaire sans possession ne répète pas la perte",
+			"passed": true
+		},
+		{
+			"description": "Le tireur récupère : une prise distincte de la perte, projection interrompue",
+			"passed": true
+		},
+		{
+			"description": "Seul le nouveau porteur boit après récupération",
+			"passed": true
+		},
+		{
+			"description": "Prise par J2 avant tir, fatal=false",
+			"passed": true
+		},
+		{
+			"description": "Un projectile cause exactement une perte de J2, fatal=false",
+			"passed": true
+		},
+		{
+			"description": "Événement de perte : ancien porteur et tireur corrects, état déjà libéré",
+			"passed": true
+		},
+		{
+			"description": "Le tir applique ses dégâts et le cas fatal passe en fantôme",
+			"passed": true
+		},
+		{
+			"description": "Projection courte vers la position du tireur à l’impact, sans poursuite ultérieure",
+			"passed": true
+		},
+		{
+			"description": "Aucune consommation au sol, scores conservés après le tir",
+			"passed": true
+		},
+		{
+			"description": "Un dégât supplémentaire sans possession ne répète pas la perte",
+			"passed": true
+		},
+		{
+			"description": "Le tireur récupère : une prise distincte de la perte, projection interrompue",
+			"passed": true
+		},
+		{
+			"description": "Seul le nouveau porteur boit après récupération",
+			"passed": true
+		},
+		{
+			"description": "Prise par J2 avant tir, fatal=true",
+			"passed": true
+		},
+		{
+			"description": "Un projectile cause exactement une perte de J2, fatal=true",
+			"passed": true
+		},
+		{
+			"description": "Événement de perte : ancien porteur et tireur corrects, état déjà libéré",
+			"passed": true
+		},
+		{
+			"description": "Le tir applique ses dégâts et le cas fatal passe en fantôme",
+			"passed": true
+		},
+		{
+			"description": "Projection courte vers la position du tireur à l’impact, sans poursuite ultérieure",
+			"passed": true
+		},
+		{
+			"description": "Aucune consommation au sol, scores conservés après le tir",
+			"passed": true
+		},
+		{
+			"description": "Un dégât supplémentaire sans possession ne répète pas la perte",
+			"passed": true
+		},
+		{
+			"description": "Le tireur récupère : une prise distincte de la perte, projection interrompue",
+			"passed": true
+		},
+		{
+			"description": "Seul le nouveau porteur boit après récupération",
+			"passed": true
+		},
+		{
+			"description": "Une attaque sans dégât ne fait pas perdre la bouteille",
+			"passed": true
+		},
+		{
+			"description": "L’ancien porteur reste exclu après un court instant",
+			"passed": true
+		},
+		{
+			"description": "Un autre actif peut ramasser immédiatement pendant le délai",
+			"passed": true
+		},
+		{
+			"description": "Un échange rapide ne supprime pas le délai du premier porteur",
+			"passed": true
+		},
+		{
+			"description": "Chaque ancien porteur attend son propre délai complet",
+			"passed": true
+		},
+		{
+			"description": "Le premier ancien porteur redevient autorisé dès son délai écoulé",
+			"passed": true
+		},
+		{
+			"description": "Les prises et pertes rapprochées ne consomment pas deux fois",
+			"passed": true
+		},
+		{
+			"description": "L’autre actif peut intercepter la bouteille dès le début de la projection",
+			"passed": true
+		},
+		{
+			"description": "L’interception ne consomme pas avant la première étape de possession",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Une pause fige aussi la projection et la récupération au sol",
+			"passed": true
+		},
+		{
+			"description": "La projection reprend après la pause sans consommation au sol",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-7 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-7 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-7 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-8 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-8 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-8 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-9 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-9 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-9 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-10 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-10 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-10 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-11 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-11 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-11 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-12 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-12 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-12 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-14 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-14 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-14 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-16 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-16 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-16 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-17 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-17 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-17 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-18 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-18 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-18 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : perimeter-19 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : perimeter-19 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : perimeter-19 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-north-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-north-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-north-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-north-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-north-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-north-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-east-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-east-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-east-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-south-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-south-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-south-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-south-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-south-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-south-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-south-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-south-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-south-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-west-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-west-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-west-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-east-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-east-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-east-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-south-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-south-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-south-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-south-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-south-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-south-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-south-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-south-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-south-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-west-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-west-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-west-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shop-west-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shop-west-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shop-west-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-north-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-north-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-north-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-north-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-north-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-north-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-east-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-east-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-east-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-east-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-east-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-south-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-south-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-south-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-south-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-south-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-south-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-south-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : shed-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : shed-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : shed-west-6 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-north-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-north-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-east-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-east-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-east-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-south-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-south-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-south-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-south-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-south-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-south-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-south-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-south-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-south-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-south-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-south-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-south-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-west-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-west-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-west-4 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-west-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-west-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-west-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-west-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-west-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-west-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : yard-west-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : yard-west-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : yard-west-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-0 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-0 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-1 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-1 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-2 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-2 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-3 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-3 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-4 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-5 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-5 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-6 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-7 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-7 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-7 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-7 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-7 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-7 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-8 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-8 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-8 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-8 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-8 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-8 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-9 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-9 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-9 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-9 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-9 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-9 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-10 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-10 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-10 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-10 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-10 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-10 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-11 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-11 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-11 / -1.0",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : courtyard-11 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : courtyard-11 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : courtyard-11 / 1.0",
+			"passed": true
+		},
+		{
+			"description": "Au moins 40 chutes près des murs, clôtures et bords réels",
+			"passed": true
+		},
+		{
+			"description": "Départ libre dans le passage saloon-est",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-est",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-est",
+			"passed": true
+		},
+		{
+			"description": "La bouteille traverse l’ouverture libre : saloon-est",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-est",
+			"passed": true
+		},
+		{
+			"description": "Départ libre dans le passage saloon-nord",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : saloon-nord",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : saloon-nord",
+			"passed": true
+		},
+		{
+			"description": "La bouteille traverse l’ouverture libre : saloon-nord",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : saloon-nord",
+			"passed": true
+		},
+		{
+			"description": "Départ libre dans le passage épicerie-ouest",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : épicerie-ouest",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : épicerie-ouest",
+			"passed": true
+		},
+		{
+			"description": "La bouteille traverse l’ouverture libre : épicerie-ouest",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : épicerie-ouest",
+			"passed": true
+		},
+		{
+			"description": "Départ libre dans le passage remise-nord",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : remise-nord",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : remise-nord",
+			"passed": true
+		},
+		{
+			"description": "La bouteille traverse l’ouverture libre : remise-nord",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : remise-nord",
+			"passed": true
+		},
+		{
+			"description": "Départ libre dans le passage enclos-ouest",
+			"passed": true
+		},
+		{
+			"description": "Chute accessible avec le gabarit des personnages : enclos-ouest",
+			"passed": true
+		},
+		{
+			"description": "Arrêt au sol, sans consommation : enclos-ouest",
+			"passed": true
+		},
+		{
+			"description": "La bouteille traverse l’ouverture libre : enclos-ouest",
+			"passed": true
+		},
+		{
+			"description": "Récupération après chute près du décor : enclos-ouest",
+			"passed": true
+		}
+	],
+	"scene": "res://scenes/match/match.tscn",
+	"status": "passed"
+}

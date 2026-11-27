@@ -1,0 +1,6 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Edit target: the attached roomier western village map.\nMake ONLY this tiny correction: on the TWO SMALL WALL SHELVES ABOVE THE SALOON BAR (left building, top interior wall), replace the green and amber decorative bottles with plain cream ceramic mugs. Keep the shelf planks exactly where they are.\nPreserve the SINGLE GREEN TEQUILA BOTTLE ON THE CENTRAL SQUARE as it is. This objective must be the only green bottle anywhere in the image.\nEverything else is LOCKED: keep EXACT image dimensions and full-map framing, every building outline and opening, all roads, all furniture, the four small characters in exactly their existing positions and scale, their weapons, color palette, low-contrast floor and softened environment outlines, gentle shaded rendering and all lighting. No changes to the central objective bottle, player count, space or composition. No text, HUD, effects, blur, added props or new characters. This is a precise prop substitution, NOT a redraw of the scene.",
+  "reference": "source/07-village-espaces-combat-v1.png",
+  "intent": "replace decorative bottles with mugs while retaining the central objective"
+}

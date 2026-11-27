@@ -1,0 +1,7 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit. Edit target: the attached transparent pixel-art poker-table sprite.\nRemove ALL chair parts, seats, side armrests and chair-back remnants that are attached around this table. The result must be ONE square poker table ALONE, with its own rounded square wooden top and short table legs, and the same three cream playing cards and little cluster of red chips on top. No chairs anywhere, no armrests protruding left/right, no chair-back above it. Preserve the warm amber wood, soft shaded chunky pixel-art style, dark brown selective outline and overhead view showing the top and short front face. Keep the table complete, not merely a cropped tabletop with cut-off edges. Center it on a generous genuinely transparent alpha background. No scenery, floor, cast shadow, labels, text, UI, glow or other props. Reusable production sprite.",
+  "reference": "godot/scenes/arroyo_seco/assets/village/table.png",
+  "issue": 60,
+  "intent": "isolate table from attached chairs so objects and collisions remain independent"
+}

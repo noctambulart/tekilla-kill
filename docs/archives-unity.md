@@ -34,6 +34,10 @@ La fiche rassemble onze graphismes. Leur provenance est conservée dans le [rele
 
 La fiche rassemble onze graphismes. Leur provenance est conservée dans le [relevé des sources v3](assets/unity-v3/sources.json).
 
+## Bruitage de rechargement
+
+Les trois builds contiennent le même clip `Gun_Reload`. La v0.1 joue un extrait de 63 ms, à partir de 472 ms, avec de courts fondus aux extrémités. L’extrait vient de l’AudioClip 13 dans `TequilaKill_v3.0_Data/resources.assets`, décodé avec UnityPy 1.25.4. [Fichier WAV intégré à Godot](../godot/scenes/character/assets/audio/reload_cartridge.wav)
+
 ## Rapport avec le nouveau concept
 
 Ces fiches documentent l’héritage visuel. Elles ne prouvent pas que les règles ou le nombre de joueurs du [concept actuel](concept.md) étaient implémentés dans les versions historiques. Le nom **Arroyo Seco** et la situation en Arizona appartiennent au concept retenu pour la nouvelle version.

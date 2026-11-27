@@ -2,6 +2,8 @@
 
 Mission : [#38](https://github.com/noctambulart/tequila-kill/issues/38). Ce lot prépare des ressources graphiques ; leur intégration au personnage jouable appartient à #40.
 
+Ce brief décrit le lot historique V4 en cellules de 48 × 48 pixels. Pour les ressources actuellement jouables en cellules de 144 × 144 pixels, consulter [#58](https://github.com/noctambulart/tequila-kill/issues/58) et [#60](https://github.com/noctambulart/tequila-kill/issues/60), qui renvoient aux exports et scènes d’essai concernés. Les coordonnées ci-dessous appartiennent au contrat V4.
+
 ## Références et intention
 
 - Référence principale explicitement retenue par le producteur le 23 novembre 2026 : **colonne Poncho de `output/concept-art/2026-11-22/07-recherche-silhouettes.png`**, reprise fidèlement. Les essais A/B ne concernent pas ce lot.
@@ -66,4 +68,4 @@ Le producteur précise le sens de « sous le chapeau ». La main ne doit pas êt
 
 Reproduire la base V2 avec `python3 scripts/poncho/prepare_seed.py --version v2` dans un environnement disposant de Pillow.
 
-Construire la base avec `python3 scripts/poncho/build_lot.py`, puis la correction avec `python3 scripts/poncho/build_v3.py`. Reproduire les captures avec `godot --path godot --script res://tools/review_poncho.gd`. Le visualiseur utilise la V3 ; `-- --v2` sélectionne l'historique. La commande se termine après capture ; ajouter `-- --animate` pour la lecture en boucle. Le fond de l'aperçu n'est pas incrusté dans les PNG exportés.
+Construire la base avec `python3 scripts/poncho/build_lot.py`, puis les corrections avec `python3 scripts/poncho/build_v3.py` et `python3 scripts/poncho/build_v4.py`, dans cet ordre. Reproduire les captures avec `godot --path godot --script res://tools/review_poncho.gd`. Le visualiseur utilise la V4 ; `-- --v2` et `-- --v3` sélectionnent les anciens lots. La commande se termine après capture ; ajouter `-- --animate` pour la lecture en boucle. Le fond de l'aperçu n'est pas incrusté dans les PNG exportés. Les [dépendances des outils](../../../scripts/README.md) sont déclarées séparément de celles du jeu.

@@ -1,0 +1,302 @@
+{
+	"checks": 73,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": true,
+	"results": [
+		{
+			"description": "Le prototype ouvre la partie avec un décompte commun",
+			"passed": true
+		},
+		{
+			"description": "Aucun mouvement ou score avant le départ",
+			"passed": true
+		},
+		{
+			"description": "Départs à égale distance de la bouteille sur la vraie carte",
+			"passed": true
+		},
+		{
+			"description": "Signal de départ et une seule bouteille de gameplay",
+			"passed": true
+		},
+		{
+			"description": "État initial publié : centre, réserve pleine, scores nuls, sans porteur",
+			"passed": true
+		},
+		{
+			"description": "Aucune consommation ni événement de score au sol",
+			"passed": true
+		},
+		{
+			"description": "La prise publie le porteur sans consommer deux fois",
+			"passed": true
+		},
+		{
+			"description": "Un second ramassage ne remplace pas un porteur existant",
+			"passed": true
+		},
+		{
+			"description": "Débit fractionnaire : trois unités après 0,4 seconde, sans perte d’arrondi",
+			"passed": true
+		},
+		{
+			"description": "La perte publie immédiatement l’absence de porteur et conserve le score",
+			"passed": true
+		},
+		{
+			"description": "La consommation cesse pendant toute la perte de possession",
+			"passed": true
+		},
+		{
+			"description": "Même temps de possession, même quantité bue pour Poncho et Garcia",
+			"passed": true
+		},
+		{
+			"description": "Les instantanés de présentation ne modifient pas les scores ni les états passés",
+			"passed": true
+		},
+		{
+			"description": "Dernière gorgée plafonnée : état final publié avant l’unique signal de fin",
+			"passed": true
+		},
+		{
+			"description": "Bouteille vide : ni nouveau porteur, ni consommation, ni seconde fin",
+			"passed": true
+		},
+		{
+			"description": "Chaque état publié conserve exactement le contenu initial",
+			"passed": true
+		},
+		{
+			"description": "Réinitialiser la bouteille remet aussi à zéro son état de fin et ses fractions",
+			"passed": true
+		},
+		{
+			"description": "Un porteur devenu fantôme ne consomme plus et ne peut pas reprendre",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Aucun pourcentage de réserve ou de score affiché pendant le round",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Le porteur boit pendant le déplacement, le tir et le rechargement",
+			"passed": true
+		},
+		{
+			"description": "Le porteur conserve la bouteille et boit pendant le dash",
+			"passed": true
+		},
+		{
+			"description": "Score égal à la quantité bue, réserve conservée exactement",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Un vrai projectile non létal fait tomber la bouteille vers le tireur",
+			"passed": true
+		},
+		{
+			"description": "Le tireur récupère la bouteille, l’ancien porteur cesse de marquer",
+			"passed": true
+		},
+		{
+			"description": "La consommation reprend pour le nouveau porteur",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "L’ancien porteur ne reprend pas immédiatement la bouteille",
+			"passed": true
+		},
+		{
+			"description": "Un autre joueur peut la prendre pendant le délai de l’ancien porteur",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "L’ancien porteur redevient autorisé après le court délai",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Une projection s’arrête contre un couvert fin sans le traverser",
+			"passed": true
+		},
+		{
+			"description": "Garcia ramasse automatiquement la même bouteille",
+			"passed": true
+		},
+		{
+			"description": "Garcia boit en se déplaçant et en visant indépendamment à la manette",
+			"passed": true
+		},
+		{
+			"description": "Le tir de Garcia laisse la consommation se poursuivre",
+			"passed": true
+		},
+		{
+			"description": "Garcia peut recharger en portant la bouteille",
+			"passed": true
+		},
+		{
+			"description": "Garcia boit pendant le dash avec sa recharge déjà engagée",
+			"passed": true
+		},
+		{
+			"description": "Capture : garcia-carried",
+			"passed": true
+		},
+		{
+			"description": "Ramassage simultané : priorité au plus proche",
+			"passed": true
+		},
+		{
+			"description": "À égalité exacte, le hasard peut désigner chacun des joueurs",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Zéro vie : fantôme et bouteille perdue",
+			"passed": true
+		},
+		{
+			"description": "Le fantôme se déplace très lentement, sans tir, dash ou recharge",
+			"passed": true
+		},
+		{
+			"description": "Fantôme invulnérable, vie récupérée progressivement",
+			"passed": true
+		},
+		{
+			"description": "Un fantôme ne ramasse pas la bouteille, même après le délai",
+			"passed": true
+		},
+		{
+			"description": "Les projectiles traversent le fantôme et atteignent la cible derrière",
+			"passed": true
+		},
+		{
+			"description": "Le fantôme traverse les personnages sans les repousser",
+			"passed": true
+		},
+		{
+			"description": "Les murs restent solides pour le fantôme",
+			"passed": true
+		},
+		{
+			"description": "Capture : ghost",
+			"passed": true
+		},
+		{
+			"description": "Retour sur place, à pleine vie et chargeur plein",
+			"passed": true
+		},
+		{
+			"description": "Le score est conservé pendant le mode fantôme",
+			"passed": true
+		},
+		{
+			"description": "Le retour au combat est immédiatement vulnérable",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Le cadrage commun garde personnages et bouteille hors du HUD",
+			"passed": true
+		},
+		{
+			"description": "Capture : bottle-carried",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Échap suspend consommation, rechargement et récupération du fantôme",
+			"passed": true
+		},
+		{
+			"description": "Reprendre poursuit les temps suspendus",
+			"passed": true
+		},
+		{
+			"description": "Perte de focus : pause commune",
+			"passed": true
+		},
+		{
+			"description": "Déconnexion de la manette : pause commune",
+			"passed": true
+		},
+		{
+			"description": "Reconnexion : reprise volontaire requise",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Bouteille vide : arrêt exact de la consommation, quantités conservées",
+			"passed": true
+		},
+		{
+			"description": "Égalité exacte : victoire partagée affichée",
+			"passed": true
+		},
+		{
+			"description": "Le résultat arrête le gameplay",
+			"passed": true
+		},
+		{
+			"description": "Rejouer réinitialise toute la partie",
+			"passed": true
+		},
+		{
+			"description": "Passer sur la bouteille la ramasse automatiquement",
+			"passed": true
+		},
+		{
+			"description": "Le plus gros buveur gagne, indépendamment du porteur final",
+			"passed": true
+		},
+		{
+			"description": "Capture : result",
+			"passed": true
+		},
+		{
+			"description": "Retour au titre sans pause résiduelle ni relecture d’introduction",
+			"passed": true
+		}
+	],
+	"scene": "res://scenes/match/match.tscn",
+	"status": "passed"
+}

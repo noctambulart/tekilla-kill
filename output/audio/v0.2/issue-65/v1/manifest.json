@@ -1,0 +1,53 @@
+{
+  "issue": 65,
+  "version": "v1",
+  "status": "fichiers_verifies_valides_producteur",
+  "direction": "sons courts rétro évoquant la SNES, prise claire, perte grave et dernière gorgée",
+  "provenance": "synthèse originale locale, Python standard ; aucun sample tiers, achat ou service de génération",
+  "source": "build.py",
+  "files": [
+    {
+      "event": "take",
+      "file": "take.wav",
+      "duration_seconds": 0.2700226757369614,
+      "sample_rate": 22050,
+      "channels": 1,
+      "pcm_bits": 16,
+      "peak_dbfs": -4.15,
+      "rms_dbfs": -18.03,
+      "sha256": "039a672b19dff3a8e0c7c20e9c442d8e5465933f0e70826276aa669970518952",
+      "suggested_gain_db": -3
+    },
+    {
+      "event": "drop",
+      "file": "drop.wav",
+      "duration_seconds": 0.24,
+      "sample_rate": 22050,
+      "channels": 1,
+      "pcm_bits": 16,
+      "peak_dbfs": -4.15,
+      "rms_dbfs": -19.12,
+      "sha256": "7e603666bda26d6d416c8238fdc74b0f2c9c78a1057acf2298c56cb4b03c41d3",
+      "suggested_gain_db": -3
+    },
+    {
+      "event": "empty",
+      "file": "empty.wav",
+      "duration_seconds": 0.44,
+      "sample_rate": 22050,
+      "channels": 1,
+      "pcm_bits": 16,
+      "peak_dbfs": -4.15,
+      "rms_dbfs": -16.84,
+      "sha256": "5c9dd0c1ce0f89589d9009d9b71d3e112c59a8fcf21aa83e50abb110bf3ed526",
+      "suggested_gain_db": -3
+    }
+  ],
+  "checks": {
+    "no_clipping": true,
+    "finite_duration": true,
+    "loop": false,
+    "format": "WAV PCM16 mono 22050 Hz"
+  },
+  "validation": "validation.json"
+}

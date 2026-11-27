@@ -90,6 +90,8 @@ func _input(event: InputEvent) -> void:
 	var skip := false
 	if event is InputEventKey:
 		skip = event.pressed and not event.echo and event.keycode in [KEY_SPACE, KEY_ENTER, KEY_ESCAPE]
+	elif event is InputEventMouseButton:
+		skip = event.pressed and event.button_index == MOUSE_BUTTON_LEFT
 	elif event is InputEventJoypadButton:
 		skip = event.pressed and event.button_index in [JOY_BUTTON_A, JOY_BUTTON_B, JOY_BUTTON_START]
 	if skip:

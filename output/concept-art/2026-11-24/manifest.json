@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-24",
+  "tool": "image_gen.imagegen (outil intégré)",
+  "purpose": "Concepts artistiques conservés avec leurs prompts. Maquettes, non intégrées au moteur et non normalisées comme tilesets de production.",
+  "style_reference": "01-saloon-poncho.png",
+  "complete_saloon_reference": "04-saloon-complet-deux-personnages.png",
+  "latest_map": "06-arroyo-seco-village-quatre-personnages.png",
+  "map_layout": {
+    "path": "godot/scenes/arroyo_seco/layout.json",
+    "sha256": "5bd9020576623bbf61ca3c98cf361627697c5563cc100d7c7e0449242e8d42ef",
+    "size_tiles": [
+      48,
+      30
+    ]
+  },
+  "concepts": [
+    {
+      "title": "Coin du saloon avec Poncho",
+      "image": "01-saloon-poncho.png",
+      "prompt": "01-saloon-poncho.prompt.json",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "271a16825d4de903b791b4ad994cd1b0270e668f626689e892a478a8afebc60e",
+      "status": "Référence préférée : dégradés doux."
+    },
+    {
+      "title": "Variante aux aplats francs",
+      "image": "02-saloon-poncho.png",
+      "prompt": "02-saloon-poncho.prompt.json",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "ad2510479cb3a9133130da6279f5c93f77f3452b1aba0605e5c188d747e69898",
+      "status": "Variante conservée ; le producteur préfère la première."
+    },
+    {
+      "title": "Variante au sol discret",
+      "image": "03-saloon-poncho.png",
+      "prompt": "03-saloon-poncho.prompt.json",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "c85b4b7c2ea1651fd8466e061b0e94097f2abff50181f853918b0315fee830cd",
+      "status": "Variante conservée ; le producteur préfère la première."
+    },
+    {
+      "title": "Saloon complet · Poncho et Garcia",
+      "image": "04-saloon-complet-deux-personnages.png",
+      "prompt": "04-saloon-complet-deux-personnages.prompt.json",
+      "width": 1672,
+      "height": 941,
+      "sha256": "9a79c2fdb5dc7438c51b12762e62d3d7b42cf12261980f9dfa51e731be55ffab",
+      "status": "Retour positif du producteur ; référence pour étendre le style à la carte."
+    },
+    {
+      "title": "Arroyo Seco · Carte complète",
+      "image": "05-arroyo-seco-carte-complete.png",
+      "prompt": "05-arroyo-seco-carte-complete.prompt.json",
+      "width": 1586,
+      "height": 992,
+      "sha256": "00818f9c01056817cb2918fc096462f1343797d38247c74451eaa121639312cc",
+      "status": "Nouvelle proposition à examiner, fondée sur le plan existant."
+    },
+    {
+      "title": "Arroyo Seco · Village western avec quatre silhouettes",
+      "image": "06-arroyo-seco-village-quatre-personnages.png",
+      "prompt": "06-arroyo-seco-village-quatre-personnages.prompt.json",
+      "width": 1586,
+      "height": 992,
+      "sha256": "152c448cd9bcbd5aa7045c6291678d522295bc757be3ad61a854518be04eae8f",
+      "status": "Première proposition après entretien : agrandissement progressif, rue principale et place, maisons fermées, limites naturelles et contournements. Deux silhouettes supplémentaires provisoires. À examiner."
+    }
+  ],
+  "design_decisions": {
+    "four_existing_places": true,
+    "geometry_changes_allowed": true,
+    "village_continues_visually_beyond_arena": true,
+    "natural_boundaries": true,
+    "closed_houses_with_porches_and_yards": true,
+    "expansion": "progressive",
+    "main_street_and_square": true,
+    "rear_routes": "deux parcours de contournement",
+    "characters_in_study": 4,
+    "additional_character_identity": "Deux silhouettes d’essai de la planche 07, non canoniques.",
+    "implementation": "Aucune modification de la carte jouable ni des règles de caméra."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "issue": 64,
+  "version": "v7",
+  "status": "maquette_a_examiner_direction_validee",
+  "direction": "Bouteille graphique sans chiffres ; ivresse cumulative ; marquage du porteur indépendant et prioritaire.",
+  "sources": [
+    {
+      "path": "output/camera/2026-11-25-wider/after-close.png",
+      "sha256": "2412eaf686e8247e767416aff120e27043db8a0da4810e4a57c55ff92b9995cf"
+    },
+    {
+      "path": "output/camera/2026-11-25-wider/after-far.png",
+      "sha256": "069985140430eeba6bf29b7015b874d63eed07b9ee389d0ba3e9fee56785e7b7"
+    },
+    {
+      "path": "output/ui/2026-11-25-menu-intro-dash/title.png",
+      "sha256": "05b4ede70dc646f0c9ebb617aaebcb6d0141e730c5a79c065c2dc5d4c78e2c4d"
+    },
+    {
+      "path": "godot/scenes/intro/assets/bottle.png",
+      "sha256": "dce1e43815c570a411319197dd42aea803ab418146e9dc97de5e09daab364234"
+    },
+    {
+      "path": "godot/scenes/character/assets/saloon_warm/poncho/idle.png",
+      "sha256": "38ca75f1e46a8752a4667945c97c8e0f060ccfbced3df081a6c82464e6bceb9e"
+    },
+    {
+      "path": "godot/scenes/character/assets/saloon_warm/poncho/hat_idle.png",
+      "sha256": "1f10b340a9b94e68ef5ba5357d8d81719dbda97951d31c41cd92bec147f7e44f"
+    },
+    {
+      "path": "godot/scenes/character/assets/saloon_warm/poncho/arm_idle.png",
+      "sha256": "4af6bebdd272631f35f3b67c74b74c093d6633de7ca9b75b485d861d6aff511e"
+    }
+  ],
+  "method": "Captures et sprites actuels réutilisés ; bouteille de tequila existante réemployée avec niveau graphique ; aucune génération IA ni modification Godot.",
+  "drunkenness_comparison": [
+    "Sobre",
+    "Quelques gorgées",
+    "Bien ivre"
+  ],
+  "drunkenness_effect": {
+    "shape": "petites étoiles à cinq branches",
+    "motion": "départs variés sur la silhouette, montée puis chute en cloche",
+    "origins": "chapeau, épaules, torse et côtés ; changement à chaque réémission",
+    "lifetime_seconds": 1.35,
+    "illustrative_counts": [
+      0,
+      4,
+      12
+    ],
+    "approval": "proposition à examiner"
+  },
+  "bobbing": {
+    "v2_radians_per_second": 2.5,
+    "v7_radians_per_second": 3.8,
+    "v7_period_seconds": 1.653
+  },
+  "states": [
+    "ground",
+    "poncho",
+    "garcia",
+    "ghost",
+    "return",
+    "low",
+    "result",
+    "tie",
+    "title"
+  ],
+  "cameras": [
+    "close",
+    "far"
+  ],
+  "fragment_bytes": 559090,
+  "selected_reference": null,
+  "selected_particle_reference": {
+    "version": "v5",
+    "approved_on": "2026-11-26",
+    "record": "../v5/validation.json",
+    "scope": "particules d’ivresse uniquement"
+  },
+  "bottle_harmonization": {
+    "static_height": 88,
+    "rendering": "cadre de tableau ovale en bois patiné, filet doré et fond chaud ; bouteille réutilisée sans halo de possession",
+    "approval": "proposition à examiner"
+  }
+}

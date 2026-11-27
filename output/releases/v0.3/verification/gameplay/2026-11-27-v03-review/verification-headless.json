@@ -1,0 +1,98 @@
+{
+	"checks": 22,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": false,
+	"results": [
+		{
+			"description": "Mur interceptant le tir à 24 unités : crosse sans cartouche",
+			"passed": true
+		},
+		{
+			"description": "Caisse interceptant le tir au contact : crosse sans cartouche",
+			"passed": true
+		},
+		{
+			"description": "La crosse retire les mêmes 25 points qu’une balle à la caisse",
+			"passed": true
+		},
+		{
+			"description": "La crosse contre le décor respecte la cadence de 0,24 s",
+			"passed": true
+		},
+		{
+			"description": "Maintenir le tir répète la crosse contre le décor",
+			"passed": true
+		},
+		{
+			"description": "Cinq crosses cassent la caisse sans munition",
+			"passed": true
+		},
+		{
+			"description": "Le maintien reprend le tir quand les débris ne l’interceptent plus",
+			"passed": true
+		},
+		{
+			"description": "Mur : une crosse à vide interrompt la recharge sur nouvel appui",
+			"passed": true
+		},
+		{
+			"description": "Un pot proche hors du trajet de tir ne déclenche pas la crosse",
+			"passed": true
+		},
+		{
+			"description": "Un mur au-delà de 30 unités laisse partir le tir",
+			"passed": true
+		},
+		{
+			"description": "Un adversaire devant le mur reste la cible de la crosse",
+			"passed": true
+		},
+		{
+			"description": "Le mur reçoit la crosse sans toucher l’adversaire derrière",
+			"passed": true
+		},
+		{
+			"description": "Taille globale conservée : street-crate · (24.0, 24.0) → (27.21344, 21.16601)",
+			"passed": true
+		},
+		{
+			"description": "Appui au sol et proportions conservés : street-crate",
+			"passed": true
+		},
+		{
+			"description": "Taille globale conservée : shop-pot · (16.0, 17.33333) → (19.41017, 14.28804)",
+			"passed": true
+		},
+		{
+			"description": "Appui au sol et proportions conservés : shop-pot",
+			"passed": true
+		},
+		{
+			"description": "Taille globale conservée : saloon-west-n · (15.0, 25.0) → (25.0, 19.64286)",
+			"passed": true
+		},
+		{
+			"description": "Appui au sol et proportions conservés : saloon-west-n",
+			"passed": true
+		},
+		{
+			"description": "Taille globale conservée : saloon-west-w · (17.66667, 25.0) → (25.0, 19.64285)",
+			"passed": true
+		},
+		{
+			"description": "Appui au sol et proportions conservés : saloon-west-w",
+			"passed": true
+		},
+		{
+			"description": "Taille globale conservée : saloon-west-e · (17.66667, 25.0) → (25.0, 19.64285)",
+			"passed": true
+		},
+		{
+			"description": "Appui au sol et proportions conservés : saloon-west-e",
+			"passed": true
+		}
+	],
+	"scene": "res://scenes/match/match.tscn",
+	"status": "passed"
+}

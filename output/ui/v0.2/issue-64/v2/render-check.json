@@ -1,0 +1,14 @@
+{
+  "renderedStates": 18,
+  "assets": 3,
+  "noNumericScore": true,
+  "possessionIndependent": true,
+  "ghostSuppression": true,
+  "ghostRestoration": true,
+  "bottleBobbing": true,
+  "animationStops": true,
+  "replay": true,
+  "title": true,
+  "tie": true,
+  "manualReview": "Voir README.md"
+}

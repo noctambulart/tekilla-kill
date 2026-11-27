@@ -1,0 +1,16 @@
+{
+  "command": "python3 scripts/godot_tasks.py verifier",
+  "exit_code": 0,
+  "results": {
+    "village": "VILLAGE: 110 checks, 0 failures",
+    "reload": "RELOAD CHECK: PASS (51 checks)",
+    "saloon_study": "SALOON STUDY: 56 checks, 0 failures",
+    "match": "MATCH CHECK: PASS (48 checks)",
+    "player_visuals": "PLAYER VISUALS: PASS (31 checks)",
+    "movement": "MOVEMENT CHECK: PASS (53 checks)",
+    "intro": "INTRO CHECK: PASS",
+    "shooting": "SHOOTING CHECK: PASS (47 checks)",
+    "import": "Import completed; see log.",
+    "player_visuals-warm": "PLAYER VISUALS: PASS (31 checks)"
+  }
+}

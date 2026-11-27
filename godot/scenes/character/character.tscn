@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Script" path="res://scenes/character/character.gd" id="1_character"]
 [ext_resource type="Script" path="res://scenes/character/human_controls.gd" id="2_controls"]
 [ext_resource type="Script" path="res://scenes/character/revolver.gd" id="3_revolver"]
 [ext_resource type="Script" path="res://scenes/character/character_visual.gd" id="4_visual"]
+[ext_resource type="AudioStream" path="res://scenes/character/assets/audio/reload_cartridge.wav" id="5_reload"]
 
 [sub_resource type="CircleShape2D" id="Circle_character"]
 radius = 8.0
@@ -22,6 +23,10 @@ script = ExtResource("2_controls")
 
 [node name="Revolver" type="Node" parent="."]
 script = ExtResource("3_revolver")
+
+[node name="ReloadAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_reload")
+volume_db = -6.0
 
 [node name="Visual" type="Node2D" parent="."]
 show_behind_parent = true

@@ -1,0 +1,15 @@
+{
+  "issue": 64,
+  "reference": "v10",
+  "approved_on": "2026-11-26",
+  "scope": "bouteille de réserve dans l’interface statique et son cadre ovale",
+  "producer_statement": "Ok partons la dessus",
+  "retained": [
+    "Cadre ovale en bois patiné avec bordure fine et fond chaud",
+    "Bouteille entièrement contenue dans le contour extérieur",
+    "Contact ou chevauchement très léger des angles avec le bord intérieur",
+    "Niveau de liquide visible sans pourcentage"
+  ],
+  "implementation_status": "référence de maquette validée ; intégration Godot à réaliser",
+  "overall_concept_approved": false
+}

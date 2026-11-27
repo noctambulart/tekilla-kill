@@ -1,0 +1,120 @@
+{
+  "issue": 64,
+  "version": "v11",
+  "status": "concepts_valides_integration_a_realiser",
+  "direction": "Round sans chiffres ; pourcentage du gagnant au résultat temporaire ; fantôme presque noir et blanc ; sons rétro locaux.",
+  "sources": [
+    {
+      "path": "output/camera/2026-11-25-wider/after-close.png",
+      "sha256": "2412eaf686e8247e767416aff120e27043db8a0da4810e4a57c55ff92b9995cf"
+    },
+    {
+      "path": "output/camera/2026-11-25-wider/after-far.png",
+      "sha256": "069985140430eeba6bf29b7015b874d63eed07b9ee389d0ba3e9fee56785e7b7"
+    },
+    {
+      "path": "output/ui/2026-11-25-menu-intro-dash/title.png",
+      "sha256": "05b4ede70dc646f0c9ebb617aaebcb6d0141e730c5a79c065c2dc5d4c78e2c4d"
+    },
+    {
+      "path": "godot/scenes/intro/assets/bottle.png",
+      "sha256": "dce1e43815c570a411319197dd42aea803ab418146e9dc97de5e09daab364234"
+    },
+    {
+      "path": "godot/scenes/character/assets/saloon_warm/poncho/idle.png",
+      "sha256": "38ca75f1e46a8752a4667945c97c8e0f060ccfbced3df081a6c82464e6bceb9e"
+    },
+    {
+      "path": "godot/scenes/character/assets/saloon_warm/poncho/hat_idle.png",
+      "sha256": "1f10b340a9b94e68ef5ba5357d8d81719dbda97951d31c41cd92bec147f7e44f"
+    },
+    {
+      "path": "godot/scenes/character/assets/saloon_warm/poncho/arm_idle.png",
+      "sha256": "4af6bebdd272631f35f3b67c74b74c093d6633de7ca9b75b485d861d6aff511e"
+    }
+  ],
+  "method": "Captures et sprites actuels réutilisés ; bouteille de tequila existante réemployée avec niveau graphique ; aucune génération IA ni modification Godot.",
+  "drunkenness_comparison": [
+    "Sobre",
+    "Quelques gorgées",
+    "Bien ivre"
+  ],
+  "drunkenness_effect": {
+    "shape": "petites étoiles à cinq branches",
+    "motion": "départs variés sur la silhouette, montée puis chute en cloche",
+    "origins": "chapeau, épaules, torse et côtés ; changement à chaque réémission",
+    "lifetime_seconds": 1.35,
+    "illustrative_counts": [
+      0,
+      4,
+      12
+    ],
+    "approval": "forme validée V5 ; réglages du producteur repris en V11"
+  },
+  "bobbing": {
+    "radians_per_second": 4,
+    "period_seconds": 1.571
+  },
+  "producer_animation_tuning": {
+    "starHeight": 1.1,
+    "starSpread": 1.05,
+    "starSize": 1.1,
+    "bobSpeed": 4
+  },
+  "states": [
+    "ground",
+    "poncho",
+    "garcia",
+    "ghost",
+    "return",
+    "low",
+    "result",
+    "result_garcia",
+    "tie",
+    "title"
+  ],
+  "cameras": [
+    "close",
+    "far"
+  ],
+  "fragment_bytes": 617502,
+  "selected_reference": "v11",
+  "selected_particle_reference": {
+    "version": "v5",
+    "approved_on": "2026-11-26",
+    "record": "../v5/validation.json",
+    "scope": "particules d’ivresse uniquement"
+  },
+  "selected_static_bottle_reference": {
+    "version": "v10",
+    "approved_on": "2026-11-26",
+    "record": "../v10/validation.json",
+    "scope": "bouteille fixe et cadre ovale"
+  },
+  "carrier_approved_on": "2026-11-26",
+  "review_pending": [],
+  "audio_manifest": "../../../../audio/v0.2/issue-65/v1/manifest.json",
+  "audio": [
+    {
+      "path": "output/audio/v0.2/issue-65/v1/take.wav",
+      "sha256": "039a672b19dff3a8e0c7c20e9c442d8e5465933f0e70826276aa669970518952"
+    },
+    {
+      "path": "output/audio/v0.2/issue-65/v1/drop.wav",
+      "sha256": "7e603666bda26d6d416c8238fdc74b0f2c9c78a1057acf2298c56cb4b03c41d3"
+    },
+    {
+      "path": "output/audio/v0.2/issue-65/v1/empty.wav",
+      "sha256": "5c9dd0c1ce0f89589d9009d9b71d3e112c59a8fcf21aa83e50abb110bf3ed526"
+    }
+  ],
+  "bottle_harmonization": {
+    "static_height": 100,
+    "previous_static_height": 132,
+    "frame_width": 86.4,
+    "frame_height": 124.8,
+    "rendering": "bouteille contenue dans le contour extérieur, léger contact des angles avec le bord intérieur ; cadre V8 conservé",
+    "approval": "bouteille fixe et cadre validés le 26 novembre 2026"
+  },
+  "validation": "validation.json"
+}

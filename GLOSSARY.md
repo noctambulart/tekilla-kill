@@ -21,6 +21,12 @@ Carte commune dans laquelle les joueurs se disputent la bouteille.
 Vue de jeu unique partagée par les joueurs réunis devant un même écran.
 _Avoid_ : Écran scindé, qui désigne plusieurs vues de jeu affichées côte à côte.
 
+**Partie** :
+Affrontement complet entre joueurs dans l’arène, dont le résultat est déterminé par les quantités bues lorsque la bouteille est vide.
+
+**Round** :
+Séquence de jeu allant du départ commun avec une bouteille pleine jusqu’à son épuisement.
+
 **Salon de préparation** :
 Écran où les joueurs humains rejoignent la partie et choisissent leur personnage, avec des places pouvant accueillir un bot ou rester vides avant le lancement.
 
@@ -45,6 +51,9 @@ Joueur contrôlé par l'ordinateur, qui participe à la même partie que les jou
 **Score** :
 Quantité de tequila bue par un joueur pendant la partie, utilisée pour déterminer le vainqueur lorsque la bouteille est vide.
 
+**Ivresse** :
+Manifestation visuelle de la quantité cumulée bue par un personnage, sans effet sur ses capacités. Elle est distincte de la possession actuelle de la bouteille.
+
 **Victoire partagée** :
 Résultat d'une partie où plusieurs joueurs ont bu la même quantité maximale de tequila lorsque la bouteille est vide.
 
@@ -59,6 +68,9 @@ Personnalité propre à un personnage, qui influence notamment sa manière de jo
 
 **Porteur** :
 Joueur qui détient la bouteille à un instant donné et peut en boire le contenu.
+
+**Étourdissement du porteur** :
+Brève immobilisation du **porteur** blessé lorsqu’il perd la **bouteille**, qui l’empêche aussi de dasher et de la ramasser. Le personnage reste vulnérable et conserve la **visée**, le tir et le **rechargement**.
 
 **Visée** :
 Direction dans laquelle un personnage oriente son arme, indépendante de sa direction de déplacement.
@@ -87,6 +99,10 @@ _Avoid_ : Recharge de compétence, qui désigne son délai de disponibilité.
 
 **Compétence spéciale** :
 Action propre à un personnage, activée volontairement et rendue temporairement indisponible après son utilisation par un temps de recharge.
+_Synonyme_ : Ulti.
+
+**Coup de crosse** :
+Attaque de base commune aux **personnages**, portée avec leur arme au corps à corps, devant eux dans la direction de la **visée**.
 
 **Dash** :
 Bref déplacement rapide déclenché pendant un déplacement, dont la direction est fixée au lancement, réutilisable après un temps de récupération. Les autres commandes du personnage sont ignorées pendant son exécution.

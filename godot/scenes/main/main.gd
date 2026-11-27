@@ -2,7 +2,7 @@ extends Control
 
 const INTRO := preload("res://scenes/intro/intro.tscn")
 
-@onready var quit_button: Button = $CenterContainer/Content/QuitButton
+@onready var play_button: Button = $CenterContainer/Content/SoloTrialButton
 @onready var title_content: Control = $CenterContainer
 
 var intro: Control
@@ -11,7 +11,7 @@ var intro: Control
 func _ready() -> void:
 	if get_tree().has_meta("intro_to_title"):
 		get_tree().remove_meta("intro_to_title")
-		quit_button.grab_focus()
+		play_button.grab_focus()
 	else:
 		start_intro()
 
@@ -36,7 +36,7 @@ func _show_title() -> void:
 		intro.queue_free()
 	intro = null
 	title_content.show()
-	$CenterContainer/Content/ReplayButton.grab_focus()
+	play_button.grab_focus()
 
 
 func _on_quit_button_pressed() -> void:
@@ -49,6 +49,14 @@ func start_movement_test() -> void:
 
 func start_arena_review() -> void:
 	get_tree().change_scene_to_file("res://scenes/arroyo_seco/arena_review.tscn")
+
+
+func start_solo_trial() -> void:
+	get_tree().change_scene_to_file("res://scenes/arroyo_seco/solo_trial.tscn")
+
+
+func start_saloon_study() -> void:
+	get_tree().change_scene_to_file("res://scenes/arroyo_seco/saloon_study/saloon_study.tscn")
 
 
 func start_match() -> void:

@@ -1,0 +1,8 @@
+{
+	"checks": 47,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": false,
+	"scope": "Tir et dégâts dans les scènes réelles, entrées simulées. Validation des sensations et manette physique à faire.",
+	"status": "passed"
+}

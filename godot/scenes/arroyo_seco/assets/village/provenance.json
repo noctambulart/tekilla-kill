@@ -1,0 +1,234 @@
+{
+  "issue": 60,
+  "source": "output/arena/2026-11-25-integration/source/environment-raw.png",
+  "sha256": "f1f456b4e74515047baeb2eda451569d2ca9e376f6cf110394f30f06466669de",
+  "grid": [
+    5,
+    4
+  ],
+  "normalization": "Alpha threshold128, occupied bounds, nearest-neighbor export; source untouched.",
+  "items": {
+    "crate": {
+      "path": "res://scenes/arroyo_seco/assets/village/crate.png",
+      "native_size": [
+        108,
+        108
+      ],
+      "base_world_size": [
+        36,
+        36
+      ]
+    },
+    "barrel": {
+      "path": "res://scenes/arroyo_seco/assets/village/barrel.png",
+      "native_size": [
+        108,
+        108
+      ],
+      "base_world_size": [
+        36,
+        36
+      ]
+    },
+    "table": {
+      "path": "res://scenes/arroyo_seco/assets/village/table.png",
+      "native_size": [
+        168,
+        168
+      ],
+      "base_world_size": [
+        56,
+        56
+      ],
+      "source": "output/arena/2026-11-25-integration/source/table-raw.png",
+      "sha256": "191f3c6832e8b50efce3984e14f08de9588dffcdf5c84e50c79ee38a2cfcd547"
+    },
+    "couch": {
+      "path": "res://scenes/arroyo_seco/assets/village/couch.png",
+      "native_size": [
+        336,
+        132
+      ],
+      "base_world_size": [
+        112,
+        44
+      ]
+    },
+    "chair": {
+      "path": "res://scenes/arroyo_seco/assets/village/chair.png",
+      "native_size": [
+        72,
+        84
+      ],
+      "base_world_size": [
+        24,
+        28
+      ]
+    },
+    "pot": {
+      "path": "res://scenes/arroyo_seco/assets/village/pot.png",
+      "native_size": [
+        72,
+        78
+      ],
+      "base_world_size": [
+        24,
+        26
+      ]
+    },
+    "cart": {
+      "path": "res://scenes/arroyo_seco/assets/village/cart.png",
+      "native_size": [
+        312,
+        144
+      ],
+      "base_world_size": [
+        104,
+        48
+      ]
+    },
+    "counter": {
+      "path": "res://scenes/arroyo_seco/assets/village/counter.png",
+      "native_size": [
+        384,
+        96
+      ],
+      "base_world_size": [
+        128,
+        32
+      ]
+    },
+    "house_wood": {
+      "path": "res://scenes/arroyo_seco/assets/village/house_wood.png",
+      "native_size": [
+        720,
+        528
+      ],
+      "base_world_size": [
+        240,
+        176
+      ]
+    },
+    "house_adobe": {
+      "path": "res://scenes/arroyo_seco/assets/village/house_adobe.png",
+      "native_size": [
+        720,
+        528
+      ],
+      "base_world_size": [
+        240,
+        176
+      ]
+    },
+    "goods": {
+      "path": "res://scenes/arroyo_seco/assets/village/goods.png",
+      "native_size": [
+        288,
+        96
+      ],
+      "base_world_size": [
+        96,
+        32
+      ]
+    },
+    "trough": {
+      "path": "res://scenes/arroyo_seco/assets/village/trough.png",
+      "native_size": [
+        240,
+        96
+      ],
+      "base_world_size": [
+        80,
+        32
+      ]
+    },
+    "cactus": {
+      "path": "res://scenes/arroyo_seco/assets/village/cactus.png",
+      "native_size": [
+        72,
+        126
+      ],
+      "base_world_size": [
+        24,
+        42
+      ]
+    },
+    "rocks": {
+      "path": "res://scenes/arroyo_seco/assets/village/rocks.png",
+      "native_size": [
+        168,
+        96
+      ],
+      "base_world_size": [
+        56,
+        32
+      ]
+    },
+    "tools": {
+      "path": "res://scenes/arroyo_seco/assets/village/tools.png",
+      "native_size": [
+        240,
+        108
+      ],
+      "base_world_size": [
+        80,
+        36
+      ]
+    },
+    "mugs": {
+      "path": "res://scenes/arroyo_seco/assets/village/mugs.png",
+      "native_size": [
+        192,
+        72
+      ],
+      "base_world_size": [
+        64,
+        24
+      ]
+    },
+    "crate_broken": {
+      "path": "res://scenes/arroyo_seco/assets/village/crate_broken.png",
+      "native_size": [
+        108,
+        84
+      ],
+      "base_world_size": [
+        36,
+        28
+      ]
+    },
+    "chair_broken": {
+      "path": "res://scenes/arroyo_seco/assets/village/chair_broken.png",
+      "native_size": [
+        84,
+        66
+      ],
+      "base_world_size": [
+        28,
+        22
+      ]
+    },
+    "pot_broken": {
+      "path": "res://scenes/arroyo_seco/assets/village/pot_broken.png",
+      "native_size": [
+        72,
+        54
+      ],
+      "base_world_size": [
+        24,
+        18
+      ]
+    },
+    "store_counter": {
+      "path": "res://scenes/arroyo_seco/assets/village/store_counter.png",
+      "native_size": [
+        432,
+        120
+      ],
+      "base_world_size": [
+        144,
+        40
+      ]
+    }
+  }
+}

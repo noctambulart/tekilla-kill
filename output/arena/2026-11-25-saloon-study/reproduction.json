@@ -1,0 +1,29 @@
+{
+  "files": 23,
+  "sha256_identical": true,
+  "checksums": {
+    "godot/scenes/arroyo_seco/saloon_study/assets/wall_v.png": "c38ee35eb235daabd21cd508d6d400dc1eca891c3d5e78e4c109d3f0fd84c5b4",
+    "godot/scenes/arroyo_seco/saloon_study/assets/plaster.png": "9e81d490b83c84cf04ccac0f04a969452212ee5910d61c2935b99e32ae00bee8",
+    "godot/scenes/arroyo_seco/saloon_study/assets/provenance.json": "577982e74f471decc1c1c11515b5f61ad3381889b00d52b25835a466f1e6bcc4",
+    "godot/scenes/arroyo_seco/saloon_study/assets/chair_n.png": "9288c1774778ff1cdb51ddb7c4129e8516d57b9e31217a187001ec059ad06dbb",
+    "godot/scenes/arroyo_seco/saloon_study/assets/post.png": "60e33cef5f3a5f48864643e157ac0f207f87dd1aea3582a18eca04ca5ac930df",
+    "godot/scenes/arroyo_seco/saloon_study/assets/couch.png": "a80e42908a1539afe9108808331fd9d2620b0d087a44c9d04932dcd255f66d94",
+    "godot/scenes/arroyo_seco/saloon_study/assets/fence_v.png": "682ef601b80570e732b6c55655aa832607520d4bee6f1c534bb30765735983e8",
+    "godot/scenes/arroyo_seco/saloon_study/assets/stool.png": "ccc6d4a19716b684002e7921853c9303f14d60a198c7e637a039c327d0988c2d",
+    "godot/scenes/arroyo_seco/saloon_study/assets/house.png": "13f59dfc7ff9a2c0bbef3497c6713bd33159fbbbc9811b075db279777f134410",
+    "godot/scenes/arroyo_seco/saloon_study/assets/pot.png": "dd3bdc7578ab949098b5f0fc969d552b2fc1fead75965ad92b9b2ddf3ea8e3b5",
+    "godot/scenes/arroyo_seco/saloon_study/assets/stone.png": "d782dd5e370b50610feffd66618dc4761de9ff04786315024360063d51a5db30",
+    "godot/scenes/arroyo_seco/saloon_study/assets/fence_h.png": "6b353244ae28913b473559f82e22a9e08ba92dde72126d7e0e7b2d40e86ba81a",
+    "godot/scenes/arroyo_seco/saloon_study/assets/wall_h.png": "97d75ea5ffd591a8e26f0bee52e4eae6fcbcc297fdf2a505aee277a622487e22",
+    "godot/scenes/arroyo_seco/saloon_study/assets/sand.png": "477247c2d8a1a28609750b901bd1c5538fadbca0ac78fd06094dbc5b7a6684f0",
+    "godot/scenes/arroyo_seco/saloon_study/assets/chair_w.png": "8e1706550d9eb312e5c3879cdb9271947ed8869b46c85683145cb3cc31b586cf",
+    "godot/scenes/arroyo_seco/saloon_study/assets/pillar.png": "c7922600eb9084ef66f2f7e1d8a8f138d61ee978c08f9fa78276a591518af17b",
+    "godot/scenes/arroyo_seco/saloon_study/assets/chair_s.png": "a687f91cde28141cf1809677caa4afdb61314a355891bd2e0d34981307119f40",
+    "godot/scenes/arroyo_seco/saloon_study/assets/bar.png": "16c1d4fbdacbef22155c4a458c30d8abf48589561e335974055f218959b55949",
+    "godot/scenes/arroyo_seco/saloon_study/assets/table.png": "8c65c6500d6dda58e8ed56aaa39a69b54342e9a51e2771b6d7975de52ce1361e",
+    "godot/scenes/arroyo_seco/saloon_study/assets/shelf.png": "c9c23998b6525b85f6670589d8b8c9ea416c51f7c934a5818caeabdf7d2f2989",
+    "godot/scenes/arroyo_seco/saloon_study/assets/barrel.png": "ad0ba70d386ae6d1086f26546acdef55972b37e5ff3dca777bb470fa77463b80",
+    "godot/scenes/arroyo_seco/saloon_study/assets/chair_e.png": "d96b70cc8d3ed01b26f11517d5de05c25386c726809cded7887aa276cda4e566",
+    "godot/scenes/arroyo_seco/saloon_study/assets/front.png": "7aa9f5ef935229ebb7fa8b792e14b92ff64bbc7501804de07b06bb89e0255c0b"
+  }
+}

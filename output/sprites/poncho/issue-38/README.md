@@ -1,5 +1,7 @@
 # Poncho — mission #38, correction V4
 
+Archive du lot V4 en cellules de 48 × 48 pixels. Les ressources jouables ultérieures sont suivies dans [#58](https://github.com/noctambulart/tequila-kill/issues/58) et [#60](https://github.com/noctambulart/tequila-kill/issues/60). Les mentions « actuel » ci-dessous sont relatives à ce lot historique.
+
 ## Correction retenue pour la main
 
 Le producteur précise que **la main est sous le chapeau comme sur la proposition**. La V3 avait trop descendu la main, la montrant à côté du poncho. La V4 corrige le placement dans le rig : **la paume est masquée derrière le bord**, avec une petite partie de la prise et le canon qui dépassent. L'arme garde la silhouette initiale de la proposition et son mouvement suit les pas.
@@ -21,7 +23,7 @@ Retour sur la V2 : la main restait fixe pendant la course et semblait posée sur
 - **Comparatif animé** : `review/poncho-v3-comparison.gif` (ancienne main, marche corrigée, course corrigée).
 - **Toutes les actions** : `review/poncho-v3-actions.gif`.
 - **Rendu Godot réel** : `review/poncho-v3-godot-*.png`, `review/poncho-v3-comparison-godot.png` et `review/poncho-v3-directions-godot.png`.
-- **Exports actuels** : `exports/v3/`, cellules PNG RGBA 48 × 48 et atlas horizontaux. `exports/v2/` reste disponible pour l'historique et la reconstruction des corps.
+- **Exports V3** : `exports/v3/`, cellules PNG RGBA 48 × 48 et atlas horizontaux. `exports/v2/` reste disponible pour l'historique et la reconstruction des corps.
 - **Contrat machine** : `exports/v3/manifest.json` ; mesures, positions de la main visible et empreintes des atlas dans `quality.json`.
 - **Sources** : fichiers originaux générés et prompts exacts dans `source/`, sans remplacement des références historiques.
 - **Brief** : `docs/art/poncho/brief.md` à la racine du dépôt.
@@ -69,4 +71,4 @@ Ajouter `-- --verify-animation` pour contrôler automatiquement la lecture conti
 
 La V3 contrôle les dix entrées, dont les nouvelles pistes de bras, et leur synchronisation avec le corps. `-- --v2` permet de rejouer les anciens aperçus.
 
-**État : correction V3 produite et vérifiée techniquement ; #38 rouverte pour les retours graphiques.** Dix entrées, 42 cellules d'animation en comptant les réutilisations et 17 caches de chapeau dérivés du corps. La main visible varie sur la boucle et apparaît sous le bord. La lisibilité aux zooms de partie, les gestes selon les déplacements réels et les réglages des cadences seront éprouvés dans #40 ; aucune intégration au gameplay ni validation créative d'une partie jouée n'est revendiquée.
+**État historique V3 : correction produite et vérifiée techniquement ; #38 rouverte pour les retours graphiques.** Dix entrées, 42 cellules d'animation en comptant les réutilisations et 17 caches de chapeau dérivés du corps. La main visible varie sur la boucle et apparaît sous le bord. La lisibilité aux zooms de partie, les gestes selon les déplacements réels et les réglages des cadences seront éprouvés dans #40 ; aucune intégration au gameplay ni validation créative d'une partie jouée n'est revendiquée.

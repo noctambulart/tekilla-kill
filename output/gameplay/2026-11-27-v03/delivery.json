@@ -1,0 +1,67 @@
+{
+  "version": "v0.3",
+  "issue": 29,
+  "engine": "Godot 4.7.2 / Compatibility",
+  "date": "2026-11-27",
+  "producer_settings": {
+    "pot_shots": 1,
+    "chair_shots": 3,
+    "crate_shots": 5,
+    "melee_range": 30,
+    "melee_arc_degrees": 90
+  },
+  "checks": [
+    {
+      "name": "shooting",
+      "count": 47,
+      "status": "passed"
+    },
+    {
+      "name": "reload",
+      "count": 53,
+      "status": "passed"
+    },
+    {
+      "name": "match",
+      "count": 69,
+      "status": "passed"
+    },
+    {
+      "name": "bottle_drops",
+      "count": 330,
+      "status": "passed"
+    },
+    {
+      "name": "holder_stun",
+      "count": 47,
+      "status": "passed"
+    },
+    {
+      "name": "v02",
+      "count": 51,
+      "status": "passed"
+    },
+    {
+      "name": "v03",
+      "count": 109,
+      "status": "passed"
+    },
+    {
+      "name": "village",
+      "count": 130,
+      "status": "passed"
+    },
+    {
+      "name": "movement",
+      "count": 53,
+      "status": "passed"
+    }
+  ],
+  "headless_total": 889,
+  "native_v03_checks": 120,
+  "native_captures": 11,
+  "producer_validation": "pending",
+  "physical_controller_test": "pending",
+  "map_layout": "existing village V6; no speculative layout change",
+  "sound": "original procedural recovery chime and melee impact; no third-party samples"
+}

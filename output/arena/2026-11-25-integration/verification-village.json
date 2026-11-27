@@ -1,0 +1,6 @@
+{
+	"checks": 49,
+	"failures": [],
+	"rendered": true,
+	"scope": "Carte réelle, passages avec rayon8, boucles, collisions, déplacements, dash, focus, menus et sprites. Ni combat à quatre ni casse validés."
+}

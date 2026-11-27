@@ -1,0 +1,73 @@
+{
+  "version": "v0.3",
+  "date": "2026-11-27",
+  "engine": "Godot 4.7.2 standard / Compatibility",
+  "producer_validation": {
+    "status": "approved",
+    "quote": "Ok on valide cette version, tu peux commiter et tagguer",
+    "issue": "https://github.com/noctambulart/tequila-kill/issues/29"
+  },
+  "suites": [
+    {
+      "suite": "bottle_drops",
+      "result": "BOTTLE DROPS: PASS (336 checks)"
+    },
+    {
+      "suite": "holder_stun",
+      "result": "HOLDER STUN: PASS (47 checks)"
+    },
+    {
+      "suite": "intro",
+      "result": "INTRO CHECK: PASS"
+    },
+    {
+      "suite": "match",
+      "result": "MATCH CHECK: PASS (69 checks)"
+    },
+    {
+      "suite": "movement",
+      "result": "MOVEMENT CHECK: PASS (53 checks)"
+    },
+    {
+      "suite": "player_visuals-warm",
+      "result": "PLAYER VISUALS: PASS (31 checks)"
+    },
+    {
+      "suite": "player_visuals",
+      "result": "PLAYER VISUALS: PASS (31 checks)"
+    },
+    {
+      "suite": "reload",
+      "result": "RELOAD CHECK: PASS (53 checks)"
+    },
+    {
+      "suite": "saloon_study",
+      "result": "SALOON STUDY: 55 checks, 0 failures"
+    },
+    {
+      "suite": "shooting",
+      "result": "SHOOTING CHECK: PASS (47 checks)"
+    },
+    {
+      "suite": "v02",
+      "result": "V02 CHECK: PASS (52 checks)"
+    },
+    {
+      "suite": "v03",
+      "result": "V03 CHECK: PASS (109 checks)"
+    },
+    {
+      "suite": "v03_review",
+      "result": "V03 REVIEW: PASS (22 checks)"
+    },
+    {
+      "suite": "village",
+      "result": "VILLAGE: 130 checks, 0 failures"
+    }
+  ],
+  "suite_count": 14,
+  "failed_suites": 0,
+  "verification_command": "python3 scripts/godot_tasks.py verifier",
+  "tag": "v0.3",
+  "tag_url": "https://github.com/noctambulart/tequila-kill/tree/v0.3"
+}

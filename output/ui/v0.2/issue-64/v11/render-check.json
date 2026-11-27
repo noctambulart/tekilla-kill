@@ -1,0 +1,33 @@
+{
+  "renderedStates": 20,
+  "assets": 7,
+  "audioPreviews": 3,
+  "noAutoplay": true,
+  "originalBottle": true,
+  "bottleInsideOuterOval": true,
+  "lightInnerRimOverlap": true,
+  "ovalGeometry": {
+    "maxOuter": 0.7905969699384618,
+    "maxInner": 1.0694017483076512
+  },
+  "drunkennessLevels": 3,
+  "variedOrigins": true,
+  "originChangesOnRespawn": true,
+  "stableFlightOrigin": true,
+  "starsRiseThenFall": true,
+  "starsMove": true,
+  "soberHasNoStars": true,
+  "noNumericScoreDuringRound": true,
+  "winnerPercentageAtResult": true,
+  "garciaVictory": true,
+  "neutralGhost": true,
+  "possessionIndependent": true,
+  "ghostSuppression": true,
+  "ghostRestoration": true,
+  "bottleBobbing": true,
+  "animationStops": true,
+  "replay": true,
+  "title": true,
+  "tie": true,
+  "manualReview": "Voir README.md"
+}

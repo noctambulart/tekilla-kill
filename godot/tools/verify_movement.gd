@@ -156,13 +156,13 @@ func _capture() -> void:
 
 
 func _run() -> void:
-	# The actual title button opens the test scene, without replaying the intro.
+	# Open the developer scene without exposing a test button in the public title.
 	set_meta("intro_to_title", true)
 	change_scene_to_file("res://scenes/main/main.tscn")
 	await _frames(3)
-	current_scene.get_node("CenterContainer/Content/MovementButton").pressed.emit()
+	current_scene.start_movement_test()
 	await _frames(3)
-	_check(current_scene.name == "MovementTest", "Accès à la zone depuis le titre")
+	_check(current_scene.name == "MovementTest", "Accès à la zone de développement")
 	var arena = current_scene
 	var j1 = arena.keyboard_character
 	var j2 = arena.joypad_character
@@ -340,7 +340,7 @@ func _run() -> void:
 	await _frames(3)
 	_check(current_scene.name == "Main" and not is_instance_valid(current_scene.intro),
 		"Retour au titre sans relancer l’introduction")
-	current_scene.get_node("CenterContainer/Content/MovementButton").pressed.emit()
+	current_scene.start_movement_test()
 	await _frames(4)
 	_check(current_scene.keyboard_character.position.is_equal_approx(Vector2(160, 208)),
 		"Nouvel essai sans commande résiduelle")

@@ -1,6 +1,8 @@
-# Références graphiques de TekillaKill
+# Références graphiques de Tequila Kill
 
-Analyse des archives locales du 6 novembre 2026. Les observations décrivent les fichiers retrouvés. La base pixel art ci-dessous a été validée le 22 novembre 2026 ; les autres propositions pour la nouvelle version restent à valider.
+Analyse des archives locales du 6 novembre 2026, complétée par les décisions de densité graphique ci-dessous. Les observations décrivent les fichiers retrouvés ; les propositions historiques ne remplacent pas les références retenues dans les Issues de réalisation.
+
+Pour produire ou intégrer un nouveau lot, partir des références et exports liés par sa mission : [personnages jouables #58](https://github.com/noctambulart/tequila-kill/issues/58), [village et zone étalon #60](https://github.com/noctambulart/tequila-kill/issues/60). Les sources anciennes ci-dessous documentent l’héritage du jeu.
 
 Les liens ci-dessous pointent vers les [archives originales](../archives-originales/TheMexicanTequilaWar/), conservées localement et ignorées par Git. Ils nécessitent la présence de ces archives sur la machine.
 
@@ -63,7 +65,7 @@ La galerie locale `output/anciens-graphismes/index.html` et son inventaire avec 
 - Les builds v1 et v3 ont livré respectivement 85 et 71 entrées Texture2D/Sprite ; le build 0-0-3 en a livré 32. Ces nombres incluent les textures et leurs sprites, et ne désignent pas autant de graphismes uniques. Les atlas de police sans dimensions et les images vides sont consignés séparément.
 - Limite : le fichier `sharedassets1.assets.resS` manque dans le build 0-0-3. Ses 54 entrées Texture2D/Sprite dépendantes restent non extractibles et sont nommées dans l'inventaire. Les huit sprites anciens dont le maillage n'était pas pris en charge ont été extraits par leur rectangle de texture, avec cette réserve indiquée dans leur provenance.
 
-Les originaux n'ont pas été modifiés et aucun exécutable n'a été lancé. Cette galerie contient les archives historiques ; les concepts générés en novembre 2026 en sont exclus. Le script de reproduction est conservé dans `tmp/graphics_inventory.py` ; il utilise Pillow, psd-tools et UnityPy.
+Les originaux n'ont pas été modifiés et aucun exécutable n'a été lancé. Cette galerie contient les archives historiques ; les concepts générés en novembre 2026 en sont exclus. Le script de reproduction est conservé dans [`scripts/archives/graphics_inventory.py`](../scripts/archives/graphics_inventory.py). Les [prérequis et la commande de reconstruction](../scripts/README.md#inventaire-des-archives) précisent ses dépendances Pillow, psd-tools et UnityPy.
 
 ## Base pixel art retenue
 
@@ -80,6 +82,10 @@ Base pixel art validée le 22 novembre 2026 dans [l’issue #12](https://github.
 Les assets se dessinent à leur taille native ; l'agrandissement de l'image est assuré par Godot. La grille de terrain de 32 pixels n'impose pas cette taille à tous les objets : les formats historiques des personnages, du mobilier et des portraits restent des références à examiner et à harmoniser.
 
 Après examen du rendu le 24 novembre 2026, la reprise [#58](https://github.com/noctambulart/tequila-kill/issues/58) augmente la densité des dessins des personnages : cellules source de 144 × 144 pixels, dessinées dans 48 × 48 unités logiques. Leurs silhouettes occupent toujours environ 32 unités de large ; les contours, franges et signes distinctifs disposent de plus de détails. À zoom natif en 1080p, un pixel de texture correspond à un pixel affiché. À 720p ou en vue d’ensemble, les textures sont réduites au plus proche voisin. Cette densité est propre aux personnages ; les tuiles de terrain restent à 32 × 32. Les anciens sprites restent disponibles pour comparaison et l’harmonisation avec le décor sera examinée en jouant.
+
+Le 25 novembre, [l’intégration #60](https://github.com/noctambulart/tequila-kill/issues/60) harmonise Poncho, Garcia et vingt sprites de décor avec le [village retenu aux passages en fondu](../output/concept-art/2026-11-25/09-village-passages-fondu.png). Elle conserve les cellules de 144 pixels et les empreintes des personnages, avec une palette partagée sur chaque séquence et un ancrage au sol stable. Le nouveau tissu de Poncho couvre les pieds sans étirement. Les ressources de production sont dans les dossiers `assets/village/` des scènes de personnage et d’Arroyo Seco ; les sources originales, prompts et captures Godot sont conservés dans `output/arena/2026-11-25-integration/`. Les contours restent nets au plus proche voisin, tandis que les volumes et transitions de sol conservent les dégradés doux préférés par le producteur.
+
+Le retour suivant sur la zone étalon demande une cohérence entre les couleurs chaleureuses du décor et celles des personnages. Une [itération chaude de Poncho et Garcia](../output/arena/2026-11-25-saloon-study/character-warm/README.md) prend la maison de cette zone comme référence de palette et d’ombrage : lumière miel/crème, médiums cuivrés, contours et ombres brun chocolat, avec des volumes plus lumineux. Les identités olive de Poncho et rouge/indigo de Garcia restent distinctes. Le producteur retient ce rendu et demande sa généralisation : il est désormais actif dans la visite, l’essai solo et la partie existante sur le [village V6 complet](../output/arena/2026-11-25-village-v6/README.md). La validation du rendu de référence ne remplace pas l’essai de la carte complète. Cellules, proportions et ancrage restent ceux du lot précédent.
 
 Le 640 × 360 est attesté dans l’écran de sélection historique. Il sert de grille de composition pour les scènes actuelles. Le cadrage de l’arène et la lisibilité avec plusieurs joueurs devront être vérifiés dans une version jouable.
 
@@ -120,7 +126,7 @@ Pour le rendu du pixel art, privilégier les agrandissements entiers et le filtr
 
 Le bois usé et les affiches de recherche sont des motifs adaptés aux menus. Les noms et scores doivent conserver une typographie lisible aux petites tailles ; les caractères western très décoratifs peuvent servir aux titres.
 
-## Références prioritaires pour la suite
+## Références historiques
 
 1. [Arène avec mobilier et ombres](../archives-originales/TheMexicanTequilaWar/MokeUp/HouseDark_with_enviro_shadow.png) : cadrage, matériaux et éclairage.
 2. [Sélection de personnages](../archives-originales/TheMexicanTequilaWar/GUI/selection_perso_tekilla_kill.png) : personnalité et présentation des combattants.

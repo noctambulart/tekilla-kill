@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-26",
+  "approved": {
+    "carrier_and_ground_bottle": true,
+    "static_bottle": "v10",
+    "drunkenness_particle_direction": "v5",
+    "sound_direction": "prise claire, perte grave, dernière gorgée ; style rétro type SNES, synthèse locale"
+  },
+  "requested_changes": {
+    "ghost": "fortement désaturé, proche du noir et blanc",
+    "temporary_result": "afficher le pourcentage du gagnant ; interface à retravailler dans une version ultérieure"
+  },
+  "producer_animation_tuning": {
+    "bobSpeed": 4,
+    "starHeight": 1.1,
+    "starSpread": 1.05,
+    "starSize": 1.1
+  },
+  "review_pending": [],
+  "overall_concept_approved": true,
+  "final_agreement": "validation.json"
+}

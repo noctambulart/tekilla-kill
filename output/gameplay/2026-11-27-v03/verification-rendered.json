@@ -1,0 +1,490 @@
+{
+	"checks": 120,
+	"engine": "4.7.2-stable (official)",
+	"failures": [],
+	"rendered": true,
+	"results": [
+		{
+			"description": "Jouer lance la v0.3 publique",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-west-n",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-west-w",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-west-e",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-north-n",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-north-w",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-north-e",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-south-n",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-south-w",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-south-e",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-pot-back",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : shop-pot",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : loading-crate-a",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : loading-crate-b",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : shed-crate-a",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : shed-crate-b",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : shed-pot",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : yard-crate",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : courtyard-pot",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : street-crate",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : saloon-entry-pot",
+			"passed": true
+		},
+		{
+			"description": "Résistance de l’objet réel : shop-entry-pot",
+			"passed": true
+		},
+		{
+			"description": "Les trois familles sont raccordées sur le village actuel",
+			"passed": true
+		},
+		{
+			"description": "Marche bloquée par l’intact : pot",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur pot · impact 1",
+			"passed": true
+		},
+		{
+			"description": "Les débris libèrent le passage : pot",
+			"passed": true
+		},
+		{
+			"description": "La ligne de tir traverse les débris : pot",
+			"passed": true
+		},
+		{
+			"description": "Capture : broken-pot",
+			"passed": true
+		},
+		{
+			"description": "Marche bloquée par l’intact : chair_n",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur chair_n · impact 1",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur chair_n · impact 2",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur chair_n · impact 3",
+			"passed": true
+		},
+		{
+			"description": "Les débris libèrent le passage : chair_n",
+			"passed": true
+		},
+		{
+			"description": "La ligne de tir traverse les débris : chair_n",
+			"passed": true
+		},
+		{
+			"description": "Capture : broken-chair_n",
+			"passed": true
+		},
+		{
+			"description": "Marche bloquée par l’intact : crate",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur crate · impact 1",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur crate · impact 2",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur crate · impact 3",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur crate · impact 4",
+			"passed": true
+		},
+		{
+			"description": "La balle s’arrête sur crate · impact 5",
+			"passed": true
+		},
+		{
+			"description": "Les débris libèrent le passage : crate",
+			"passed": true
+		},
+		{
+			"description": "La ligne de tir traverse les débris : crate",
+			"passed": true
+		},
+		{
+			"description": "Capture : broken-crate",
+			"passed": true
+		},
+		{
+			"description": "Le couvert occupe la grille du bot",
+			"passed": true
+		},
+		{
+			"description": "La casse ouvre aussi les cellules de navigation",
+			"passed": true
+		},
+		{
+			"description": "Un mur reste permanent et arrête les tirs",
+			"passed": true
+		},
+		{
+			"description": "Crosse à vide : une unité, aucune balle ni projectile",
+			"passed": true
+		},
+		{
+			"description": "Cadence commune : aucune deuxième attaque avant 0,24 s",
+			"passed": true
+		},
+		{
+			"description": "Maintien : deuxième crosse à cadence normale",
+			"passed": true
+		},
+		{
+			"description": "Le maintien réévalue et redevient un tir hors de portée",
+			"passed": true
+		},
+		{
+			"description": "Cible exclue de la portée / de l’arc : (-25.0, 0.0)",
+			"passed": true
+		},
+		{
+			"description": "Cible exclue de la portée / de l’arc : (15.0, 24.0)",
+			"passed": true
+		},
+		{
+			"description": "Cible exclue de la portée / de l’arc : (31.0, 0.0)",
+			"passed": true
+		},
+		{
+			"description": "Cible admissible à l’intérieur de l’arc de 90°",
+			"passed": true
+		},
+		{
+			"description": "Un mur fin empêche la crosse",
+			"passed": true
+		},
+		{
+			"description": "Crosse : nouvel appui interrompt la recharge et conserve la cartouche",
+			"passed": true
+		},
+		{
+			"description": "Crosse : interruption possible avant la première cartouche",
+			"passed": true
+		},
+		{
+			"description": "Aucune crosse pendant le dash",
+			"passed": true
+		},
+		{
+			"description": "Le futur blessé porte la bouteille",
+			"passed": true
+		},
+		{
+			"description": "La crosse applique la perte de bouteille et l’étourdissement habituels",
+			"passed": true
+		},
+		{
+			"description": "La crosse n’ajoute pas de recul",
+			"passed": true
+		},
+		{
+			"description": "La crosse reste disponible au porteur étourdi",
+			"passed": true
+		},
+		{
+			"description": "Capture : melee-close",
+			"passed": true
+		},
+		{
+			"description": "Quatre crosses déclenchent le fantôme",
+			"passed": true
+		},
+		{
+			"description": "Le fantôme n’est plus une cible de crosse",
+			"passed": true
+		},
+		{
+			"description": "Le fantôme ne peut pas frapper",
+			"passed": true
+		},
+		{
+			"description": "Capture : dash-pot",
+			"passed": true
+		},
+		{
+			"description": "Dash franchit sans dégâts, à portée normale : pot",
+			"passed": true
+		},
+		{
+			"description": "Fin du dash : collisions restaurées",
+			"passed": true
+		},
+		{
+			"description": "Capture : dash-chair_n",
+			"passed": true
+		},
+		{
+			"description": "Dash franchit sans dégâts, à portée normale : chair_n",
+			"passed": true
+		},
+		{
+			"description": "Fin du dash : collisions restaurées",
+			"passed": true
+		},
+		{
+			"description": "Un dash franchit deux petits objets intacts",
+			"passed": true
+		},
+		{
+			"description": "Arrivée / trajet refusé, arrêt devant le pot : arrival",
+			"passed": true
+		},
+		{
+			"description": "Arrivée / trajet refusé, arrêt devant le pot : wall",
+			"passed": true
+		},
+		{
+			"description": "Arrivée / trajet refusé, arrêt devant le pot : crate",
+			"passed": true
+		},
+		{
+			"description": "Arrivée / trajet refusé, arrêt devant le pot : opponent",
+			"passed": true
+		},
+		{
+			"description": "Arrivée / trajet refusé, arrêt devant le pot : margin",
+			"passed": true
+		},
+		{
+			"description": "Une caisse reste bloquante pendant le dash",
+			"passed": true
+		},
+		{
+			"description": "Franchissement en cours avant interruption : stun",
+			"passed": true
+		},
+		{
+			"description": "Interruption sans emprisonnement dans le pot : stun",
+			"passed": true
+		},
+		{
+			"description": "Franchissement en cours avant interruption : ghost",
+			"passed": true
+		},
+		{
+			"description": "Interruption sans emprisonnement dans le pot : ghost",
+			"passed": true
+		},
+		{
+			"description": "Franchissement en cours avant interruption : stop",
+			"passed": true
+		},
+		{
+			"description": "Interruption sans emprisonnement dans le pot : stop",
+			"passed": true
+		},
+		{
+			"description": "Pause au-dessus du pot : position et temps figés",
+			"passed": true
+		},
+		{
+			"description": "Reprise du franchissement après pause",
+			"passed": true
+		},
+		{
+			"description": "Le premier segment se remplit progressivement avant le son",
+			"passed": true
+		},
+		{
+			"description": "Première unité complétée à 1,25 s : un son",
+			"passed": true
+		},
+		{
+			"description": "Pause : récupération et sons figés",
+			"passed": true
+		},
+		{
+			"description": "Capture : ghost-segments",
+			"passed": true
+		},
+		{
+			"description": "Trois segments restaurés successivement à 3,75 s",
+			"passed": true
+		},
+		{
+			"description": "Quatrième son à cinq secondes et retour au combat",
+			"passed": true
+		},
+		{
+			"description": "Le son de vie diffère de l’insertion de cartouche",
+			"passed": true
+		},
+		{
+			"description": "Rejouer restaure vie, récupération et décor intacts",
+			"passed": true
+		},
+		{
+			"description": "Clic réel : crosse remplace le tir au contact",
+			"passed": true
+		},
+		{
+			"description": "RT simulé : même crosse à la manette",
+			"passed": true
+		},
+		{
+			"description": "Espace en déplacement lance le franchissement",
+			"passed": true
+		},
+		{
+			"description": "Entrées réelles : franchissement complet, tir ignoré pendant le dash",
+			"passed": true
+		},
+		{
+			"description": "Capture : street-cover-intact",
+			"passed": true
+		},
+		{
+			"description": "Cinq tirs détruisent la caisse de rue réelle sans toucher Garcia derrière",
+			"passed": true
+		},
+		{
+			"description": "Capture : street-cover-broken",
+			"passed": true
+		},
+		{
+			"description": "Garcia bot utilise la même crosse au contact, même à vide",
+			"passed": true
+		},
+		{
+			"description": "Garcia poursuit un porteur masqué au lieu de tirer dans une caisse",
+			"passed": true
+		},
+		{
+			"description": "Garcia reconnaît immédiatement la ligne de tir ouverte par la casse",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : saloon",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : saloon",
+			"passed": true
+		},
+		{
+			"description": "Capture : bot-saloon",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : épicerie",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : épicerie",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : remise",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : remise",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : enclos",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : enclos",
+			"passed": true
+		},
+		{
+			"description": "Garcia rejoint et prend la bouteille : près du couvert",
+			"passed": true
+		},
+		{
+			"description": "Trajet dans les zones libres, sans traverser le décor : près du couvert",
+			"passed": true
+		},
+		{
+			"description": "Round complet sans fixture de quantité ou téléportation jusqu’à bouteille vide",
+			"passed": true
+		},
+		{
+			"description": "Contenu d’origine conservé, prise réelle de Garcia et victoire calculée",
+			"passed": true
+		},
+		{
+			"description": "Capture : full-round-result",
+			"passed": true
+		}
+	],
+	"scene": "res://scenes/match/match.tscn",
+	"status": "passed"
+}

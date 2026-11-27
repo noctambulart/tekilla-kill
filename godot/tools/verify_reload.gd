@@ -145,32 +145,39 @@ func _verify_reload_and_dash() -> void:
 	await _prepare()
 	await _spend_rounds(4)
 	await _reload()
+	# Reach the next insertion during the dash, after spending part of its delay.
 	await _frames(24)
 	var loaded: int = j1.weapon.ammunition
 	_key(KEY_D, true)
-	await _frames(8)
+	await _frames(18)
+	var progress: float = j1.weapon.reload_progress()
 	_key(KEY_SPACE, true)
 	await _frames()
-	_check(j1.is_dashing() and not j1.weapon.is_reloading()
-		and j1.weapon.ammunition == loaded, "Début du dash : annulation sans perdre les balles ajoutées")
+	_check(j1.is_dashing() and j1.weapon.is_reloading()
+		and j1.weapon.ammunition == loaded, "Le dash conserve la recharge en cours")
+	_check(j1.weapon.reload_progress() > progress,
+		"Le délai de cartouche continue sans repartir à zéro pendant le dash")
 	_key(KEY_R, true)
 	_mouse(true)
+	await _frames(5)
+	_check(j1.is_dashing() and j1.weapon.ammunition == loaded + 1,
+		"La cartouche arrive au rythme habituel pendant le dash")
 	await _frames(30)
-	_check(not j1.is_dashing() and not j1.weapon.is_reloading()
-		and j1.weapon.ammunition == loaded, "Appuis maintenus pendant le dash : aucune reprise différée")
+	_check(not j1.is_dashing() and j1.weapon.ammunition == 5 and j1.weapon.is_reloading(),
+		"Tir et recharge pressés pendant le dash n’interrompent pas la recharge")
+	await _frames(24)
+	_check(j1.weapon.ammunition == 6 and not j1.weapon.is_reloading(),
+		"La recharge va jusqu’au plein malgré le dash et le tir maintenu")
 	_key(KEY_D, false)
 	_key(KEY_SPACE, false)
 	_mouse(false)
 	_key(KEY_R, false)
 	await _frames()
-	await _reload()
-	_check(j1.weapon.is_reloading(), "Nouvel appui de recharge après le dash : autorisé")
 	_mouse(true)
 	await _frames()
 	_mouse(false)
-	_check(j1.weapon.ammunition == loaded - 1 and not j1.weapon.is_reloading(),
-		"Nouvel appui de tir après le dash : autorisé et interrompt la recharge")
-	# A tap during the dash must also be forgotten, even if released before its end.
+	_check(j1.weapon.ammunition == 5, "Un nouvel appui après le dash permet de tirer")
+	# A tap during the dash cannot start a reload that was not already running.
 	await _prepare()
 	await _spend_rounds(2)
 	_key(KEY_D, true)
@@ -264,7 +271,7 @@ func _run() -> void:
 	set_meta("intro_to_title", true)
 	change_scene_to_file("res://scenes/main/main.tscn")
 	await _frames(3)
-	current_scene.get_node("CenterContainer/Content/MovementButton").pressed.emit()
+	current_scene.start_movement_test()
 	await _frames(3)
 	arena = current_scene
 	j1 = arena.keyboard_character
@@ -300,4 +307,8 @@ func _run() -> void:
 			"scope": "Rechargement dans les scènes réelles, entrées clavier/souris/manette simulées. Sensations et matériel physique à essayer."
 		}, "\t") + "\n")
 	print("RELOAD CHECK: ", "PASS" if failures.is_empty() else failures, " (", checks, " checks)")
+	current_scene.queue_free()
+	current_scene = null
+	await _frames(2)
+	OS.delay_msec(100)
 	quit(0 if failures.is_empty() else 1)

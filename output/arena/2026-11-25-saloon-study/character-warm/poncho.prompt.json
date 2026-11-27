@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Use case: style-transfer, production animated sprite atlas edit.\nEDIT TARGET reference 1 is the shipped character's complete TWELVE-POSE atlas, exactly SIX COLUMNS by TWO ROWS. Keep this layout and each pose's identity/motion. STYLE AND COLOUR REFERENCE 2 is the house now in the game. The character must look painted by the SAME PIXEL ARTIST as that house.\nPreserve the fixed overhead/front view, character proportions and silhouette, exact costume, orientation, pose order, and common ground baseline. Feet/fabric must stay grounded. No rotation, different facing, outfit replacement, extra character, equipment, weapon, hands, shadows, background scenery, labels, frame borders or UI. Genuine transparent background with clear margins around all twelve poses. Consistent size and palette across the entire atlas.\nChange ART DIRECTION and PALETTE: match the house's warm honey/amber/copper highlights, creamy golden reflected daylight, and deep warm chocolate-brown outlines/shadows. Remove the dull, grey/desaturated, sooty cast. Sculpt simple broad softly shaded pixel-art volumes like the roof tiles and carved wood; several luminous midtones instead of a flat dark fill. Lighting from UPPER LEFT, gentle warm reflected light from sand below. Selective warm-brown stepped outlines comparable to the house, no pure black ink and no isolated bright contour/glow. Crisp pixel clusters, NO Gaussian blur, fine hatching, paper grain, dithering or photorealism. The player still needs a clear contrasting silhouette on both warm sand and blue-gray floor.\nRow1 is six subtle walk poses. Row2 is one idle, four dash poses, then matching idle. Preserve this exact arrangement and all the pose differences. Do not add large bouncing, flying or new action.\nCharacter PONCHO: Keep the broad straw sombrero with its OLIVE crown (identity marker), and long fringed poncho hiding his feet. Repaint the straw with luminous honey-gold and cream highlights that resemble the house's illuminated wooden steps; model the olive crown with warm moss/ochre light and deep olive-brown shadows. The cloth should be a richer, warmer burnt ochre/copper-brown, lighter and more luminous than the seed, with three or four broad readable folds and golden-ochre fringe, instead of many muddy dark stripes. Keep a warm deep-brown underside so hat and cloth remain separate. Do not turn the crown orange or remove the olive identity. No hands or weapon.",
+  "references": [
+    "output/arena/2026-11-25-integration/source/poncho-raw.png",
+    "godot/scenes/arroyo_seco/saloon_study/assets/house.png"
+  ],
+  "grid": [
+    6,
+    2
+  ],
+  "issue": 60
+}

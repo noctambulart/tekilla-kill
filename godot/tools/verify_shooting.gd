@@ -306,14 +306,14 @@ func _run() -> void:
 	set_meta("intro_to_title", true)
 	change_scene_to_file("res://scenes/main/main.tscn")
 	await _frames(3)
-	current_scene.get_node("CenterContainer/Content/MovementButton").pressed.emit()
+	current_scene.start_movement_test()
 	await _frames(3)
 	arena = current_scene
 	j1 = arena.keyboard_character
 	j2 = arena.joypad_character
 	arena.assign_joypad(7)
 	j1.weapon.fired.connect(func(): shot_frames.append(Engine.get_physics_frames()))
-	_check(j1.combat_enabled and j2.combat_enabled, "Le titre ouvre l’essai de combat")
+	_check(j1.combat_enabled and j2.combat_enabled, "La scène de développement ouvre l’essai de combat")
 	await _verify_inputs_and_magazine()
 	await _verify_joypad()
 	await _verify_cover()
@@ -324,7 +324,7 @@ func _run() -> void:
 	await _frames(3)
 	_check(current_scene.name == "Main" and get_nodes_in_group("revolver_bullets").is_empty(),
 		"Retour au titre : projectiles nettoyés")
-	current_scene.get_node("CenterContainer/Content/MovementButton").pressed.emit()
+	current_scene.start_movement_test()
 	await _frames(3)
 	_check(current_scene.keyboard_character.weapon.ammunition == 6, "Nouvel essai : chargeur plein")
 	var folder := ProjectSettings.globalize_path("res://../output/combat/issue-20")

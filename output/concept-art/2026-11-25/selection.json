@@ -1,0 +1,9 @@
+{
+  "selected_image": "09-village-passages-fondu.png",
+  "source": "source/09-village-passages-cassables-v1.png",
+  "prompt": "09-village-passages-cassables.prompt.json",
+  "producer_feedback": "C'est beaucoup mieux pour les passages de l'image 1 avec le fondu. On peut partir",
+  "decision": "Retenir la première version09 avec fondu comme base de poursuite.",
+  "retained_variant": "09-village-passages-cassables.png",
+  "scope": "Préférence pour la maquette artistique ; aucune intégration moteur ni validation du jalon déduite."
+}
